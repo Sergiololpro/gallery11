@@ -8,7 +8,6 @@
   <img class="banner__img" src="img/banner__img.svg" alt="">
   <div class="wrapper wrapper-banner">
     <div class="banner__contacts">
-      <a href="tel:+73432173500" class="header__phone">+7 343 217 35 00</a>
       <div class="header__address">Екатеринбург, Студенческая 11</div>
     </div>
     <img class="banner__logo" src="img/banner__logo.svg" alt="">
@@ -108,7 +107,7 @@
       <img class="design__img" src="img/design__img.svg" alt="">
       <div class="design__image" style="background-image: url(img/design-1.jpg)"></div>
       <div class="design__content">
-        <h2 class="title title-right">Шоу-румы</h2>
+        <h2 class="title title-design title-right">Шоу-румы</h2>
         <div class="design__title">
           Мебельные <span>магазины</span>
         </div>
@@ -148,7 +147,7 @@
     <div class="design__top">
       <img class="design__img" src="img/design__img-2.svg" alt="">
       <div class="design__content">
-        <h2 class="title">Офисы</h2>
+        <h2 class="title title-design">Офисы</h2>
         <div class="design__title">
           Представительства <span>компаний</span>
         </div>

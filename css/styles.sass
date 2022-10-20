@@ -1582,6 +1582,7 @@ body
         align-items: flex-start
     &__logo
         width: 100%
+        max-width: 320px
         margin: 0 0 50px
     &__title
         font-size: 32px
@@ -1952,10 +1953,10 @@ body
         margin: 0 0 40px
 
     .title
-        font-size: 36px
+        font-size: 54px
         margin: 0 0 30px
         &:before
-            top: 35px
+            top: 55px
         &-short
             max-width: 450px
             font-size: 60px
@@ -1970,6 +1971,12 @@ body
                 top: 55px
             &_mobile
                 display: inline-block
+        &-design
+            position: absolute
+            left: 0
+            top: 0
+            &:before
+                left: initial
 
     .event
         &__wrp
@@ -2087,10 +2094,56 @@ body
             width: auto
             max-width: inherit
 
+    .design
+        margin: 0 0 80px
+        &__top
+            flex-direction: column
+            padding: 90px 0 0
+        &__image
+            width: 100%
+            height: 350px
+            order: 1
+            margin: 0 0 30px
+        &__content
+            width: 100%
+            order: 2
+        &__text
+            max-width: 100%
+        &__img
+            top: 40px
+            bottom: inherit
+        &__el
+            height: 240px
+        &__txt
+            font-size: 24px
+
+    .bottom
+        &__wrp
+            flex-direction: column
+            padding: 120px 0 0
+        &__image
+            width: 100%
+            height: 450px
+            margin: 0 0 30px
+        &__content
+            width: 100%
+        &__text
+            max-width: 100%
+        &__logo
+            position: absolute
+            left: 0
+            top: 0
+        &__img
+            width: 100%
+            left: 0
+            top: 100px
+            bottom: inherit
+
+
 @media (max-width: 640px)
     .wrapper
         &-banner
-            padding: 100px 20px 60px
+            padding: 80px 20px 140px
 
     .header
         height: 80px
@@ -2108,11 +2161,19 @@ body
             width: 32px
             height: 32px
             margin: 0 10px 0 0
+        &__address
+            color: #fff
+            text-align: center
+
+    .title
+        font-size: 36px
+        &:before
+            top: 40px
 
     .banner
         &__contacts
             display: block
-            margin: 0 0 30px
+            margin: 0 0 70px
         &__h1
             font-size: 36px
             &:before
@@ -2120,13 +2181,14 @@ body
         &__text
             font-size: 20px
             margin: 0 0 30px
+        &__logo
+            max-width: 270px
 
     .socials
         display: none
     
     .event
-        &__img
-            display: none
+        margin: 0 0 20px
         &__wrp
             display: inline-block
             margin: 0 10px 0 0
@@ -2427,6 +2489,46 @@ body
         &__ul
             li
                 margin: 0 0 20px
+
+    .design
+        &__image
+            height: 170px
+            margin: 0 0 20px
+        &__title
+            font-size: 24px
+            padding: 0 0 24px
+        &__text
+            font-size: 18px
+            margin: 0
+        &__row
+            flex-wrap: wrap
+        &__el
+            width: 100%
+            padding: 20px
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
+        .button
+            display: none
+
+    .bottom
+        &__title
+            font-size: 24px
+            padding: 0 0 24px
+            margin: 0 0 30px
+        &__text
+            font-size: 18px
+        &__logo
+            max-width: 100%
+        &__row
+            flex-direction: column
+        &__el
+            width: 100%
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
+        .button
+            width: 100%
 
 @media (max-width: 320px)
     .button
