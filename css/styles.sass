@@ -1,0 +1,2434 @@
+@font-face
+    font-family: TTNormsPro
+    src: url(../fonts/TTNormsPro/TTNormsPro-400.woff)
+    font-weight: 400
+    font-display: swap
+
+@font-face
+    font-family: TTNormsPro
+    src: url(../fonts/TTNormsPro/TTNormsPro-500.woff)
+    font-weight: 500
+    font-display: swap
+
+@font-face
+    font-family: OptimaCyr
+    src: url(../fonts/OptimaCyr/OptimaCyr-400.woff)
+    font-weight: 400
+    font-display: swap
+
+*
+    box-sizing: border-box
+    -webkit-overflow-scrolling: touch
+
+ul,
+li
+    margin: 0
+    padding: 0
+
+h1,
+h2,
+h3,
+h4,
+p
+    margin: 0
+
+a
+    color: #212f4b
+    text-decoration: none
+
+textarea,
+input
+    outline: none
+    border: none
+    border-radius: 0
+    font-family: 'TTNormsPro'
+    color: #7A7A7A
+    box-shadow: none
+    -webkit-appearance: none
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder
+    color: #7A7A7A
+
+textarea
+    resize: none
+
+button
+    outline: none
+    border: none
+    cursor: pointer
+
+ul
+    list-style-type: none
+
+body
+    width: 100%
+    min-width: 320px
+    background: #fff
+    font-family: 'TTNormsPro'
+    font-size: 0
+    color: #7A7A7A
+    font-weight: 400
+    overflow-x: hidden
+    margin: 0
+    -webkit-text-size-adjust: none
+
+.wrapper
+    width: 100%
+    max-width: 1620px
+    position: relative
+    padding: 0 20px
+    margin: 0 auto
+    &-header
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-banner
+        height: 100%
+        padding: 400px 20px 120px
+
+.header
+    width: 100%
+    height: 150px
+    background: rgba(255, 255, 255, .7)
+    z-index: 5
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    padding: 50px 0 0
+    margin: 0 auto
+    transition: background .3s ease-out
+    &-main
+        background: rgba(0, 0, 0, .7)
+        .header
+            &__phone
+                color: #fff
+            &__address
+                color: #fff
+            &__logo
+                display: none
+                &-light
+                    display: block
+        .navigate
+            &__nav
+                color: #fff
+    &.transparent
+        background: transparent
+    &__logo
+        min-width: 233px
+        height: 65px
+        display: block
+        background: url(../img/footer__logo.svg) center no-repeat
+        background-size: contain
+        &-light
+            background: url(../img/logo-rus.svg) center no-repeat
+            background-size: contain
+            display: none
+    &__right
+        display: flex
+        align-items: center
+        margin: 0 0 10px
+    &__contacts
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__phone
+        display: block
+        font-family: 'OptimaCyr'
+        font-size: 24px
+        color: #37474F
+        margin: 0 0 5px
+    &__address
+        font-size: 12px
+        color: #37474F
+        font-weight: 500
+    &__buttons
+        display: flex
+        margin: 0 0 0 40px
+    &__button
+        width: 40px
+        height: 40px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 70%
+        background-color: #26343C
+        border-radius: 4px
+        cursor: pointer
+        margin: 0 24px 0 0
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+        &-search
+            background-image: url(../img/header__button-search.svg)
+        &-cabinet
+            background-image: url(../img/header__button-cabinet.svg)
+            background-size: 90%
+    &__menu
+        display: none
+    &__close
+        display: none
+    &__left
+        display: flex
+        align-items: center
+
+.navigate
+    display: flex
+    position: relative
+    padding: 0 0 20px
+    &:before
+        content: ""
+        width: 120%
+        height: 1px
+        background: #F57D02
+        position: absolute
+        right: 20px
+        top: 32px
+    &__nav
+        font-size: 14px
+        color: #37474F
+        font-weight: 500
+        text-transform: uppercase
+        position: relative
+        margin: 0 20px
+        transition: color .3s ease-out
+        &:before
+            content: ""
+            width: 100%
+            height: 2px
+            background: #fff
+            opacity: 0
+            position: absolute
+            left: 0
+            bottom: -14px
+            transition: opacity .3s ease-out
+        &.active,
+        &:hover
+            color: #F57D02
+            &:before
+                opacity: 1
+
+.banner
+    width: 100%
+    min-height: 900px
+    background: url(../img/banner.jpg) center no-repeat
+    background-size: cover
+    position: relative
+    margin: 0 0 90px
+    &__img
+        width: 100%
+        position: absolute
+        bottom: 0
+    &__h1
+        max-width: 1000px
+        font-family: 'OptimaCyr'
+        font-size: 70px
+        color: #F57D02
+        font-weight: 400
+        line-height: 100%
+        position: relative
+        margin: 0 0 30px
+        &:before
+            content: ""
+            width: 100%
+            height: 1px
+            background: #F57D02
+            position: absolute
+            right: 155px
+            top: 66px
+    &__logo
+        width: 590px
+        max-width: 100%
+        margin: 0 0 30px
+    &__text
+        max-width: 590px
+        font-family: 'OptimaCyr'
+        font-size: 20px
+        color: #fff
+        line-height: 140%
+        margin: 0 0 40px
+    &__contacts
+        display: none
+
+.button
+    height: 48px
+    display: inline-block
+    background-image: url(../img/banner__button.svg)
+    background-position: center right 24px
+    background-repeat: no-repeat
+    background-color: #37474F
+    background-size: 16px
+    border-radius: 4px
+    font-size: 18px
+    color: #fff
+    font-weight: 500
+    line-height: 48px
+    cursor: pointer
+    padding: 0 100px 0 20px
+    transition: background-color .3s ease-out, color .3s ease-out, padding .3s ease-out
+    &:hover
+        background-color: #F57D02
+        padding: 0 130px 0 20px
+    &-orange
+        background-color: #F57D02
+        &:hover
+            background-color: #37474F
+    &-down
+        background-position: center right 16px
+        background-image: url(../img/down.svg)
+        background-color: #fff
+        background-size: 24px
+        border: 1px solid #F57D02
+        color: #37474F
+        &:hover
+            color: #fff
+    &-banner
+        background-image: url(../img/arrrow-orange.svg)
+        background-color: transparent
+        background-size: 24px
+        border: 1px solid #F57D02
+        color: #F57D02
+        &:hover
+            background-image: url(../img/banner__button.svg)
+            background-size: 16px
+            color: #fff
+
+
+.socials
+    display: flex
+    flex-direction: column
+    position: absolute
+    right: 20px
+    top: 160px
+    &__el
+        width: 32px
+        height: 32px
+        margin: 0 0 25px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+        &:last-child
+            margin: 0
+        &-vk
+            background: url(../img/socials__el-vk.svg) center no-repeat
+            background-size: contain
+        &-tg
+            background: url(../img/socials__el-tg.svg) center no-repeat
+            background-size: contain
+
+.title
+    display: inline-block
+    font-family: 'OptimaCyr'
+    color: #F57D02
+    font-weight: 400
+    font-size: 100px
+    position: relative
+    margin: 0 0 70px
+    &:before
+        content: ""
+        width: calc(100% + 140px)
+        height: 1px
+        background: #F57D02
+        position: absolute
+        right: 0
+        top: 100px
+    &-right
+        &:before
+            width: calc(100% + 700px)
+            left: 0
+            right: inherit
+    &-public
+        margin: 0 0 40px
+    &-short
+        max-width: 820px
+        font-size: 100px
+        &:before
+            top: 85px
+    &-arendator
+        font-size: 100px
+        margin: 0 0 20px
+        &:before
+            width: calc(100% + 500px)
+            left: 0
+            right: inherit
+            top: 85px
+        &_mobile
+            display: none
+    &-desc
+        margin: 0 0 30px
+
+.event
+    overflow: hidden
+    &__img
+        width: 100%
+        position: absolute
+        left: 0
+        top: 35px
+    &__wrp
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0 0 30px
+        &-actions
+            margin: 0
+    &__el
+        width: calc((100% - 30px) / 2)
+        height: 750px
+        cursor: pointer
+        overflow: hidden
+        position: relative
+        margin: 0 0 30px
+        &:hover
+            .event
+                &__image
+                    transform: scale(1.1)
+        &-large
+            margin: 0
+            .event
+                &__content
+                    min-height: 275px
+        &-top
+            margin: 0
+            .event
+                &__content
+                    bottom: inherit
+                    top: 100px
+        &-bottom
+            height: 360px
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        left: 0
+        top: 0
+        transition: transform .3s ease-out
+    &__label
+        height: 28px
+        background: #37474F
+        border: 1px solid #F57D02
+        border-radius: 4px
+        font-size: 14px
+        color: #fff
+        font-weight: 500
+        line-height: 26px
+        text-transform: uppercase
+        position: absolute
+        left: 40px
+        top: 40px
+        padding: 0 10px
+    &__content
+        width: calc(100% - 80px)
+        max-width: 475px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: rgba(0, 0, 0, .5)
+        padding: 16px
+        position: absolute
+        left: 40px
+        bottom: 40px
+    &__date
+        font-size: 14px
+        color: #fff
+        font-weight: 500
+        text-transform: uppercase
+        margin: 0 0 16px
+    &__h3
+        font-family: 'OptimaCyr'
+        font-size: 32px
+        color: #fff
+        line-height: 100%
+        margin: 0 0 16px
+    &__text
+        font-family: 'OptimaCyr'
+        font-size: 24px
+        color: #fff
+        line-height: 140%
+    &__col
+        width: calc((100% - 30px) / 2)
+        .event
+            &__el
+                width: 100%
+                height: calc((100% - 30px) / 2)
+                margin: 0 0 30px
+                &:last-child
+                    margin: 0
+            &__content
+                min-height: inherit
+
+.news
+    display: flex
+    justify-content: space-between
+    padding: 0 0 60px
+    &__el
+        width: calc((100% - 60px) / 3)
+        cursor: pointer
+        transition: box-shadow .3s ease-out
+        &:hover
+            box-shadow: 0 20px 38px rgba(0, 0, 0, .25)
+            .news
+                &__h3
+                    color: #F57D02
+                    text-decoration: underline
+    &__image
+        width: 100%
+        height: 300px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+    &__label
+        height: 28px
+        background: #37474F
+        border: 1px solid #F57D02
+        border-radius: 4px
+        font-size: 14px
+        color: #fff
+        font-weight: 500
+        line-height: 26px
+        text-transform: uppercase
+        position: absolute
+        left: 25px
+        bottom: 25px
+        padding: 0 10px
+    &__content
+        background: #fff
+        padding: 25px
+    &__date
+        font-size: 14px
+        color: #7A7A7A
+        font-weight: 500
+        text-transform: uppercase
+        margin: 0 0 16px
+    &__h3
+        font-family: 'OptimaCyr'
+        font-size: 32px
+        font-weight: 400
+        margin: 0 0 16px
+        transition: color .3s ease-out
+    &__text
+        font-family: 'OptimaCyr'
+        font-size: 24px
+        line-height: 140%
+
+.center
+    background: url(../img/center.jpg) center no-repeat #37474F
+    background-size: 1920px auto
+    padding: 90px 0
+    margin: 0 0 70px
+    &__text
+        max-width: 620px
+        font-family: 'OptimaCyr'
+        font-size: 38px
+        color: #fff
+        line-height: 100%
+        margin: 0 0 80px
+    &__els
+        width: 420px
+        max-width: 100%
+        display: flex
+        flex-direction: column
+        border-top: 1px solid #fff
+    &__el
+        width: 100%
+        background: url(../img/banner__button.svg) center right 24px no-repeat
+        background-size: 20px
+        border-bottom: 1px solid #fff
+        font-family: 'OptimaCyr'
+        font-size: 24px
+        color: #fff
+        cursor: pointer
+        padding: 20px
+        transition: background .3s ease-out
+        &:hover
+            background: url(../img/banner__button.svg) center right 24px no-repeat #F57D02
+            background-size: 20px
+
+.blocks
+    overflow: hidden
+    margin: 0 0 120px
+    &__wrp
+        display: flex
+        justify-content: space-between
+        position: relative
+    &__back
+        width: 90%
+        position: absolute
+        left: -50%
+        top: 80px
+    &__col
+        width: calc((100% - 30px) / 2)
+    &__els
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__el
+        width: 100%
+        height: 320px
+        display: flex
+        align-items: flex-end
+        overflow: hidden
+        position: relative
+        padding: 24px
+        margin: 0 0 30px
+        &:hover
+            .blocks
+                &__image
+                    transform: scale(1.1)
+        &-small
+            width: calc((100% - 30px) / 2)
+            margin: 0
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        left: 0
+        top: 0
+        transition: transform .3s ease-out
+    &__text
+        max-width: 210px
+        font-family: 'OptimaCyr'
+        font-size: 32px
+        color: #fff
+        line-height: 100%
+        position: relative
+
+.public
+    overflow: hidden
+    position: relative
+    margin: 0 0 100px
+    &__wrp
+        background: url(../img/public__wrp.jpg) center no-repeat
+        background-size: cover
+        position: relative
+        padding: 70px
+    &__image
+        width: 90%
+        max-width: 1470px
+        position: absolute
+        left: 0
+        right: 0
+        top: -50px
+        margin: 0 auto
+    &__text
+        font-family: 'OptimaCyr'
+        font-size: 38px
+        color: #fff
+        margin: 0 0 60px
+    &__img
+        width: 110%
+        position: absolute
+        right: -50%
+        bottom: 100px
+
+.subscribe
+    overflow: hidden
+    margin: 0 0 100px
+    &__wrp
+        display: flex
+        justify-content: space-between
+    &__image
+        width: 57%
+        height: 570px
+        background: url(../img/subscribe__image.jpg) center no-repeat
+        background-size: cover
+    &__content
+        width: 35%
+    &__h2
+        display: inline-block
+        font-family: "OptimaCyr"
+        color: #F57D02
+        font-weight: 400
+        font-size: 60px
+        position: relative
+        margin: 0 0 70px
+        &:before
+            content: ""
+            width: calc(100% + 140px)
+            height: 1px
+            background: #F57D02
+            position: absolute
+            left: 0
+            top: 60px
+    &__form
+        max-width: 500px
+        display: flex
+        justify-content: space-between
+        margin: 0 0 30px
+    &__input
+        width: calc(100% - 170px)
+        height: 64px
+        background: #fff
+        border: 1px solid #EDEDED
+        border-radius: 4px
+        font-size: 15px
+        padding: 0 20px
+    &__button
+        width: 150px
+        height: 64px
+        background: #F57D02
+        border-radius: 4px
+        font-size: 18px
+        color: #fff
+        font-weight: 500
+        transition: background .3s ease-out
+        &:hover
+            background: #37474F
+    &__text
+        max-width: 500px
+        font-size: 12px
+        line-height: 140%
+        a
+            color: #F57D02
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+
+.footer
+    background: url(../img/footer.jpg) center no-repeat
+    background-size: cover
+    padding: 70px 0
+    &__top
+        display: flex
+        justify-content: space-between
+        margin: 0 0 30px
+    &__logo
+        width: 240px
+        height: 82px
+        display: inline-block
+        background: url(../img/footer__logo.svg) center no-repeat
+        background-size: contain
+        margin: 0 0 40px
+    &__text
+        max-width: 286px
+        font-size: 15px
+        line-height: 140%
+    &__phone
+        display: block
+        background: url(../img/footer__phone.svg) left top no-repeat
+        background-size: 24px
+        font-family: "OptimaCyr"
+        font-size: 38px
+        white-space: nowrap
+        padding: 0 0 0 40px
+        margin: 0 0 24px
+    &__time
+        background: url(../img/footer__t.svg) left center no-repeat
+        background-size: 24px
+        font-family: "OptimaCyr"
+        font-size: 20px
+        font-weight: 500
+        text-transform: uppercase
+        padding: 0 0 0 40px
+        margin: 0 0 24px
+    &__address
+        min-height: 24px
+        background: url(../img/footer__address.svg) left top no-repeat
+        background-size: 24px
+        font-family: "OptimaCyr"
+        font-size: 20px
+        padding: 0 0 0 40px
+    &__link
+        display: block
+        font-size: 15px
+        color: #7A7A7A
+        padding: 4px 0 0 40px
+        margin: 0 0 24px
+        transition: color .3s ease-out
+        &:hover
+            color: #F57D02
+    &__email
+        display: block
+        background: url(../img/footer__email.svg) left -2px no-repeat
+        background-size: 24px
+        font-family: "OptimaCyr"
+        font-size: 20px
+        color: #F57D02
+        padding: 0 0 0 40px
+        transition: color .3s ease-out
+        &:hover
+            color: #7A7A7A
+            text-decoration: underline
+    &__center
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin: 0 0 70px
+    &__bottom
+        display: flex
+        justify-content: space-between
+    &__copy
+        font-size: 11px
+    &_navs
+        display: flex
+        &__col
+            display: flex
+            flex-direction: column
+            margin: 0 40px
+        &__el
+            font-family: "OptimaCyr"
+            font-size: 24px
+            color: #37474F
+            margin: 0 0 16px
+            transition: color .3s ease-out
+            &:hover
+                color: #F57D02
+            &:last-child
+                margin: 0
+    &_subscribe
+        max-width: 100%
+        &__text
+            font-family: "OptimaCyr"
+            font-size: 14px
+            font-weight: 500
+            text-transform: uppercase
+            margin: 0 0 16px
+        &__form
+            width: 410px
+            max-width: 100%
+            display: flex
+        &__input
+            width: calc(100% - 48px)
+            height: 48px
+            background: #fff
+            border: 1px solid #EDEDED
+            border-radius: 4px
+            font-size: 15px
+            padding: 0 10px
+        &__button
+            width: 48px
+            height: 48px
+            background: url(../img/banner__button.svg) center no-repeat #F57D02
+            background-size: 24px
+            border-radius: 4px
+            transition: background .3s ease-out
+            &:hover
+                background: url(../img/banner__button.svg) center no-repeat #37474F
+                background-size: 24px
+    &_socials
+        display: flex
+        &__el
+            width: 56px
+            height: 56px
+            margin: 0 48px 0 0
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &:last-child
+                margin: 0
+            &-vk
+                background: url(../img/footer_socials__el-vk.svg) center no-repeat
+                background-size: contain
+            &-tg
+                background: url(../img/footer_socials__el-tg.svg) center no-repeat
+                background-size: contain
+            &-insta
+                background: url(../img/footer_socials__el-insta.svg) center no-repeat
+                background-size: contain
+            &-you
+                background: url(../img/footer_socials__el-you.svg) center no-repeat
+                background-size: contain
+    &_links
+        display: flex
+        &__link
+            font-size: 11px
+            color: #F57D02
+            margin: 0 70px 0 0
+            transition: color .3s ease-out
+            &:hover
+                color: #37474F
+            &:last-child
+                margin: 0
+
+.page
+    overflow: hidden
+    position: relative
+    padding: 160px 0 100px
+    &__image
+        width: 90%
+        pointer-events: none
+        position: absolute
+        top: 360px
+        right: -25%
+        &-services
+            top: 280px
+        &-rent
+            width: 300px
+            right: inherit
+            left: -150px
+            top: 280px
+
+.breadcrumbs
+    font-size: 12px
+    font-weight: 500
+    margin: 0 0 60px
+    &__sep
+        color: #F57D02
+        margin: 0 8px
+    a
+        color: #37474F
+        transition: color .3s ease-out
+        &:hover
+            color: #F57D02
+
+.tabs
+    white-space: nowrap
+    overflow-y: auto
+    margin: 0 0 60px
+    &__tab
+        display: inline-flex
+        vertical-align: top
+        border-bottom: 1px solid #fff
+        font-family: "OptimaCyr"
+        font-size: 24px
+        cursor: pointer
+        margin: 0 45px 0 0
+        transition: border .3s ease-out
+        &:last-child
+            margin: 0
+        &:hover,
+        &.active
+            border-bottom: 1px solid #F57D02
+
+.products
+    height: 0
+    display: flex
+    flex-wrap: wrap
+    opacity: 0
+    transform: translateX(-100%)
+    transition: transform .5s ease-out
+    &.active
+        height: auto
+        opacity: 1
+        margin: 0 0 50px
+        transform: translateX(0)
+    &__el
+        width: calc((100% - 90px) / 4)
+        height: 320px
+        display: flex
+        align-items: flex-end
+        overflow: hidden
+        cursor: pointer
+        position: relative
+        padding: 24px
+        margin: 0 30px 30px 0
+        &:nth-child(4n)
+            margin: 0 0 30px
+        &:hover
+            .products
+                &__image
+                    transform: scale(1.1)
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        left: 0
+        top: 0
+        transition: transform .3s ease-out
+    &__text
+        max-width: 210px
+        font-family: 'OptimaCyr'
+        font-size: 32px
+        color: #fff
+        line-height: 100%
+        position: relative
+
+.seo_text
+    font-size: 24px
+    line-height: 140%
+    p
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+
+.sevices
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 50px
+
+.rent
+    display: flex
+    flex-wrap: wrap
+    &__el
+        width: calc((100% - 80px) / 2)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 0 80px 80px 0
+        &:nth-child(2n)
+            margin: 0 0 80px
+    &__top
+        border: 1px solid #DBDBDB
+        padding: 30px
+        margin: 0 0 30px
+    &__image
+        width: 100%
+        height: 370px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+    &__text
+        font-size: 18px
+        color: #37474F
+        font-weight: 500
+        line-height: 140%
+        margin: 0 0 30px
+
+.actions
+    height: 0
+    opacity: 0
+    transform: translateX(-100%)
+    transition: transform .5s ease-out
+    &.active
+        height: auto
+        opacity: 1
+        transform: translateX(0)
+
+.registration
+    &__top
+        position: relative
+        margin: 0 0 150px
+    &__back
+        background: url(../img/registration__back.svg) left top no-repeat
+        background-size: 24px
+        font-family: 'OptimaCyr'
+        font-size: 24px
+        color: #37474F
+        cursor: pointer
+        padding: 2px 0 0 40px
+        margin: 0 0 30px
+        transition: color .3s ease-out
+        &:hover
+            color: #F57D02
+    &__wrp
+        padding: 0 0 30px 90px
+    &__date
+        font-size: 14px
+        font-weight: 500
+        text-transform: uppercase
+        margin: 0 0 30px
+    &__text
+        max-width: 350px
+        font-family: 'OptimaCyr'
+        font-size: 24px
+        color: #37474F
+        line-height: 140%
+        margin: 0 0 30px
+    &__image
+        width: 1100px
+        max-width: calc(100% - 550px)
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        right: 0
+        top: 0
+    &__img
+        width: 110%
+        position: absolute
+        left: 0
+        right: 0
+        bottom: -100px
+    &__bottom
+        display: flex
+        justify-content: space-between
+    &__left
+        width: calc(100% - 500px)
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__dt
+        background: #EDEDED
+        font-size: 18px
+        color: #37474F
+        font-weight: 500
+        padding: 8px 16px
+        margin: 50px 0
+
+.pdf
+    min-height: 60px
+    background: url(../img/pdf.svg) left top no-repeat
+    background-size: 60px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0 0 0 84px
+    transition: opacity .3s ease-out
+    &:hover
+        opacity: .7
+    &__title
+        font-size: 24px
+        color: #37474F
+        margin: 0 0 4px
+    &__size
+        font-size: 18px
+        font-weight: 500
+
+.photos
+    position: relative
+    margin: 150px 0
+    &__image
+        width: 75%
+        position: absolute
+        right: -10%
+        top: 30px
+    &__els
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__el
+        width: calc((100% - 60px) / 3)
+        height: 600px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+        &-large
+            width: calc((100% - 60px) / 4 * 2)
+            height: 400px
+        &-small
+            width: calc((100% - 60px) / 4)
+            height: 400px
+    &__col
+        width: calc((100% - 60px) / 3)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 0 0 30px
+        .photos
+            &__el
+                width: 100%
+                height: calc((100% - 30px) / 2)
+
+.video
+    position: relative
+    margin: 150px 0 0
+    &__image
+        width: 75%
+        position: absolute
+        right: -10%
+        top: 30px
+    &__els
+        display: flex
+        justify-content: space-between
+    &__el
+        width: calc((100% - 60px) / 4 * 2)
+        height: 470px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        cursor: pointer
+        &:hover
+            .video
+                &__play
+                    transform: scale(1.1)
+    &__right
+        width: calc((100% - 60px) / 4 * 2)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-content: space-between
+        .video
+            &__el
+                width: calc((100% - 30px) / 2)
+                height: calc((100% - 30px) / 2)
+            &__play
+                width: 56px
+                height: 56px
+    &__play
+        width: 100px
+        height: 100px
+        background: url(../img/video__play.svg) center no-repeat
+        background-size: contain
+        transition: transform .3s ease-out
+
+.tab_filters
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 60px
+    &__els
+        white-space: nowrap
+        overflow-y: auto
+        margin: 0 100px 30px 0
+        &:last-child
+            margin: 0
+    &__el
+        display: inline-flex
+        vertical-align: top
+        border-bottom: 1px solid #fff
+        font-family: "OptimaCyr"
+        font-size: 24px
+        cursor: pointer
+        margin: 0 45px 0 0
+        transition: border .3s ease-out
+        &:last-child
+            margin: 0
+        &:hover,
+        &.active
+            border-bottom: 1px solid #F57D02
+        
+.prods
+    position: relative
+    margin: 0 0 70px
+    &__img
+        width: 80%
+        pointer-events: none
+        position: absolute
+        top: -100px
+        right: -10%
+    &__els
+        display: flex
+        flex-wrap: wrap
+        margin: 0 0 30px
+    &__el
+        width: calc((100% - 90px) / 4)
+        height: 430px
+        cursor: pointer
+        position: relative
+        margin: 0 30px 30px 0
+        &:nth-child(4n)
+            margin: 0 0 30px
+        &:hover
+            .prods
+                &__image
+                    transform: scale(1.1)
+                &__hover
+                    transform: scale(1)
+    &__wp
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: flex-end
+        overflow: hidden
+        position: relative
+        padding: 24px
+    &__image
+        width: 100%
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        left: 0
+        top: 0
+        transition: transform .3s ease-out
+    &__content
+        width: 100%
+        position: relative
+    &__title
+        font-family: "OptimaCyr"
+        font-size: 32px
+        color: #fff
+        line-height: 100%
+        margin: 0 0 16px
+    &__bottom
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        font-size: 14px
+        color: #fff
+        font-weight: 500
+        text-transform: uppercase
+    &__left
+        display: flex
+    &__floor
+        background: url(../img/prods__floor.svg) left center no-repeat
+        background-size: 14px 10px
+        padding: 0 0 0 20px
+    &__room
+        min-height: 10px
+        background: url(../img/prods__room.svg) left center no-repeat
+        background-size: 14px
+        padding: 0 0 0 20px
+        margin: 0 16px
+    &__hover
+        width: 100%
+        background: #fff
+        padding: 24px
+        box-shadow: 0 5px 25px rgba(0, 0, 0, .25)
+        z-index: 1
+        position: absolute
+        left: 0
+        bottom: -100px
+        transform: scale(0)
+        transform-origin: left top
+        transition: transform .3s ease-out
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 0 30px
+    &__logo
+        width: calc(100% - 160px)
+        height: 80px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+    &__rgt
+        width: 130px
+        font-size: 15px
+    &__row_1
+        background: url(../img/prods__row_1.svg) left center no-repeat
+        background-size: 14px 10px
+        padding: 0 0 0 20px
+        margin: 0 0 8px
+    &__row_2
+        background: url(../img/prods__row_2.svg) left center no-repeat
+        background-size: 14px
+        padding: 0 0 0 20px
+        margin: 0 0 8px
+    &__ttl
+        font-family: "OptimaCyr"
+        font-size: 32px
+        line-height: 100%
+        margin: 0 0 8px
+    &__txt
+        font-size: 15px
+        line-height: 140%
+
+.arendator
+    &__top
+        display: flex
+        justify-content: space-between
+        margin: 0 0 50px
+    &__image
+        width: 50%
+        height: 660px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+    &__logo
+        width: 260px
+        height: 180px
+        background-color: #fff
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 80%
+        position: absolute
+        left: 40px
+        top: 40px
+    &__right
+        width: calc(50% - 90px)
+        position: relative
+    &__img
+        width: 120%
+        pointer-events: none
+        position: absolute
+        top: -100px
+        left: -20%
+    &__line
+        display: flex
+        flex-wrap: wrap
+        align-items: baseline
+        font-size: 15px
+        margin: 0 0 60px
+    &__floor
+        background: url(../img/prods__row_1.svg) left center no-repeat
+        background-size: 16px 11px
+        padding: 0 0 0 20px
+    &__place
+        background: url(../img/prods__row_2.svg) left center no-repeat
+        background-size: 16px
+        padding: 0 0 0 20px
+        margin: 0 16px
+        margin: 0 0 0 20px
+    &__room
+        margin: 0 0 0 60px
+    &__link
+        font-size: 12px
+        color: #F57D02
+        margin: 0 0 0 10px
+        transition: color .3s ease-out
+        &:hover
+            color: #7A7A7A
+    &__pdfs
+        .pdf
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
+    &__bottom
+        min-height: 230px
+        position: relative
+        margin: 0 0 100px
+    &__text
+        width: 650px
+        max-width: calc(50% - 100px)
+        font-size: 24px
+        line-height: 140%
+    &__dec
+        width: 456px
+        height: 360px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        left: calc(50% - 50px)
+        top: -130px
+    &__wp
+        display: flex
+        justify-content: space-between
+    &__txt
+        width: 50%
+        font-size: 24px
+        line-height: 140%
+    &__ul
+        width: 500px
+        max-width: 40%
+        font-size: 18px
+        color: #37474F
+        font-weight: 500
+        line-height: 100%
+        li
+            position: relative
+            padding: 0 0 0 25px
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
+            &:before
+                content: ""
+                width: 8px
+                height: 8px
+                background: #F57D02
+                border-radius: 100%
+                position: absolute
+                left: 0
+                top: 8px
+
+.dark
+    background: #37474F
+    .news
+        &__content
+            background: #37474F
+        &__date
+            color: #DBDBDB
+        &__h3
+            color: #fff
+        &__text
+            color: #DBDBDB
+    .footer
+        background: url(../img/footer-dark.jpg) center no-repeat
+        background-size: cover
+        &__logo
+            background: url(../img/logo-rus.svg) center no-repeat
+            background-size: contain
+        &__text
+            color: #EDEDED
+        &__email
+            &:hover
+                color: #fff
+        &__phone
+            color: #F57D02
+        &__time
+            color: #DBDBDB
+        &__address
+            color: #DBDBDB
+        &__link
+            color: #DBDBDB
+            &:hover
+                color: #F57D02
+        &_navs
+            &__el
+                color: #fff
+                &:hover
+                    color: #F57D02
+        &_subscribe
+            &__text
+                color: #fff
+        &_socials
+            &__el
+                &-vk
+                    background: url(../img/footer_socials__el-dark-vk.svg) center no-repeat
+                    background-size: contain
+                &-tg
+                    background: url(../img/footer_socials__el-dark-tg.svg) center no-repeat
+                    background-size: contain
+                &-insta
+                    background: url(../img/footer_socials__el-dark-insta.svg) center no-repeat
+                    background-size: contain
+                &-you
+                    background: url(../img/footer_socials__el-dark-you.svg) center no-repeat
+                    background-size: contain
+    .navigate
+        &:before
+            top: 30px
+
+.design
+    margin: 0 0 150px
+    &__top
+        display: flex
+        justify-content: space-between
+        position: relative
+        margin: 0 0 30px
+    &__img
+        width: 100%
+        pointer-events: none
+        position: absolute
+        left: 0
+        bottom: 0
+    &__image
+        width: calc(100% - 560px)
+        height: 600px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+    &__content
+        width: 480px
+        max-width: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__title
+        font-size: 32px
+        color: #F57D02
+        position: relative
+        padding: 0 0 30px
+        margin: 0 0 30px
+        span
+            position: absolute
+            right: -40px
+            bottom: 0
+    &__text
+        max-width: 410px
+        font-size: 20px
+        color: #fff
+        line-height: 140%
+        margin: 0 0 30px
+    &__row
+        display: flex
+        justify-content: space-between
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+    &__el
+        width: calc((100% - 30px) / 2)
+        height: 320px
+        display: flex
+        align-items: flex-end
+        cursor: pointer
+        overflow: hidden
+        position: relative
+        padding: 30px
+        &:hover
+            .design
+                &__back
+                    transform: scale(1.1)
+                &__txt
+                    color: #F57D02
+        &-small
+            width: calc((100% - 60px) / 3)
+    &__back
+        width: 100%
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        left: 0
+        top: 0
+        transition: transform .3s ease-out
+    &__txt
+        max-width: 220px
+        font-family: 'OptimaCyr'
+        font-size: 34px
+        color: #fff
+        line-height: 100%
+        z-index: 1
+        position: relative
+        transition: color .3s ease-out
+
+.bottom
+    margin: 0 0 60px
+    &__wrp
+        display: flex
+        justify-content: space-between
+        position: relative
+        margin: 0 0 40px
+    &__img
+        width: 90%
+        pointer-events: none
+        position: absolute
+        left: -10%
+        bottom: 0
+    &__image
+        width: calc(100% - 560px)
+        height: 600px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+    &__content
+        width: 480px
+        max-width: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__logo
+        width: 100%
+        margin: 0 0 50px
+    &__title
+        font-size: 32px
+        color: #F57D02
+        position: relative
+        padding: 0 0 30px
+        margin: 0 0 40px
+        span
+            position: absolute
+            right: -40px
+            bottom: 0
+    &__text
+        max-width: 370px
+        font-size: 20px
+        color: #fff
+        line-height: 140%
+        margin: 0 0 30px
+    &__row
+        display: flex
+        justify-content: space-between
+    &__el
+        width: calc((100% - 60px) / 3)
+        min-height: 80px
+        display: flex
+        align-items: center
+        background-image: url(../img/arrrow-orange.svg)
+        background-size: 24px
+        background-position: right 25px center
+        background-color: transparent
+        background-repeat: no-repeat
+        border: 1px solid #F57D02
+        font-size: 16px
+        color: #fff
+        font-weight: 500
+        line-height: 140%
+        text-transform: uppercase
+        cursor: pointer
+        padding: 16px 70px 16px 30px
+        transition: background .3s ease-out
+        &:hover
+            background-color: rgba(245, 125, 2, .3)
+            text-decoration: underline
+
+.navig
+    width: 100%
+    height: calc(100vh - 112px)
+    background: rgba(55, 71, 79, .78)
+    z-index: 5
+    position: fixed
+    left: 0
+    right: 0
+    top: 112px
+    padding: 60px 0
+    margin: 0 auto
+    transform: scale(0)
+    transform-origin: top
+    transition: transform .3s ease-out
+    &.active
+        transform: scale(1)
+    &__top
+        display: flex
+        justify-content: space-between
+        margin: 0 0 50px
+    &__title
+        font-family: "OptimaCyr"
+        color: #F57D02
+        font-size: 38px
+        position: relative
+        &:before
+            content: ""
+            width: 300%
+            height: 1px
+            background: #F57D02
+            position: absolute
+            right: 0
+            top: 55px
+    &__right
+        width: calc(((100% - 90px) / 2) + 30px)
+    &__text
+        max-width: 600px
+        font-family: "OptimaCyr"
+        font-size: 20px
+        color: #fff
+        line-height: 140%
+        margin: 0 0 10px
+    &__more
+        font-size: 15px
+        color: #F57D02
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__els
+        display: flex
+        flex-wrap: wrap
+    &__el
+        width: calc((100% - 90px) / 4)
+        height: 110px
+        display: flex
+        align-items: center
+        border: 1px solid #7A7A7A
+        font-family: "OptimaCyr"
+        font-size: 20px
+        color: #fff
+        line-height: 140%
+        padding: 30px
+        margin: 0 30px 30px 0
+        transition: border .3s ease-out, color .3s ease-out
+        &:nth-child(4n)
+            margin: 0 0 30px
+        &:hover
+            border: 1px solid #F57D02
+            color: #F57D02
+    &__wp
+        display: flex
+        justify-content: space-between
+    &__navs
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__nav
+        font-family: "OptimaCyr"
+        font-size: 32px
+        color: #fff
+        margin: 0 0 30px
+        &:last-child
+            margin: 0
+    &__rgt
+        width: 50%
+    &__under
+        font-family: "OptimaCyr"
+        font-size: 20px
+        color: #fff
+        margin: 0 0 40px
+    &_card
+        width: 100%
+        height: 360px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        &__label
+            height: 28px
+            background: #37474F
+            border: 1px solid #F57D02
+            border-radius: 4px
+            font-size: 14px
+            color: #fff
+            font-weight: 500
+            line-height: 26px
+            text-transform: uppercase
+            position: absolute
+            left: 30px
+            top: 30px
+            padding: 0 10px
+        &__content
+            width: 100%
+            background: rgba(0, 0, 0, .5)
+            position: absolute
+            left: 0
+            bottom: 0
+            padding: 24px
+        &__date
+            font-size: 14px
+            color: #fff
+            font-weight: 500
+            text-transform: uppercase
+            margin: 0 0 16px
+        &__title
+            font-family: "OptimaCyr"
+            font-size: 32px
+            color: #fff
+            margin: 0 0 16px
+        &__text
+            font-family: "OptimaCyr"
+            font-size: 20px
+            color: #fff
+
+@media (max-width: 1400px)
+    .header
+        height: 130px
+        padding: 30px 0 0
+        &-main
+            .header
+                &__menu
+                    div
+                        background: #fff 
+        &__menu
+            width: 24px
+            height: 16px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            cursor: pointer
+            margin: 0 30px 0 0
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            div
+                width: 100%
+                height: 1px
+                background: #37474F
+        &__close
+            width: 24px
+            height: 24px
+            background: url(../img/header__close.svg) center no-repeat
+            background-size: contain
+            display: block
+            cursor: pointer
+            position: absolute
+            right: 30px
+            top: 30px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+    
+    .navigate
+        width: 320px
+        height: 100vh
+        display: flex
+        flex-direction: column
+        background: rgba(0, 0, 0, .7)
+        z-index: 5
+        position: fixed
+        left: 0
+        top: 0
+        padding: 40px
+        transform: translateX(-100%)
+        transition: transform .3s ease-out
+        &.active
+            transform: translateX(0)
+        &:before
+            display: none
+        &__nav
+            color: #fff
+            margin: 0 0 16px
+            &:last-child
+                margin: 0
+
+@media (max-width: 1024px)
+    .footer
+        padding: 180px 0 70px
+        &__top
+            flex-direction: column
+        &__left
+            order: 3
+        &__right
+            order: 1
+            margin: 0 0 30px
+        &__logo
+            position: absolute
+            left: 20px
+            top: -110px
+        &__block
+            display: none
+        &_navs
+            order: 2
+            margin: 0 0 30px
+            &__col
+                margin: 0 40px 0 0
+
+    .news
+        display: block
+        white-space: nowrap
+        overflow-y: auto
+        &__el
+            width: calc((100% - 30px) / 2)
+            display: inline-block
+            vertical-align: top
+            white-space: normal
+            margin: 0 30px 0 0
+            &:last-child
+                margin: 0
+
+    .blocks
+        &__wrp
+            flex-direction: column
+        &__col
+            width: 100%
+            margin: 0 0 70px
+            &:last-child
+                margin: 0
+
+    .title
+        &-right
+            &:before
+                width: calc(100% + 140px)
+                left: inherit
+                right: 0
+    
+    .subscribe
+        &__image
+            width: 50%
+        &__content
+            width: 45%
+
+    .products
+        &__el
+            width: calc((100% - 60px) / 3)
+            &:nth-child(4n)
+                margin: 0 30px 30px 0
+            &:nth-child(3n)
+                margin: 0 0 30px
+
+    .breadcrumbs
+        margin: 0 0 30px
+
+    .registration
+        &__bottom
+            flex-direction: column
+        &__left
+            width: 100%
+            margin: 0 0 50px
+
+    .photos
+        margin: 100px 0
+        &__els
+            margin: 0 0 30px
+        &__el
+            width: calc((100% - 30px) / 2)
+            height: 400px
+        &__col
+            width: 100%
+            flex-direction: row
+            .photos
+                &__el
+                    width: calc((100% - 30px) / 2)
+                    height: 400px
+                    margin: 0
+
+    .video
+        margin: 100px 0 0
+        &__els
+            flex-direction: column
+        &__el
+            width: 100%
+            height: 400px
+            margin: 0 0 30px
+        &__right
+            width: 100%
+            .video
+                &__el
+                    width: calc((100% - 30px) / 2)
+                    height: 400px
+
+    .prods
+        &__el
+            width: calc((100% - 60px) / 3)
+            &:nth-child(4n)
+                margin: 0 30px 30px 0
+            &:nth-child(3n)
+                margin: 0 0 30px
+        &__logo
+            width: calc(100% - 100px)
+        &__rgt
+            width: auto
+
+    .arendator
+        &__image
+            height: 500px
+
+@media (max-width: 768px)
+    .wrapper
+        &-banner
+            padding: 200px 20px 60px
+
+    .banner
+        min-height: inherit
+        margin: 0 0 40px
+
+    .title
+        font-size: 36px
+        margin: 0 0 30px
+        &:before
+            top: 35px
+        &-short
+            max-width: 450px
+            font-size: 60px
+            &:before
+                top: 55px
+        &-arendator
+            font-size: 60px
+            display: none
+            &:before
+                left: inherit
+                right: 0
+                top: 55px
+            &_mobile
+                display: inline-block
+
+    .event
+        &__wrp
+            flex-direction: column
+        &__el
+            width: 100%
+            height: 420px
+            margin: 0 0 30px
+        &__content
+            min-height: inherit
+        &__col
+            width: 100%
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
+            .event
+                &__el
+                    height: 420px
+
+    .news
+        padding: 0
+        margin: 0 0 40px
+        &__content
+            padding: 25px 0
+        &__el
+            &:hover
+                box-shadow: none
+
+    .center
+        margin: 0 0 40px
+
+    .blocks
+        margin: 0 0 60px
+
+    .public
+        margin: 0 0 40px
+
+    .subscribe
+        margin: 0 0 40px
+        &__wrp
+            flex-direction: column
+        &__image
+            width: 100%
+            height: 400px
+            margin: 0 0 30px
+        &__content
+            width: 100%
+        &__h2
+            max-width: 500px
+            font-size: 36px
+            margin: 0 0 30px
+            &:before
+                left: inherit
+                right: 0
+                top: 35px
+    .footer
+        &__center
+            flex-direction: column
+            align-items: flex-start
+        &_subscribe
+            margin: 0 0 30px
+
+    .products
+        &__el
+            width: calc((100% - 30px) / 2)
+            &:nth-child(3n)
+                margin: 0 30px 30px 0
+            &:nth-child(2n)
+                margin: 0 0 30px
+
+    .rent
+        &__el
+            width: 100%
+            margin: 0 0 80px
+
+    .registration
+        &__image
+            display: none
+        &__top
+            margin: 0 0 50px
+        &__wrp
+            padding: 0
+
+    .prods
+        &__el
+            width: calc((100% - 30px) / 2)
+            height: 400px
+            &:nth-child(3n)
+                margin: 0 30px 30px 0
+            &:nth-child(2n)
+                margin: 0 0 30px
+
+    .arendator
+        &__bottom
+            min-height: inherit
+        &__text
+            width: 100%
+            max-width: 100%
+        &__dec
+            display: none
+        &__top
+            flex-wrap: wrap
+        &__image
+            width: 100%
+            height: 400px
+            margin: 0 0 30px
+        &__right
+            width: 100%
+        &__wp
+            flex-wrap: wrap
+        &__txt
+            width: 100%
+            margin: 0 0 30px
+        &__ul
+            width: auto
+            max-width: inherit
+
+@media (max-width: 640px)
+    .wrapper
+        &-banner
+            padding: 100px 20px 60px
+
+    .header
+        height: 80px
+        padding: 30px 0 20px
+        &__menu
+            margin: 0 20px 0 0
+        &__logo
+            min-width: 120px
+            height: 32px
+        &__contacts
+            display: none
+        &__phone
+            font-size: 32px
+        &__button
+            width: 32px
+            height: 32px
+            margin: 0 10px 0 0
+
+    .banner
+        &__contacts
+            display: block
+            margin: 0 0 30px
+        &__h1
+            font-size: 36px
+            &:before
+                display: none
+        &__text
+            font-size: 20px
+            margin: 0 0 30px
+
+    .socials
+        display: none
+    
+    .event
+        &__img
+            display: none
+        &__wrp
+            display: inline-block
+            margin: 0 10px 0 0
+            &:last-child
+                margin: 0
+        &__el
+            width: 320px
+            display: inline-block
+            vertical-align: top
+            white-space: normal
+            margin: 0 10px 0 0
+            &-bottom
+                &:last-child
+                    margin: 0
+            &-top
+                &:last-child
+                    margin: 0
+        &__label
+            left: 20px
+            top: 20px
+        &__content
+            width: calc(100% - 40px)
+            left: 20px
+            bottom: 20px
+        &__h3
+            font-size: 24px
+        &__text
+            font-size: 20px
+        &__col
+            width: auto
+            display: inline-block
+            margin: 0 8px 0 0
+            .event
+                &__el
+                    width: 320px
+                    margin: 0 10px 0 0
+        &__wp
+            overflow-y: auto
+            vertical-align: top
+            white-space: nowrap
+            margin: 0 0 30px
+
+    .news
+        display: inline-block
+        vertical-align: top
+        overflow-y: visible
+        margin: 0
+        &__el
+            width: 320px
+            height: 420px
+            overflow: hidden
+            margin: 0 10px 0 0
+        &__image
+            height: 220px
+        &__label
+            left: 20px
+            bottom: 20px
+        &__content
+            padding: 25px 10px
+        &__h3
+            font-size: 24px
+        &__text
+            font-size: 20px
+
+    .center
+        background: url(../img/center.jpg) left 100% bottom -46px no-repeat #37474F
+        background-size: 230%
+        padding: 30px 0 230px
+        &__text
+            font-size: 28px
+            margin: 0 0 30px
+        &__el
+            background: url(../img/banner__button.svg) center right no-repeat
+            background-size: 16px
+            font-size: 20px
+            padding: 20px 0
+
+    .blocks
+        &__col
+            margin: 0 0 40px
+        &__el
+            height: 240px
+            &:last-child
+                margin: 0
+            &-small
+                width: 100%
+                margin: 0 0 30px
+        &__text
+            font-size: 24px
+
+    .public
+        &__image
+            display: none
+        &__wrp
+            padding: 30px
+        &__text
+            font-size: 28px
+            margin: 0 0 30px
+
+    .subscribe
+        &__image
+            height: 200px
+        &__form
+            flex-direction: column
+        &__input
+            width: 100%
+            height: 56px
+            margin: 0 0 16px
+        &__button
+            width: 100%
+            height: 56px
+
+    .footer
+        padding: 100px 0 30px
+        &__logo
+            width: 145px
+            height: 52px
+            top: -80px
+        &__phone
+            background: url(../img/footer__phone.svg) left top no-repeat
+            background-size: 16px
+            font-size: 28px
+            padding: 0 0 0 30px
+        &__time
+            min-height: 16px
+            background: url(../img/footer__t.svg) left center no-repeat
+            background-size: 16px
+            font-size: 15px
+            line-height: 16px
+            margin: 0 0 20px
+        &__address
+            background: url(../img/footer__address.svg) left top no-repeat
+            background-size: 16px
+            font-size: 20px
+        &__link
+            font-size: 15px
+            font-weight: 400
+            margin: 0 0 20px
+        &__email
+            background: url(../img/footer__email.svg) left -2px no-repeat
+            background-size: 16px
+            font-size: 20px
+        &__right
+            margin: 0 0 40px
+        &__center
+            margin: 0 0 30px
+        &__bottom
+            flex-direction: column
+        &__copy
+            margin: 0 0 10px
+        &_navs
+            flex-direction: column
+            &__col
+                margin: 0 0 16px
+            &__el
+                font-size: 20px
+        &_subscribe
+            margin: 0
+        &_socials
+            display: none
+        &_links
+            flex-direction: column
+            &__link
+                margin: 0 0 10px
+                &:last-child
+                    margin: 0
+
+    .page
+        padding: 90px 0 50px
+        &__image
+            display: none
+
+    .tabs
+        margin: 0 0 30px
+
+    .products
+        &__el
+            width: 100%
+            height: 240px
+            margin: 0 0 30px
+            &:nth-child(3n)
+                margin: 0 0 30px
+            &:last-child
+                margin: 0
+        &__text
+            font-size: 24px
+
+    .seo_text
+        font-size: 16px
+
+    .rent
+        &__el
+            width: 100%
+            margin: 0 0 50px
+            &:nth-child(2n)
+                margin: 0 0 50px
+        &__image
+            height: 220px
+
+    .button
+        padding: 0 80px 0 20px
+
+    .title
+        &-short
+            font-size: 36px
+            &:before
+                top: 35px
+        &-arendator
+            font-size: 36px
+            &:before
+                top: 35px
+
+    .registration
+        &__img
+            display: none
+        &__text
+            font-size: 18px
+        &__back
+            background-size: 20px
+            font-size: 18px
+            padding: 2px 0 0 30px
+
+    .pdf
+        &__title
+            font-size: 18px
+        &__size
+            font-size: 14px
+
+    .photos
+        margin: 50px 0
+        &__col
+            flex-direction: column
+            .photos
+                &__el
+                    width: 100%
+                    height: 240px
+                    margin: 0 0 30px
+                    &:last-child
+                        margin: 0
+        &__el
+            width: 100%
+            height: 240px
+
+    .video
+        margin: 50px 0 0
+        &__el
+            height: 240px
+        &__play
+            width: 50px
+            height: 50px
+        &__right
+            .video
+                &__el
+                    width: 100%
+                    height: 240px
+                &__play
+                    width: 50px
+                    height: 50px
+
+    .tab_filters
+        margin: 0 0 30px
+        &__els
+            margin: 0 0 30px
+
+    .prods
+        margin: 0 0 50px
+        &__img
+            display: none
+        &__els
+            margin: 0
+        &__el
+            width: 100%
+            height: 300px
+            margin: 0 0 30px
+            &:nth-child(3n)
+                margin: 0 0 30px
+
+    .arendator
+        &__image
+            height: 240px
+        &__img
+            display: none
+        &__logo
+            width: 150px
+            height: 100px
+            left: 20px
+            top: 20px
+        &__line
+            margin: 0 0 30px
+        &__top
+            margin: 0 0 40px
+        &__bottom
+            margin: 0 0 40px
+        &__text
+            font-size: 16px
+        &__txt
+            font-size: 16px
+        &__ul
+            li
+                margin: 0 0 20px
+
+@media (max-width: 320px)
+    .button
+        font-size: 14px
+        padding: 0 50px 0 20px
