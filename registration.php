@@ -7,25 +7,27 @@
 <div class="registration__wp">
     <div class="registration__top">
         <div class="wrapper">
-            <div class="registration__image" style="background-image: url(img/registration__image.jpg)"></div>
-            <img class="registration__img" src="img/registration__img-2.svg" alt="">
-            <div class="registration__content">
-                <div class="breadcrumbs breadcrumbs-dark">
-                    <a href="#">Главная</a>
-                    <span class="breadcrumbs__sep">//</span>
-                    <a href="#">Акции, новости и события</a>
-                    <span class="breadcrumbs__sep">//</span>
-                    <span>Школа колористики</span>
+            <div class="breadcrumbs breadcrumbs-dark">
+                <a href="#">Главная</a>
+                <span class="breadcrumbs__sep">//</span>
+                <a href="#">Акции, новости и события</a>
+                <span class="breadcrumbs__sep">//</span>
+                <span>Школа колористики</span>
+            </div>
+            <div class="registration__line">
+                <div class="registration__content">
+                    <div class="registration__line">
+                        <div class="registration__label">ЛЕКЦИЯ</div>
+                        <div class="registration__date">05 августа 2022 в 14:00</div>
+                    </div>
+                    <h1 class="title title-short title-reg">Выставка Саши Черепанова</h1>
+                    <div class="registration__wrp">
+                        <div class="registration__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
+                        <div class="button button-banner">Регистрация на мероприятие</div>
+                    </div>
                 </div>
-                <div class="registration__line">
-                    <div class="registration__label">ЛЕКЦИЯ</div>
-                    <div class="registration__date">05 августа 2022 в 14:00</div>
-                </div>
-                <h1 class="title title-short title-reg">Выставка Саши Черепанова</h1>
-                <div class="registration__wrp">
-                    <div class="registration__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
-                    <div class="button button-banner">Регистрация на мероприятие</div>
-                </div>
+                <div class="registration__image" style="background-image: url(img/registration__image.jpg)"></div>
+                <img class="registration__img" src="img/registration__img-2.svg" alt="">
             </div>
         </div>
     </div>

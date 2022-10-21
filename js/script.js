@@ -27,7 +27,6 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".products[data-id=" + id + "]").addClass("active");
         $(".actions[data-id=" + id + "]").addClass("active");
-        $(".sevices[data-id=" + id + "]").addClass("active");
     });
 
     // Меню

@@ -1,16 +1,31 @@
+<?php
+    $dark_header = true;
+?>
+
 <?php include 'includes/header.php'; ?>
 
-<div class="page">
-    <div class="wrapper">
-        <div class="breadcrumbs">
-            <a href="#">Главная</a>
-            <span class="breadcrumbs__sep">//</span>
-            <a href="#">Шоу-румы</a>
-            <span class="breadcrumbs__sep">//</span>
-            <span>Детские</span>
+<div class="prod_wp">
+    <div class="prod_top">
+        <div class="wrapper">
+            <div class="breadcrumbs breadcrumbs-dark">
+                <a href="#">Главная</a>
+                <span class="breadcrumbs__sep">//</span>
+                <a href="#">Шоу-румы</a>
+                <span class="breadcrumbs__sep">//</span>
+                <span>Мягкая мебель</span>
+            </div>
+            <h1 class="title title-products title-products_mobile">Мягкая мебель</h1>
+            <div class="prod_top__wp">
+                <img class="prod_top__img" src="img/prod_top__img.svg" alt="">
+                <div class="prod_top__content">
+                    <h1 class="title title-desc title-products">Мягкая мебель</h1>
+                    <div class="prod_top__text">Разнообразный и богатый опыт говорит нам, что внедрение современных методик, в своём классическом представлении, допускает внедрение новых предложений. Принимая во внимание показатели успешности, новая модель организационной деятельности</div>
+                </div>
+                <div class="prod_top__image" style="background-image: url(img/prod_top__image.jpg)"></div>
+            </div>
         </div>
-        <div class="registration__back">Назад</div>
-        <h1 class="title">Мягкая мебель</h1>
+    </div>
+    <div class="wrapper">
         <div class="tab_filters">
             <div class="tab_filters__els">
                 <div class="tab_filters__el active">Все здания</div>
