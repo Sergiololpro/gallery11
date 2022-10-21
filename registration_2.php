@@ -1,28 +1,37 @@
+<?php
+    $dark_header = true;
+?>
+
 <?php include 'includes/header.php'; ?>
 
-<div class="page">
-    <div class="wrapper">
-        <div class="registration">
-            <div class="registration__top">
-                <div class="registration__image" style="background-image: url(img/registration__image.jpg)"></div>
-                <img class="registration__img" src="img/registration__img.svg" alt="">
-                <div class="registration__content">
-                    <div class="breadcrumbs">
-                        <a href="#">Главная</a>
-                        <span class="breadcrumbs__sep">//</span>
-                        <a href="#">Акции, новости и события</a>
-                        <span class="breadcrumbs__sep">//</span>
-                        <span>Школа колористики</span>
-                    </div>
-                    <div class="registration__back">Назад</div>
-                    <h1 class="title title-short">Выставка Саши Черепанова</h1>
-                    <div class="registration__wrp">
-                        <div class="registration__date">05 августа 2022 в 14:00</div>
-                        <div class="registration__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
-                        <div class="button">Регистрация на мероприятие</div>
-                    </div>
+<div class="registration__wp">
+    <div class="registration__top">
+        <div class="wrapper">
+            <div class="registration__image" style="background-image: url(img/registration__image.jpg)"></div>
+            <img class="registration__img" src="img/registration__img-2.svg" alt="">
+            <div class="registration__content">
+                <div class="breadcrumbs breadcrumbs-dark">
+                    <a href="#">Главная</a>
+                    <span class="breadcrumbs__sep">//</span>
+                    <a href="#">Акции, новости и события</a>
+                    <span class="breadcrumbs__sep">//</span>
+                    <span>Школа колористики</span>
+                </div>
+                <div class="registration__line">
+                    <div class="registration__label">ЛЕКЦИЯ</div>
+                    <div class="registration__date">05 августа 2022 в 14:00</div>
+                </div>
+                <h1 class="title title-short title-reg">Выставка Саши Черепанова</h1>
+                <div class="registration__wrp">
+                    <div class="registration__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
+                    <div class="button button-banner">Регистрация на мероприятие</div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="registration">
             <div class="registration__bottom">
                 <div class="registration__left">
                     <div class="seo_text">
@@ -42,7 +51,7 @@
         </div>
         <div class="photos">
             <img class="photos__image" src="img/photos__image.svg" alt="">
-            <h2 class="title">Фотоочтет</h2>
+            <h2 class="title">Фото</h2>
             <div class="photos__els">
                 <div class="photos__col">
                     <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
@@ -57,8 +66,8 @@
             <div class="button">Показать еще</div>
         </div>
         <div class="video">
-            <img class="video__image" src="img/video__image.svg" alt="">
-            <h2 class="title">Видеоотчет</h2>
+            <img class="video__image" src="img/video.svg" alt="">
+            <h2 class="title">Видео</h2>
             <div class="video__els">
                 <div class="video__el" style="background-image: url(img/video__el-1.jpg)">
                     <div class="video__play"></div>

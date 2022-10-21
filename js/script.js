@@ -10,12 +10,12 @@ $(document).ready(function () {
 
     // Открыть меню
     $(".header__menu").on("click", function() {
-        $(".navigate").addClass("active");
+        $(".mobile_menu").addClass("active");
     });
 
     // Закрыть меню
-    $(".header__close").on("click", function() {
-        $(".navigate").removeClass("active");
+    $(".mobile_menu__close").on("click", function() {
+        $(".mobile_menu").removeClass("active");
     });
 
     // Продукты
@@ -27,6 +27,7 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".products[data-id=" + id + "]").addClass("active");
         $(".actions[data-id=" + id + "]").addClass("active");
+        $(".sevices[data-id=" + id + "]").addClass("active");
     });
 
     // Меню

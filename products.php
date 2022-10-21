@@ -1,14 +1,33 @@
+<?php
+    $dark_header = true;
+?>
+
 <?php include 'includes/header.php'; ?>
 
-<div class="page">
-    <img class="page__image" src="img/products.svg" alt="">
-    <div class="wrapper">
-        <div class="breadcrumbs">
-            <a href="#">Главная</a>
-            <span class="breadcrumbs__sep">//</span>
-            <span>Шоу-румы</span>
+<div class="products__wp">
+    <div class="products__top">
+        <div class="wrapper">
+            <div class="breadcrumbs breadcrumbs-dark">
+                <a href="#">Главная</a>
+                <span class="breadcrumbs__sep">//</span>
+                <span>Шоу-румы</span>
+            </div>
+            <h1 class="title title-products title-products_mobile title-right">Шоу-румы</h1>
+            <div class="products__wrp">
+                <img class="products__img" src="img/products-2.svg" alt="">
+                <div class="products__left" style="background-image: url(img/products__left.jpg)"></div>
+                <div class="products__right">
+                    <h1 class="title title-products title-right">Шоу-румы</h1>
+                    <div class="products__title">
+                        Мебельные <span>магазины</span>
+                    </div>
+                    <div class="products__txt">Разнообразный и богатый опыт говорит нам, что внедрение современных методик, в своём классическом представлении, допускает внедрение новых предложений. Принимая во внимание показатели успешности, новая модель организационной деятельности</div>
+                </div>
+            </div>
         </div>
-        <h1 class="title">Товары / шоу-румы</h1>
+    </div>
+
+    <div class="wrapper">
         <div class="tabs">
             <div data-id="1" class="tabs__tab active">Все</div>
             <div data-id="2" class="tabs__tab">Акции</div>
@@ -424,6 +443,5 @@
         </div>
     </div>
 </div>
-
 
 <?php include 'includes/footer.php'; ?>

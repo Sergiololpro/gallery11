@@ -13,7 +13,7 @@
 
 <body <?php if ($main) { ?>class="dark"<?php } ?>>
 
-  <header class="header<?php if ($main) { ?> header-main<?php } ?>">
+  <header class="header<?php if ($dark_header) { ?> header-main<?php } ?>">
     <div class="wrapper wrapper-header">
       <div class="header__left">
         <div class="header__menu">
@@ -46,6 +46,39 @@
       </div>
     </div>
   </header>
+
+  <div class="mobile_menu">
+    <div class="mobile_menu__top">
+      <div class="mobile_menu__left">
+        <div class="mobile_menu__close"></div>
+        <div class="mobile_menu__logo"></div>
+      </div>
+      <div class="header__buttons">
+        <div class="header__button header__button-search"></div>
+        <div class="header__button header__button-cabinet"></div>
+      </div>
+    </div>
+    <nav class="mobile_menu__navs">
+      <a href="#" class="mobile_menu__nav">О центре</a>
+      <a href="#" class="mobile_menu__nav">СОБЫТИЯ</a>
+      <a href="#" class="mobile_menu__nav">ШОУ-РУМЫ</a>
+      <a href="#" class="mobile_menu__nav">Офисы</a>
+      <a href="#" class="mobile_menu__nav">Распродажа</a>
+      <a href="#" class="mobile_menu__nav">Аренда</a>
+      <a href="#" class="mobile_menu__nav">Контакты</a>
+    </nav>
+    <div class="mobile_menu__socials">
+      <a href="#" class="mobile_menu__social mobile_menu__social-vk"></a>
+      <a href="#" class="mobile_menu__social mobile_menu__social-tg"></a>
+      <a href="#" class="mobile_menu__social mobile_menu__social-insta"></a>
+      <a href="#" class="mobile_menu__social mobile_menu__social-you"></a>
+    </div>
+    <a href="tel:+7343 2173500" class="mobile_menu__phone">+7 343 217 35 00</a>
+    <div class="mobile_menu__time">ПН-ВС, с 9:00 - 18:00 Без выходных</div>
+    <div class="mobile_menu__address">Екатеринбург, Студенческая 11</div>
+    <a href="#" class="mobile_menu__link">схема проезда и парковки</a>
+    <a href="mailto" class="mobile_menu__email">Написать письмо</a>
+  </div>
 
   <div class="navig" data-id="3">
     <div class="wrapper">

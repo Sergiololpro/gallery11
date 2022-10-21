@@ -1,5 +1,6 @@
 <?php
     $main = true;
+    $dark_header = true;
 ?>
 
 <?php include 'includes/header.php'; ?>
