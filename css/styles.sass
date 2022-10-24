@@ -1330,23 +1330,25 @@ body
         top: -100px
         right: -10%
     &__els
+        width: calc(100% + 30px)
         display: flex
         flex-wrap: wrap
         margin: 0 0 30px
     &__el
-        width: calc((100% - 90px) / 4)
+        width: calc((100% - 120px) / 4)
         height: 430px
         cursor: pointer
         position: relative
         margin: 0 30px 30px 0
-        &:nth-child(4n)
-            margin: 0 0 30px
+        display: none
         &:hover
             .prods
                 &__image
                     transform: scale(1.1)
                 &__hover
                     transform: scale(1)
+        &.active
+            display: block
     &__wp
         width: 100%
         height: 100%
@@ -2177,11 +2179,7 @@ body
 
     .prods
         &__el
-            width: calc((100% - 60px) / 3)
-            &:nth-child(4n)
-                margin: 0 30px 30px 0
-            &:nth-child(3n)
-                margin: 0 0 30px
+            width: calc((100% - 90px) / 3)
         &__logo
             width: calc(100% - 100px)
         &__rgt
@@ -2318,12 +2316,8 @@ body
 
     .prods
         &__el
-            width: calc((100% - 30px) / 2)
+            width: calc((100% - 60px) / 2)
             height: 400px
-            &:nth-child(3n)
-                margin: 0 30px 30px 0
-            &:nth-child(2n)
-                margin: 0 0 30px
 
     .arendator
         &__under
@@ -2757,13 +2751,12 @@ body
         &__img
             display: none
         &__els
+            width: 100%
             margin: 0
         &__el
             width: 100%
             height: 300px
             margin: 0 0 30px
-            &:nth-child(3n)
-                margin: 0 0 30px
 
     .arendator
         &__under

@@ -55,4 +55,40 @@ $(document).ready(function () {
         }, 100)
     });
 
+    // Фильтр
+    var build = 0,
+        floor = 0,
+        row = "";
+
+    $(".tab_filters__el").on("click", function() {
+        if ($(this).data("build") != undefined) {
+            build = $(this).data("build");
+        }
+
+        if ($(this).data("floor") != undefined) {
+            floor = $(this).data("floor");
+        }
+
+        row = "";
+        
+        $(".prods__el").removeClass("active");
+        $(this).parent().find(".tab_filters__el").removeClass("active");
+
+        $(this).addClass("active");
+
+        if (build) {
+            row += "[data-build='" + build + "']";
+        }
+
+        if (floor) {
+            row += "[data-floor='" + floor + "']";
+        }
+
+        console.log(build)
+        console.log(floor)
+        console.log(row)
+
+        $(".prods__el" + row).addClass("active");
+    });
+
 });
