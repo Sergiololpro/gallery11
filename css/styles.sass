@@ -182,8 +182,8 @@ body
     &:before
         content: ""
         width: 120%
-        height: 2px
-        background: #F57D02
+        height: 1.5px
+        background: #f57d01
         position: absolute
         right: 20px
         top: 30px
@@ -198,7 +198,7 @@ body
         &:before
             content: ""
             width: 100%
-            height: 2px
+            height: 1px
             background: #fff
             opacity: 0
             position: absolute
@@ -254,6 +254,7 @@ body
         display: none
 
 .button
+    max-width: 100%
     height: 48px
     display: inline-block
     background-image: url(../img/banner__button.svg)
@@ -298,6 +299,8 @@ body
             background-image: url(../img/arrow-down-white.svg)
             color: #fff
             padding: 0 100px 0 20px
+    &-map
+        width: calc((100% - 10px) / 2)
 
 .socials
     display: flex
@@ -369,6 +372,11 @@ body
     &-products
         &_mobile
             display: none
+    &-map
+        font-size: 60px
+        margin: 0 0 30px
+        &:before
+            top: 65px
 
 .event
     overflow: hidden
@@ -734,14 +742,15 @@ body
         padding: 0 0 0 40px
         margin: 0 0 24px
     &__time
-        background: url(../img/footer__t.svg) left center no-repeat
+        min-height: 24px
+        background: url(../img/footer__t.svg) left top no-repeat
         background-size: 24px
         font-family: "OptimaCyr"
         font-size: 20px
         color: #DBDBDB
         font-weight: 500
         text-transform: uppercase
-        padding: 0 0 0 40px
+        padding: 4px 0 0 40px
         margin: 0 0 24px
     &__address
         min-height: 24px
@@ -762,7 +771,7 @@ body
             color: #F57D02
     &__email
         display: block
-        background: url(../img/footer__email.svg) left -2px no-repeat
+        background: url(../img/footer__email.svg) left -4px no-repeat
         background-size: 24px
         font-family: "OptimaCyr"
         font-size: 20px
@@ -898,6 +907,8 @@ body
         a
             color: #fff
 
+.a_tabs,
+.r_tabs,
 .tabs
     white-space: nowrap
     overflow-y: auto
@@ -941,7 +952,7 @@ body
         padding: 160px 0 0
         margin: 0 0 150px
     &__left
-        width: calc(68% - 100px)
+        width: calc(100% - 530px)
         height: 600px
         background-position: center
         background-repeat: no-repeat
@@ -949,7 +960,7 @@ body
         position: relative
         bottom: -30px
     &__right
-        width: 32%
+        width: 430px
         display: flex
         flex-direction: column
         align-items: flex-start
@@ -1223,6 +1234,7 @@ body
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        margin: 0 0 60px
     &__el
         width: calc((100% - 60px) / 3)
         height: 600px
@@ -1261,6 +1273,7 @@ body
     &__els
         display: flex
         justify-content: space-between
+        margin: 0 0 60px
     &__el
         width: calc((100% - 60px) / 4 * 2)
         height: 470px
@@ -1660,6 +1673,8 @@ body
 
 .bottom
     margin: 0 0 60px
+    &-about
+        padding: 0 0 60px
     &__wrp
         display: flex
         justify-content: space-between
@@ -1698,7 +1713,6 @@ body
             right: -40px
             bottom: 0
     &__text
-        max-width: 370px
         font-size: 20px
         color: #fff
         line-height: 140%
@@ -2030,6 +2044,548 @@ body
         color: #fff
         line-height: 140%
 
+.r_build
+    position: relative
+    &__img
+        width: 100%
+        pointer-events: none
+        position: absolute
+        left: 0
+        top: 140px
+    &__els
+        margin: 0 0 60px
+    &__el
+        width: 100%
+        flex-wrap: wrap
+        justify-content: space-between
+        border: 1px solid #EDEDED
+        border-radius: 4px
+        padding: 30px 0 30px 30px
+        margin: 0 0 30px
+        display: none
+        &:last-child
+            margin: 0
+        &.active
+            display: flex
+        &-dark
+            background: #37474F
+            color: #fff
+            .r_build
+                &__text
+                    color: #fff
+                &__floor
+                    background: url(../img/prods__floor.svg) left center no-repeat
+                    background-size: 14px 10px
+                    color: #fff
+                &__room
+                    background: url(../img/prods__room.svg) left center no-repeat
+                    background-size: 14px
+                    color: #fff
+                &__nav
+                    border: 1px solid #F57D02
+            .button
+                background-image: url(../img/arrrow-orange.svg)
+                background-color: transparent
+                background-size: 24px
+                border: 1px solid #F57D02
+                color: #F57D02
+                &:hover
+                    background-image: url(../img/banner__button.svg)
+                    background-size: 16px
+                    background-color: #F57D02
+                    color: #fff
+        &-vertical
+            .r_build
+                &__row
+                    margin: 0 0 10px
+                &__size
+                    margin: 0 30px 0 0
+                &__slide
+                    height: 240px
+                &__lupe
+                    width: 24px
+                    height: 24px
+                    right: 10px
+                    bottom: 10px
+            .button
+                &:hover
+                    padding: 0 100px 0 20px
+    &__left
+        width: 400px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__title
+        font-family: "OptimaCyr"
+        font-size: 32px
+        font-weight: 400
+        margin: 0 0 20px
+    &__label
+        background: rgba(245, 125, 2, .1)
+        font-size: 13px
+        white-space: nowrap
+        padding: 10px
+        margin: 0 0 20px
+    &__text
+        font-size: 15px
+        color: #7A7A7A
+        line-height: 140%
+        margin: 0 0 20px
+    &__size
+        font-family: "OptimaCyr"
+        font-size: 32px
+        margin: 0 0 20px
+    &__row
+        display: flex
+        align-items: center
+        margin: 0 0 30px
+    &__floor
+        background: url(../img/prods__row_1.svg) left center no-repeat
+        background-size: 14px 10px
+        font-size: 15px
+        color: #7A7A7A
+        white-space: nowrap
+        padding: 0 0 0 20px
+    &__room
+        min-height: 10px
+        background: url(../img/prods__row_2.svg) left center no-repeat
+        background-size: 14px
+        font-size: 15px
+        color: #7A7A7A
+        white-space: nowrap
+        padding: 0 0 0 20px
+        margin: 0 20px
+    &__link
+        font-size: 12px
+        color: #F57D02
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__right
+        width: calc(100% - 440px)
+        overflow: hidden
+        position: relative
+        padding: 0 0 70px
+    &__slider
+        width: 80%
+        position: static
+    &__slide
+        height: 320px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        cursor: pointer
+        position: relative
+        margin: 0 30px 0 0
+    &__lupe
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        background: url(../img/lupe.svg) center no-repeat
+        background-size: contain
+        position: absolute
+        right: 20px
+        bottom: 20px
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav.svg) center no-repeat
+        background-size: 16px
+        border: 1px solid #EDEDED
+        border-radius: 100%
+        cursor: pointer
+        position: absolute
+        bottom: 0
+        transition: background .3s ease-out
+        &:hover
+            background: url(../img/nav.svg) center no-repeat #EDEDED
+            background-size: 16px
+        &-prev
+            right: 90px
+        &-next
+            right: 30px
+            transform: scale(-1, 1)
+
+    &__top
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px 0 0
+        margin: 0 0 40px
+    &__col_1
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin: 0 30px 0 0
+    &__col_2
+        max-width: 30%
+        margin: 0 30px 0 0
+    &__col_3
+        margin: 0 30px 0 0
+    &__col_4
+        display: flex
+        align-items: center
+    &__bottom
+        width: 100%
+        overflow: hidden
+        position: relative
+        padding: 0 0 70px
+    &__slider_verrtical
+        width: 95%
+        position: static
+    .slick
+        &-list
+            overflow: visible
+        &-dots
+            display: flex
+            position: absolute
+            left: 0
+            bottom: 0
+            li
+                margin: 0 16px 0 0
+                &:last-child
+                    margin: 0
+            button
+                width: 8px
+                height: 8px
+                background: #EDEDED
+                border-radius: 100%
+                font-size: 0
+                cursor: pointer
+                padding: 0
+                transition: background .3s ease-out
+                &:hover
+                    background: #F57D02
+        &-active
+            button
+                background: #F57D02
+
+.r_modal
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(0, 0, 0, .88)
+    opacity: 0
+    pointer-events: none
+    z-index: 10
+    position: fixed
+    left: 0
+    top: 0
+    transition: opacity .3s ease-out
+    &.active
+        opacity: 1
+        pointer-events: auto
+    &__content
+        width: 1120px
+        max-width: 90%
+        max-height: 90%
+        background: #fff
+        border-radius: 4px
+        box-shadow: 0 5px 25px rgba(0, 0, 0, .25)
+        overflow-y: auto
+        position: relative
+        padding: 80px
+    &__close
+        width: 16px
+        height: 16px
+        background: url(../img/cross.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        position: absolute
+        right: 20px
+        top: 20px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
+    &__bottom
+        overflow: hidden
+
+.r_slider_1
+    position: relative
+    margin: 0 0 30px
+    &__slide
+        height: 570px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+    &__nav
+        width: 24px
+        height: 24px
+        background: url(../img/nav.svg) center no-repeat
+        background-size: 16px
+        border: 1px solid #EDEDED
+        border-radius: 100%
+        cursor: pointer
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto
+        transition: background .3s ease-out
+        &:hover
+            background: url(../img/nav.svg) center no-repeat #EDEDED
+            background-size: 16px
+        &-prev
+            left: -50px
+        &-next
+            right: -50px
+            transform: scale(-1, 1)
+
+.r_slider_2
+    width: 95%
+    .slick
+        &-list
+            overflow: visible
+    &__slide
+        height: 75px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        cursor: pointer
+        margin: 0 30px 0 0
+
+.r_build_hidden
+    display: none
+
+.about
+    &__top
+        background: #37474F
+        padding: 160px 0 0
+    &_block
+        overflow: hidden
+        margin: 0 0 100px
+        &__content
+            height: 0
+            display: flex
+            justify-content: space-between
+            transform: translateX(-100%)
+            transition: transform .3s ease-out
+            &.active
+                height: auto
+                transform: translateX(0)
+        &__left
+            width: 58%
+        &__right
+            width: 30%
+    &_text
+        position: relative
+        margin: 0 0 100px
+        &__img
+            width: 100%
+            pointer-events: none
+            position: absolute
+            left: 0
+            top: 70px
+        &__content
+            display: flex
+            justify-content: space-between
+        &__left
+            width: 50%
+        &__right
+            width: 30%
+
+.seo_block
+    margin: 60px 0
+
+.contacts
+    &_socials
+        display: flex
+        margin: 70px 0 0
+        &__el
+            width: 24px
+            height: 24px
+            margin: 0 20px 0 0
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .7
+            &:last-child
+                margin: 0
+            &-vk
+                background: url(../img/contacts_socials__el-vk.svg) center no-repeat
+                background-size: contain
+            &-tg
+                background: url(../img/contacts_socials__el-tg.svg) center no-repeat
+                background-size: contain
+    &_parking
+        position: relative
+        margin: 0 0 100px
+        &__img
+            width: 100%
+            pointer-events: none
+            position: absolute
+            left: 0
+            top: 70px
+        &__images
+            display: flex
+            flex-wrap: wrap
+            z-index: 1
+            position: relative
+        &__image
+            width: calc((100% - 60px) / 3)
+            height: 380px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            margin: 0 30px 0 0
+            &:nth-child(3n)
+                margin: 0
+    &_personal
+        display: flex
+        flex-wrap: wrap
+        margin: 0 0 30px
+        &__el
+            width: calc((100% - 60px) / 3)
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            position: relative
+            padding: 40px 0 0
+            margin: 0 30px 70px 0
+            &:nth-child(3n)
+                margin: 0 0 70px
+        &__img
+            max-width: 90%
+            position: absolute
+            left: 50px
+            top: 0
+        &__top
+            font-size: 15px
+            color: #7A7A7A
+            margin: 0 0 10px
+        &__name
+            font-family: "OptimaCyr"
+            font-size: 32px
+            line-height: 100%
+            margin: 0 0 10px
+        &__phone
+            background: url(../img/footer__phone.svg) left top no-repeat
+            background-size: 16px
+            font-size: 18px
+            color: #F57D02
+            font-weight: 500
+            padding: 0 0 0 30px
+            margin: 0 0 10px
+        &__email
+            background: url(../img/footer__email.svg) left 4px no-repeat
+            background-size: 16px
+            font-size: 18px
+            color: #F57D02
+            font-weight: 500
+            padding: 0 0 0 30px
+    &_video
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0 0 100px
+        &__wrp
+            width: 1100px
+            max-width: 100%
+            height: 630px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            cursor: pointer
+            margin: 0 0 30px
+            &:hover
+                .contacts
+                    &_video
+                        &__play
+                            transform: scale(1.1)
+        &__play
+            width: 100px
+            height: 100px
+            background: url(../img/video__play.svg) center no-repeat
+            background-size: contain
+            transition: transform .3s ease-out
+        &__text
+            font-size: 20px
+            text-align: center
+    &_map
+        width: 100%
+        max-width: 1920px
+        position: relative
+        margin: 0 auto 200px
+        &__img
+            width: 100%
+            pointer-events: none
+            position: absolute
+            left: 0
+            bottom: -100px
+        &__wrp
+            min-height: 600px
+            display: flex
+            z-index: 1
+            position: relative
+        &__map
+            width: calc(100% - 820px)
+            min-height: 100%
+            iframe
+                width: 100%
+                height: 100%
+        &__form
+            width: 820px
+            background: #37474F
+            overflow: hidden
+            padding: 50px 100px
+        &__text
+            font-family: "OptimaCyr"
+            font-size: 20px
+            color: #fff
+            margin: 0 0 30px
+        &__input
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            background: #6D838E
+            border-radius: 4px
+            padding: 8px 16px
+            margin: 0 0 10px
+        &__label
+            font-size: 12px
+            color: #fff
+            margin: 0 0 6px
+        &__textarea,
+        &__inp
+            background: transparent
+            font-size: 18px
+            color: rgba(219, 219, 219, .5)
+            font-weight: 500
+            &::-webkit-input-placeholder
+                color: rgba(219, 219, 219, .5)
+        &__textarea
+            height: 50px
+        &__inputs
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            .contacts
+                &_map
+                    &__input
+                        width: calc((100% - 10px) / 2)
+        &__bottom
+            display: flex
+            justify-content: space-between
+            margin: 30px 0 0
+        &__txt
+            max-width: 260px
+            font-size: 12px
+            color: #fff
+            line-height: 160%
+            margin: 0 40px 0 0
+            a
+                color: #F57D02
+                transition: opacity .3s ease-out
+                &:hover
+                    opacity: .7
+
 @media (max-width: 1400px)
     .header
         height: 130px
@@ -2190,6 +2746,64 @@ body
             margin: 0 0 100px
         &__image
             width: calc(65% - 50px)
+
+    .r_build
+        &__el
+            &-vertical
+                .r_build
+                    &__text
+                        margin: 0
+                    &__size
+                        margin: 0 0 10px
+                    &__label
+                        margin: 0
+        &__top
+            margin: 0
+        &__col
+            width: 45%
+            max-width: 100%
+            margin: 0 0 30px
+        &__col_4
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &__slider_verrtical
+            width: 80%
+
+    .about
+        &_block
+            &__content
+                flex-direction: column
+            &__left
+                width: 100%
+            &__right
+                width: 100%
+                margin: 30px 0 0
+        &_text
+            &__content
+                flex-direction: column
+            &__left
+                width: 100%
+            &__right
+                width: 100%
+                margin: 30px 0 0
+
+    .contacts
+        &_parking
+            &__image
+                height: 240px
+        &_video
+            &__wrp
+                height: 500px
+        &_map
+            &__wrp
+                flex-direction: column
+            &__map
+                width: 100%
+                height: 550px
+            &__form
+                width: 100%
+                padding: 30px 20px
 
 @media (max-width: 768px)
     .wrapper
@@ -2423,6 +3037,39 @@ body
             width: 100%
             padding: 0 0 50px
 
+    .r_build
+        &__el
+            flex-direction: column
+        &__left
+            width: 100%
+            margin: 0 0 30px
+        &__right
+            width: 100%
+        &__slide
+            height: 240px
+
+    .r_modal
+        &__content
+            padding: 40px
+
+    .contacts
+        &_parking
+            &__images
+                display: block
+                white-space: nowrap
+                overflow-x: auto
+            &__image
+                width: 300px
+                display: inline-block
+        &_personal
+            &__el
+                width: calc((100% - 30px) / 2)
+                margin: 0 30px 50px 0
+                &:nth-child(3n)
+                    margin: 0 30px 50px 0
+                &:nth-child(2n)
+                    margin: 0 0 50px
+
 @media (max-width: 640px)
     .wrapper
         &-banner
@@ -2611,7 +3258,7 @@ body
             font-weight: 400
             margin: 0 0 20px
         &__email
-            background: url(../img/footer__email.svg) left -2px no-repeat
+            background: url(../img/footer__email.svg) left top no-repeat
             background-size: 16px
             font-size: 20px
         &__right
@@ -2644,6 +3291,8 @@ body
         &__image
             display: none
 
+    .a_tabs,
+    .r_tabs,
     .tabs
         margin: 0 0 30px
 
@@ -2681,6 +3330,8 @@ body
 
     .button
         padding: 0 80px 0 20px
+        &-map
+            width: auto
 
     .title
         &-short
@@ -2712,6 +3363,8 @@ body
 
     .photos
         margin: 50px 0
+        &__els
+            margin: 0 0 30px
         &__col
             flex-direction: column
             .photos
@@ -2727,6 +3380,8 @@ body
 
     .video
         margin: 50px 0 0
+        &__els
+            margin: 0
         &__el
             height: 240px
         &__play
@@ -2831,6 +3486,85 @@ body
             height: 240px
         &__img
             display: none
+
+    .r_build
+        &__img
+            display: none
+        &__right
+            padding: 0 0 50px
+        &__nav
+            margin: 0 auto
+            &-prev
+                left: -50px
+                right: 0
+            &-next
+                left: 0
+                right: -50px
+        &__els
+            margin: 0 0 30px
+        &__top
+            margin: 0 0 10px
+        &__bottom
+            padding: 0 0 50px
+        &__col
+            width: 100%
+            margin: 0 0 20px
+
+    .r_modal
+        &__close
+            right: 10px
+            top: 10px
+        &__content
+            padding: 30px
+
+    .r_slider_1
+        &__slide
+            height: 240px
+        &__nav
+            display: none !important
+
+    .about
+        &_block
+            margin: 0 0 50px
+        &_text
+            margin: 0 0 50px
+
+    .contacts
+        &_parking
+            margin: 0 0 50px
+        &_socials
+            margin: 30px 0 0
+        &_personal
+            margin: 0
+            &__el
+                width: 100%
+                margin: 0 0 50px
+                &:nth-child(3n)
+                    margin: 0 0 50px
+        &_video
+            margin: 0 0 50px
+            &__wrp
+                height: 240px
+            &__play
+                width: 50px
+                height: 50px
+            &__text
+                font-size: 16px
+        &_map
+            margin: 0 auto 50px
+            &__img
+                display: none
+            &__map
+                height: 300px
+            &__inputs
+                .contacts
+                    &_map
+                        &__input
+                            width: 100%
+            &__bottom
+                flex-direction: column-reverse
+            &__txt
+                margin: 20px 0 0
 
 @media (max-width: 320px)
     .button

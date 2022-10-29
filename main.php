@@ -29,7 +29,7 @@
     <h2 class="title">Cобытия</h2>
     <div class="event__wp">
       <div class="event__wrp">
-        <article class="event__el event__el-large">
+        <a href="#" class="event__el event__el-large">
           <div class="event__image" style="background-image: url(img/event__image-1.jpg)"></div>
           <div class="event__label">Событие</div>
           <div class="event__content">
@@ -39,7 +39,7 @@
             </div>
             <div class="event__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
           </div>
-        </article>
+        </a>
         <div class="event__col">
           <article class="event__el">
             <div class="event__image" style="background-image: url(img/event__image-2.jpg)"></div>
@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class="news">
-        <article class="news__el">
+        <a href="#" class="news__el">
           <div class="news__image" style="background-image: url(img/news__image-1.jpg)">
             <div class="news__label">Новость</div>
           </div>
@@ -75,8 +75,8 @@
             <h3 class="news__h3">Подарок за Подписку</h3>
             <div class="news__text">Состоялась презентация нового сборника стихов "Вторая волна" в лектории Gallery11 | Интерьерный центр</div>
           </div>
-        </article>
-        <article class="news__el">
+          </a>
+        <a href="#" class="news__el">
           <div class="news__image" style="background-image: url(img/news__image-2.jpg)">
             <div class="news__label">Новость</div>
           </div>
@@ -86,8 +86,8 @@
               в несколько строк</h3>
             <div class="news__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
           </div>
-        </article>
-        <article class="news__el">
+        </a>
+        <a href="#" class="news__el">
           <div class="news__image" style="background-image: url(img/news__image-3.jpg)">
             <div class="news__label">Новость</div>
           </div>
@@ -96,7 +96,7 @@
             <h3 class="news__h3">Заголовок для новости</h3>
             <div class="news__text">Состоялась презентация нового сборника стихов "Вторая волна" в лектории Gallery11 | Интерьерный центр</div>
           </div>
-        </article>
+        </a>
       </div>
     </div>
   </div>
@@ -117,28 +117,28 @@
       </div>
     </div>
     <div class="design__row">
-      <div class="design__el">
+      <a href="#" class="design__el">
         <div class="design__back" style="background-image: url(img/design-2.jpg)"></div>
         <div class="design__txt">Мягкая мебель</div>
-      </div>
-      <div class="design__el">
+      </a>
+      <a href="#" class="design__el">
         <div class="design__back" style="background-image: url(img/design-3.jpg)"></div>
         <div class="design__txt">Спальни</div>
-      </div>
+      </a>
     </div>
     <div class="design__row">
-      <div class="design__el design__el-small">
+      <a href="#" class="design__el design__el-small">
         <div class="design__back" style="background-image: url(img/design-4.jpg)"></div>
         <div class="design__txt">Двери, перегородки</div>
-      </div>
-      <div class="design__el design__el-small">
+      </a>
+      <a href="#" class="design__el design__el-small">
         <div class="design__back" style="background-image: url(img/design-5.jpg)"></div>
         <div class="design__txt">Свет, аксессуары</div>
-      </div>
-      <div class="design__el design__el-small">
+      </a>
+      <a href="#" class="design__el design__el-small">
         <div class="design__back" style="background-image: url(img/design-6.jpg)"></div>
         <div class="design__txt">Посмотреть все шоу-румы</div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -158,18 +158,18 @@
       <div class="design__image" style="background-image: url(img/design-1.jpg)"></div>
     </div>
     <div class="design__row">
-      <div class="design__el design__el-small">
+      <a href="#" class="design__el design__el-small">
         <div class="design__back" style="background-image: url(img/design-7.jpg)"></div>
         <div class="design__txt">Архитектура и дизайн</div>
-      </div>
-      <div class="design__el design__el-small">
+      </a>
+      <a href="#" class="design__el design__el-small">
         <div class="design__back" style="background-image: url(img/design-8.jpg)"></div>
         <div class="design__txt">Отделочные и строительные организации</div>
-      </div>
-      <div class="design__el design__el-small">
+      </a>
+      <a href="#" class="design__el design__el-small">
         <div class="design__back" style="background-image: url(img/design-9.jpg)"></div>
         <div class="design__txt">Посмотреть все услуги</div>
-      </div>
+      </a>
     </div>
   </div>
 </section>

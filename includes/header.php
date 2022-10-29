@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="js/libs/slick/slick.css">
-  <link rel="stylesheet" href="css/styles.css?v=1">
+  <link rel="stylesheet" href="css/styles.css?v=3">
   <title>Gallery11</title>
 </head>
 
@@ -73,7 +73,7 @@
       <a href="#" class="mobile_menu__social mobile_menu__social-insta"></a>
       <a href="#" class="mobile_menu__social mobile_menu__social-you"></a>
     </div>
-    <a href="tel:+7343 2173500" class="mobile_menu__phone">+7 343 217 35 00</a>
+    <a href="tel:+73432173500" class="mobile_menu__phone">+7 343 217 35 00</a>
     <div class="mobile_menu__time">ПН-ВС, с 9:00 - 18:00 Без выходных</div>
     <div class="mobile_menu__address">Екатеринбург, Студенческая 11</div>
     <a href="#" class="mobile_menu__link">схема проезда и парковки</a>
