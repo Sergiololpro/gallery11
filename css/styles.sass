@@ -1352,6 +1352,7 @@ body
         width: calc((100% - 120px) / 4)
         height: 430px
         cursor: pointer
+        box-shadow: 0 5px 25px rgba(0, 0, 0, .25)
         position: relative
         margin: 0 30px 30px 0
         display: none
@@ -1363,6 +1364,26 @@ body
                     transform: scale(1)
         &.active
             display: block
+        &-build
+            .prods
+                &__wp
+                    padding: 0
+                &__content
+                    min-height: 170px
+                    background: #fff
+                    padding: 30px
+                &__bottom
+                    justify-content: flex-start
+                    color: #7A7A7A
+                &__title
+                    color: #7A7A7A
+                    margin: 16px 0 0
+                &__floor
+                    background: url(../img/prods__row_1.svg) left center no-repeat
+                    background-size: 14px 10px
+                &__room
+                    background: url(../img/prods__row_2.svg) left center no-repeat
+                    background-size: 14px
     &__wp
         width: 100%
         height: 100%
@@ -2362,10 +2383,12 @@ body
             height: 0
             display: flex
             justify-content: space-between
+            opacity: 0
             transform: translateX(-100%)
-            transition: transform .3s ease-out
+            transition: opacity .3s ease-out, transform .3s ease-out
             &.active
                 height: auto
+                opacity: 1
                 transform: translateX(0)
         &__left
             width: 58%
@@ -2587,6 +2610,219 @@ body
                 &:hover
                     opacity: .7
 
+.scheme
+    margin: 0 0 100px
+    &_top
+        background: #222D32
+        padding: 160px 0 140px
+        margin: 0 0 100px
+        &__wp
+            display: flex
+            justify-content: space-between
+        &__left
+            width: calc(100% - 530px)
+        &__right
+            width: 430px
+        &__title
+            font-family: "OptimaCyr"
+            font-size: 50px
+            color: #F57D02
+            font-weight: 400
+            line-height: 80%
+            margin: 0 0 10px
+        &__under
+            font-family: "OptimaCyr"
+            font-size: 32px
+            line-height: 100%
+            margin: 0 0 30px
+        &__img
+            width: 100%
+            height: 220px
+            background: #fff
+            opacity: .5
+            margin: 0 0 30px
+        &__ttl
+            font-family: "OptimaCyr"
+            font-size: 38px
+            color: #F57D02
+            margin: 0 0 20px
+        &__text
+            max-width: 320px
+            font-size: 15px
+            color: #EDEDED
+            line-height: 150%
+            margin: 0 0 20px
+        &__els
+            margin: 0 0 30px
+        &__el
+            font-size: 15px
+            color: #EDEDED
+            margin: 0 0 6px
+            &:last-child
+                margin: 0
+            span
+                font-family: "OptimaCyr"
+                font-size: 20px
+                color: #F57D02
+    &_nav
+        white-space: nowrap
+        overflow-x: auto
+        &__el
+            display: inline-block
+            border-bottom: 1px solid transparent
+            font-family: "OptimaCyr"
+            font-size: 20px
+            cursor: pointer
+            padding: 0 0 4px
+            margin: 0 40px 0 0
+            transition: border .3s ease-out, color .3s ease-out
+            &:last-child
+                margin: 0
+            &:hover,
+            &.active
+                border-bottom: 1px solid #F57D02
+                color: #F57D02
+    &_block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        position: relative
+        margin: 0 0 100px
+        &__img
+            width: 100%
+            pointer-events: none
+            position: absolute
+            left: 0
+            top: 70px
+        &__left
+            width: calc(50% - 100px)
+        &__text
+            max-width: 620px
+            margin: 0 0 30px
+        &__image
+            width: 50%
+            height: 500px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+
+.building
+    overflow: hidden
+    margin: 0 0 100px
+    &_top
+        background: #222D32
+        padding: 160px 0 120px
+        margin: 0 0 100px
+        &__wp
+            max-width: 1200px
+            display: flex
+            justify-content: space-between
+            margin: 0 auto
+        &__left
+            width: calc(50% - 100px)
+        &__right
+            width: 50%
+        &__row
+            display: flex
+            justify-content: space-between
+            align-items: baseline
+            margin: 0 0 20px
+        &__lft
+            font-family: "OptimaCyr"
+            font-size: 32px
+            color: #fff
+        &__rgt
+            font-size: 20px
+            color: #fff
+            text-transform: uppercase
+        &__scheme
+            width: 100%
+            height: 420px
+            background: #fff
+            opacity: .5
+        &__top
+            width: 46px
+            font-size: 11px
+            color: #fff
+            text-align: center
+            text-transform: uppercase
+            margin: 0 0 20px
+        &__bottom
+            display: flex
+            justify-content: space-between
+            align-items: self-end
+    &_nav
+        white-space: nowrap
+        overflow-x: auto
+        margin: 0 0 30px
+        &__el
+            display: flex
+            align-items: center
+            cursor: pointer
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+            &:hover,
+            &.active
+                .building
+                    &_nav
+                        &__circle
+                            background: transparent
+                            border: 3px solid #fff
+        &__circle
+            width: 46px
+            height: 46px
+            background: #37474F
+            border: 3px solid #37474F
+            border-radius: 100%
+            font-size: 22px
+            color: #fff
+            font-weight: 500
+            line-height: 40px
+            text-align: center
+            transition: background .3s ease-out, border .3s ease-out
+        &__icons
+            display: flex
+            margin: 0 0 0 30px
+        &__icon
+            width: 23px
+            margin: 0 10px 0 0
+            &:last-child
+                margin: 0
+    &_desc
+        &__el
+            display: flex
+            align-items: center
+            font-size: 12px
+            color: #fff
+            font-weight: 500
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+        &__img
+            width: 23px
+            margin: 0 10px 0 0
+    &_colors
+        &__el
+            display: flex
+            align-items: center
+            font-size: 12px
+            color: #fff
+            font-weight: 500
+            margin: 0 0 20px
+            &:last-child
+                margin: 0
+        &__color
+            width: 20px
+            height: 20px
+            margin: 0 20px 0 0
+            &-1
+                background: #165274
+            &-2
+                background: #00B548
+            &-3
+                background: #4631CA
+
 @media (max-width: 1400px)
     .header
         height: 130px
@@ -2805,6 +3041,17 @@ body
             &__form
                 width: 100%
                 padding: 30px 20px
+
+    .scheme
+        &_top
+            padding: 160px 0 60px
+        &_block
+            flex-direction: column
+            &__left
+                width: 100%
+                margin: 0 0 50px
+            &__image
+                width: 100%
 
 @media (max-width: 768px)
     .wrapper
@@ -3070,6 +3317,48 @@ body
                     margin: 0 30px 50px 0
                 &:nth-child(2n)
                     margin: 0 0 50px
+    
+    .scheme
+        &_top
+            &__wp
+                flex-direction: column
+            &__left
+                width: 100%
+                margin: 0 0 50px
+
+    .building
+        &_top
+            padding: 160px 0 60px
+            &__wp
+                flex-direction: column
+            &__left
+                width: 100%
+                margin: 0 0 50px
+            &__right
+                width: 100%
+            &__bottom
+                flex-direction: column
+                align-items: flex-start
+        &_nav
+            display: flex
+            margin: 0 0 50px
+            &__el
+                flex-direction: column
+                margin: 0 30px 0 0
+            &__icons
+                flex-direction: column
+                margin: 20px 0 0
+            &__icon
+                margin: 0 0 10px
+        &_desc
+            display: flex
+            margin: 0 0 30px
+            &__el
+                margin: 0 20px 0 0
+        &_colors
+            display: flex
+            &__el
+                margin: 0 20px 0 0
 
 @media (max-width: 640px)
     .wrapper
@@ -3566,6 +3855,26 @@ body
                 flex-direction: column-reverse
             &__txt
                 margin: 20px 0 0
+
+    .scheme
+        &_top
+            padding: 90px 0 30px
+            margin: 0 0 50px
+            &__title
+                font-size: 32px
+            &__under
+                font-size: 24px
+        &_block
+            margin: 0 0 50px
+            &__image
+                height: 240px
+
+    .building
+        &_top
+            padding: 90px 0 30px
+            margin: 0 0 50px
+            &__scheme
+                height: 240px
 
 @media (max-width: 320px)
     .button

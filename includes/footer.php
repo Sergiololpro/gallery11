@@ -59,7 +59,7 @@
 
   <script src="js/libs/jquery/jquery.js"></script>
   <script src="js/libs/slick/slick.min.js"></script>
-  <script src="js/script.js?v=1"></script>
+  <script src="js/script.js?v=4"></script>
 </body>
 
 </html>
