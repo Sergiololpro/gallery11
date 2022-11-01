@@ -139,6 +139,10 @@
         <div class="design__back" style="background-image: url(img/design-6.jpg)"></div>
         <div class="design__txt">Посмотреть все шоу-румы</div>
       </a>
+      <a href="#" class="design__el design__el-small">
+        <div class="design__back" style="background-image: url(img/design-6.jpg)"></div>
+        <div class="design__txt">Посмотреть все шоу-румы</div>
+      </a>
     </div>
   </div>
 </section>
