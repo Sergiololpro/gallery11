@@ -30,17 +30,32 @@ $(document).ready(function () {
     });
 
     // Меню
+    var timeout;
+
     $(".navigate__nav").on("mouseenter", function() {
-        var id = $(this).data("id");
+        var $this = $(this);
 
-        $(".navigate__nav, .navig").removeClass("active");
+        if (timeout != null) {
+            clearTimeout(timeout);
+        }
 
-        $(this).addClass("active");
-        $(".navig[data-id=" + id + "]").addClass("active");
+        timeout = setTimeout(function () {
+            var id = $this.data("id");
+
+            $(".navigate__nav, .navig").removeClass("active");
+
+            $this.addClass("active");
+            $(".navig[data-id=" + id + "]").addClass("active");
+        }, 100);
     });
 
     $(".navigate, .navig").on("mouseleave", function() {
         var check = true;
+
+        if (timeout != null) { 
+            clearTimeout(timeout); 
+            timeout = null;
+        }
 
         setTimeout(function(){
             document.querySelectorAll(':hover').forEach(function(em){
