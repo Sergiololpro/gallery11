@@ -7,7 +7,7 @@
             <span class="breadcrumbs__sep">//</span>
             <span>Cобытия</span>
         </div>
-        <h1 class="title">Cобытия</h1>
+        <h1 class="title title-new">Cобытия</h1>
         <div class="event__wp">
             <div class="event__wrp event__wrp-actions">
                 <article class="event__el">

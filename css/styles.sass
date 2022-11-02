@@ -91,7 +91,7 @@ body
 .header
     width: 100%
     height: 150px
-    background: rgba(255, 255, 255, .7)
+    background: rgba(255, 255, 255, .8)
     z-index: 5
     position: fixed
     left: 0
@@ -101,7 +101,7 @@ body
     margin: 0 auto
     transition: background .3s ease-out
     &-main
-        background: rgba(0, 0, 0, .7)
+        background: rgba(0, 0, 0, .8)
         .header
             &__phone
                 color: #fff
@@ -141,7 +141,7 @@ body
         color: #37474F
         margin: 0 0 5px
     &__address
-        font-size: 12px
+        font-size: 13px
         color: #37474F
         font-weight: 500
     &__buttons
@@ -186,9 +186,9 @@ body
         background: #f57d01
         position: absolute
         right: 20px
-        top: 30px
+        top: 31px
     &__nav
-        font-size: 14px
+        font-size: 16px
         color: #37474F
         font-weight: 500
         text-transform: uppercase
@@ -198,18 +198,42 @@ body
         &:before
             content: ""
             width: 100%
-            height: 1px
+            height: 1.5px
             background: #fff
             opacity: 0
             position: absolute
             left: 0
-            bottom: -14px
+            bottom: -13px
             transition: opacity .3s ease-out
         &.active,
         &:hover
             color: #F57D02
             &:before
                 opacity: 1
+        &:hover
+            .navigate
+                &__help
+                    opacity: 1
+                    pointer-events: auto
+    &__help
+        width: 180px
+        height: 28px
+        background: #37474F
+        border: 1px solid #F57D02
+        border-radius: 4px
+        font-size: 12px
+        color: #fff
+        font-weight: 500
+        line-height: 26px
+        text-transform: uppercase
+        text-align: center
+        opacity: 0
+        pointer-events: none
+        position: absolute
+        left: -31px
+        right: 0
+        top: -34px
+        transition: opacity .3s ease-out
 
 .banner
     width: 100%
@@ -375,6 +399,11 @@ body
     &-map
         font-size: 60px
         margin: 0 0 30px
+        &:before
+            top: 65px
+    &-new
+        font-size: 60px
+        margin: 0 0 50px
         &:before
             top: 65px
 
@@ -791,7 +820,7 @@ body
         display: flex
         justify-content: space-between
     &__copy
-        font-size: 11px
+        font-size: 15px
     &_navs
         display: flex
         &__col
@@ -865,7 +894,7 @@ body
     &_links
         display: flex
         &__link
-            font-size: 11px
+            font-size: 15px
             color: #F57D02
             margin: 0 70px 0 0
             transition: color .3s ease-out
@@ -893,7 +922,7 @@ body
             top: 280px
 
 .breadcrumbs
-    font-size: 12px
+    font-size: 14px
     font-weight: 500
     margin: 0 0 60px
     &__sep
@@ -951,7 +980,7 @@ body
     &__top
         background: #37474F
         padding: 160px 0 0
-        margin: 0 0 150px
+        margin: 0 0 100px
     &__left
         width: calc(100% - 530px)
         height: 600px
@@ -997,6 +1026,15 @@ body
             .products
                 &__image
                     transform: scale(1.1)
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.67) 100%), transparent
+            z-index: 1
+            position: absolute
+            left: 0
+            top: 0
     &__img
         width: 100%
         pointer-events: none
@@ -1024,6 +1062,7 @@ body
         font-size: 32px
         color: #fff
         line-height: 100%
+        z-index: 1
         position: relative
 
 .seo_text
@@ -1362,6 +1401,15 @@ body
                     transform: scale(1.1)
                 &__hover
                     transform: scale(1)
+        &:before
+            content: ""
+            width: 100%
+            height: 100%
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.67) 100%), transparent
+            z-index: 1
+            position: absolute
+            left: 0
+            top: 0
         &.active
             display: block
         &-build
@@ -1404,6 +1452,7 @@ body
         transition: transform .3s ease-out
     &__content
         width: 100%
+        z-index: 1
         position: relative
     &__title
         font-family: "OptimaCyr"
@@ -1487,7 +1536,7 @@ body
     &__under
         background: #37474F
         padding: 160px 0 0
-        margin: 0 0 150px
+        margin: 0 0 100px
     &__image
         width: calc(65% - 150px)
         height: 600px
@@ -2212,6 +2261,9 @@ body
         position: absolute
         right: 20px
         bottom: 20px
+        transition: transform .3s ease-out
+        &:hover
+            transform: scale(1.1)
     &__nav
         width: 24px
         height: 24px
@@ -2314,7 +2366,7 @@ body
         box-shadow: 0 5px 25px rgba(0, 0, 0, .25)
         overflow-y: auto
         position: relative
-        padding: 80px
+        padding: 60px
     &__close
         width: 16px
         height: 16px
@@ -2830,7 +2882,22 @@ body
             &-3
                 background: #4631CA
 
+@media (max-width: 1500px)
+    .navigate
+        &:before
+            top: 30px
+        &__nav
+            font-size: 14px
+
 @media (max-width: 1400px)
+    .navigate
+        &:before
+            top: 29px
+        &__nav
+            font-size: 12px
+            margin: 0 14px
+
+@media (max-width: 1250px)
     .header
         height: 130px
         padding: 30px 0 0

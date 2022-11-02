@@ -47,7 +47,7 @@
     <div class="wrapper">
         <div class="arendator">
             <div class="arendator__desc">
-                <h2 class="title title-desc">Инормация для клиентов</h2>
+                <h2 class="title title-new">Инормация для клиентов</h2>
                 <div class="arendator__wp">
                     <div class="arendator__txt">Разнообразный и богатый опыт говорит нам, что внедрение современных методик, в своём классическом представлении, допускает внедрение новых предложений. Принимая во внимание показатели успешности, новая модель организационной деятельности предоставляет широкие возможности для кластеризации усилий. Имеется спорная точка зрения, гласящая примерно следующее: некоторые особенности внутренней политики лишь добавляют фракционных разногласий и заблокированы в рамках своих собственных рациональных ограничений. Наше дело не так однозначно, как может показаться: существующая теория требует анализа новых предложений.</div>
                     <ul class="arendator__ul">
@@ -61,7 +61,7 @@
         </div>
         <div class="photos">
             <img class="photos__image" src="img/photos__image.svg" alt="">
-            <h2 class="title">Фото</h2>
+            <h2 class="title title-new">Фото</h2>
             <div class="photos__els">
                 <div class="photos__col">
                     <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
@@ -77,7 +77,7 @@
         </div>
         <div class="video">
             <img class="video__image" src="img/video.svg" alt="">
-            <h2 class="title">Видео</h2>
+            <h2 class="title title-new">Видео</h2>
             <div class="video__els">
                 <div class="video__el" style="background-image: url(img/video__el-1.jpg)">
                     <div class="video__play"></div>

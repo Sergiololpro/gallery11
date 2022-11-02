@@ -53,7 +53,7 @@
         </div>
         <div class="photos">
             <img class="photos__image" src="img/photos__image.svg" alt="">
-            <h2 class="title">Фото</h2>
+            <h2 class="title title-new">Фото</h2>
             <div class="photos__els">
                 <div class="photos__col">
                     <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
@@ -69,7 +69,7 @@
         </div>
         <div class="video">
             <img class="video__image" src="img/video.svg" alt="">
-            <h2 class="title">Видео</h2>
+            <h2 class="title title-new">Видео</h2>
             <div class="video__els">
                 <div class="video__el" style="background-image: url(img/video__el-1.jpg)">
                     <div class="video__play"></div>

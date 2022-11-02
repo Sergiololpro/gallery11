@@ -36,7 +36,7 @@
     <div class="wrapper">
         <div class="contacts_parking">
             <img class="contacts_parking__img" src="img/contacts_parking__img.svg" alt="">
-            <h2 class="title">Парковки</h2>
+            <h2 class="title title-new">Парковки</h2>
             <div class="contacts_parking__images">
                 <div class="contacts_parking__image" style="background-image: url(img/bottom__image.jpg)"></div>
                 <div class="contacts_parking__image" style="background-image: url(img/bottom__image.jpg)"></div>

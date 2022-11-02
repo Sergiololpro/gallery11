@@ -120,7 +120,7 @@
     </div>
     <div class="about_text">
       <img class="about_text__img" src="img/about_text__img.svg" alt="">
-      <h2 class="title">Арендаторам</h2>
+      <h2 class="title title-new">Арендаторам</h2>
       <div class="about_text__content">
         <div class="about_text__left seo_text">
           <p>Мебельный центр Галерея 11 гостеприимно распахнул свои двери в 1999 году как первый региональный мебельный центр ценового уровня «средний и премиум». Мебельный центр Галерея 11 гостеприимно распахнул свои двери в 1999 году как первый региональный мебельный центр ценового уровня «средний и премиум».</p>
@@ -136,7 +136,7 @@
     </div>
     <div class="photos">
         <img class="photos__image" src="img/photos__image.svg" alt="">
-        <h2 class="title">Фото центра</h2>
+        <h2 class="title title-new">Фото центра</h2>
         <div class="photos__els">
             <div class="photos__col">
                 <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
@@ -152,7 +152,7 @@
     </div>
     <div class="video">
         <img class="video__image" src="img/video.svg" alt="">
-        <h2 class="title">Видео о центре</h2>
+        <h2 class="title title-new">Видео о центре</h2>
         <div class="video__els">
             <div class="video__el" style="background-image: url(img/video__el-1.jpg)">
                 <div class="video__play"></div>

@@ -29,7 +29,10 @@
         <a href="#" class="navigate__nav" data-id="1">Афиша</a>
         <a href="#" class="navigate__nav" data-id="3">ШОУ-РУМЫ</a>
         <a href="#" class="navigate__nav" data-id="1">Офисы</a>
-        <a href="#" class="navigate__nav" data-id="1">Распродажа</a>
+        <a href="#" class="navigate__nav" data-id="1">
+          Распродажа
+          <div class="navigate__help">перейти на сайт аутлет</div>
+        </a>
         <a href="#" class="navigate__nav" data-id="1">Аренда</a>
         <a href="#" class="navigate__nav" data-id="1">Контакты</a>
         <div class="header__close"></div>

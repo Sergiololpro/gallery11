@@ -47,7 +47,7 @@
         <section class="scheme_block">
             <img class="scheme_block__img" src="img/scheme_block__img.svg" alt="">
             <div class="scheme_block__left">
-                <h2 class="title">Галерея 11</h2>
+                <h2 class="title title-new">Галерея 11</h2>
                 <div class="scheme_block__text seo_text">
                     <p>Мебельный центр Галерея 11 гостеприимно распахнул свои двери в 1999 году как первый региональный мебельный центр ценового уровня «средний и премиум». Мебельный центр Галерея 11 гостеприимно распахнул свои двери в 1999 году как первый региональный мебельный центр ценового уровня «средний и премиум».</p>
                     <p>Проект фасада мебельного центра разработал архитектор Тимур Абдуллаев.</p>
@@ -58,7 +58,7 @@
         </section>
         <div class="photos">
             <img class="photos__image" src="img/photos__image.svg" alt="">
-            <h2 class="title">Фото здания</h2>
+            <h2 class="title title-new">Фото здания</h2>
             <div class="photos__els">
                 <div class="photos__col">
                     <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
@@ -74,7 +74,7 @@
         </div>
         <div class="video">
             <img class="video__image" src="img/video.svg" alt="">
-            <h2 class="title">Видео о центре</h2>
+            <h2 class="title title-new">Видео о центре</h2>
             <div class="video__els">
                 <div class="video__el" style="background-image: url(img/video__el-1.jpg)">
                     <div class="video__play"></div>

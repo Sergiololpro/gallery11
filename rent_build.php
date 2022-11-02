@@ -8,7 +8,7 @@
                 <span class="breadcrumbs__sep">//</span>
                 <span>Аренда помещений</span>
             </div>
-            <h1 class="title">Аренда помещений</h1>
+            <h1 class="title title-new">Аренда помещений</h1>
             <img class="r_build__img" src="img/r_build__img.svg" alt="">
             <div class="r_tabs">
                 <div data-id="0" class="r_tabs__tab active">Все</div>
@@ -28,7 +28,7 @@
                             <div class="r_build__room">Пом. 3</div>
                             <a href="#" class="r_build__link">Показать на схеме</a>
                         </div>
-                        <div class="button">Арендовать</div>
+                        <div class="button">Отправить запрос </div>
                     </div>
                     <div class="r_build__right">
                         <div class="r_build__slider">
@@ -88,7 +88,7 @@
                             <div class="r_build__room">Пом. 3</div>
                             <a href="#" class="r_build__link">Показать на схеме</a>
                         </div>
-                        <div class="button">Арендовать</div>
+                        <div class="button">Отправить запрос </div>
                     </div>
                     <div class="r_build__right">
                         <div class="r_build__slider">
@@ -148,7 +148,7 @@
                             <div class="r_build__room">Пом. 3</div>
                             <a href="#" class="r_build__link">Показать на схеме</a>
                         </div>
-                        <div class="button">Арендовать</div>
+                        <div class="button">Отправить запрос </div>
                     </div>
                     <div class="r_build__right">
                         <div class="r_build__slider">
@@ -215,7 +215,7 @@
                         </div>
                         <div class="r_build__col r_build__col_4">
                             <div class="r_build__size">150 м2</div>
-                            <div class="button">Арендовать</div>
+                            <div class="button">Отправить запрос </div>
                         </div>
                     </div>
                     <div class="r_build__bottom">
