@@ -295,4 +295,38 @@ $(document).ready(function () {
         }
     });
 
+    // События
+    var vue = new Vue({
+        el: '#vue',
+        data: {
+            elements: elements.length ? elements : [],
+            f_elements: [],
+        },
+        mounted: function() {
+            this.f_elements = this.elements;
+            console.log(this.f_elements)
+        },
+        computed: {
+ 
+        },
+        methods:{
+            filter(id) {
+                var self = this,
+                    array = [];
+
+                if (id) {
+                    self.elements.forEach((element) => {
+                        if (element.type == id) {
+                            array.push(element);
+                        }
+                    });
+
+                    self.f_elements = array;
+                } else {
+                    self.f_elements = elements; 
+                }
+            },
+        }
+    })
+
 });

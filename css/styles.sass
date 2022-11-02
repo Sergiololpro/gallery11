@@ -433,6 +433,8 @@ body
             .event
                 &__image
                     transform: scale(1.1)
+        &:last-child
+            margin: 0
         &-large
             margin: 0
             .event
@@ -440,10 +442,6 @@ body
                     min-height: 275px
         &-top
             margin: 0
-            .event
-                &__content
-                    bottom: inherit
-                    top: 100px
         &-bottom
             height: 360px
     &__image
@@ -500,6 +498,7 @@ body
         line-height: 140%
     &__col
         width: calc((100% - 30px) / 2)
+        height: 750px
         .event
             &__el
                 width: 100%
@@ -937,6 +936,7 @@ body
         a
             color: #fff
 
+.ev_tabs,
 .a_tabs,
 .r_tabs,
 .tabs
@@ -3177,6 +3177,7 @@ body
             min-height: inherit
         &__col
             width: 100%
+            height: auto
             margin: 0 0 30px
             &:last-child
                 margin: 0
@@ -3655,6 +3656,7 @@ body
         &__image
             display: none
 
+    .ev_tabs,
     .a_tabs,
     .r_tabs,
     .tabs
