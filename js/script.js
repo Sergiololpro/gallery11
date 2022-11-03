@@ -311,10 +311,19 @@ $(document).ready(function () {
                 more: false,
             },
             mounted: function() {
+                var self = this;
+
                 this.f_elements = this.elements;
-                console.log(this.f_elements)
 
                 this.filter(this.type);
+
+                $(".navig__nav").on("click", function() {
+                    if ($("#vue").length) {
+                        self.type = +window.location.hash.substring(1);
+                        self.filter(self.type);
+                    }
+                    console.log(self.type )
+                });
             },
             computed: {
     
