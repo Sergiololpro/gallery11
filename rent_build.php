@@ -28,7 +28,7 @@
                             <div class="r_build__room">Пом. 3</div>
                             <a href="#" class="r_build__link">Показать на схеме</a>
                         </div>
-                        <div class="button">Отправить запрос </div>
+                        <div class="button open_form">Отправить запрос </div>
                     </div>
                     <div class="r_build__right">
                         <div class="r_build__slider">
@@ -88,7 +88,7 @@
                             <div class="r_build__room">Пом. 3</div>
                             <a href="#" class="r_build__link">Показать на схеме</a>
                         </div>
-                        <div class="button">Отправить запрос </div>
+                        <div class="button open_form">Отправить запрос </div>
                     </div>
                     <div class="r_build__right">
                         <div class="r_build__slider">
@@ -148,7 +148,7 @@
                             <div class="r_build__room">Пом. 3</div>
                             <a href="#" class="r_build__link">Показать на схеме</a>
                         </div>
-                        <div class="button">Отправить запрос </div>
+                        <div class="button open_form">Отправить запрос </div>
                     </div>
                     <div class="r_build__right">
                         <div class="r_build__slider">
@@ -215,7 +215,7 @@
                         </div>
                         <div class="r_build__col r_build__col_4">
                             <div class="r_build__size">150 м2</div>
-                            <div class="button">Отправить запрос </div>
+                            <div class="butto open_form">Отправить запрос </div>
                         </div>
                     </div>
                     <div class="r_build__bottom">
@@ -282,6 +282,46 @@
 
             </div>
         </div>
+    </div>
+</div>
+
+<div class="c_modal">
+    <div class="c_modal__content">
+        <div class="r_modal__close"></div>
+        <form class="contacts_map__form">
+            <div class="title title-right title-map">Остались вопросы?</div>
+            <div class="contacts_map__text">Задайте их нашим специалистам</div>
+            <div class="contacts_map__input">
+                <label for="name" class="contacts_map__label">Ваше имя</label>
+                <input id="name" name="name" placeholder="Введите" class="contacts_map__inp" type="text">
+            </div>
+            <div class="contacts_map__inputs">
+                <div class="contacts_map__input">
+                    <label for="email" class="contacts_map__label">E-mail</label>
+                    <input id="email" name="email" placeholder="Sample@sample.com" class="contacts_map__inp" type="email">
+                </div>
+                <div class="contacts_map__input">
+                    <label for="phone" class="contacts_map__label">Телефон</label>
+                    <input id="phone" name="phone" placeholder="+ _ ___ ___ __ __" class="contacts_map__inp" type="text">
+                </div>  
+            </div>
+            <div class="contacts_map__input">
+                <label for="question" class="contacts_map__label">Опишите свой вопрос</label>
+                <textarea id="question" name="question" placeholder="Введите" class="contacts_map__textarea"></textarea>
+            </div>
+            <div class="contacts_map__bottom">
+                <div class="contacts_map__txt">
+                    <div class="checkbox">
+                        <input id="agree" value="agree" name="agree" type="checkbox" checked>
+                        <label for="agree">
+                            Нажимая кнопку "Отправить" я соглашаюсь
+                            с <a href="#" target="_blank">Положением о персональных данных и конфиденциальности</a>.
+                        </label>
+                    </div>
+                </div>
+                <div class="button button-banner button-map">Отправить</div>
+            </div>
+        </form>
     </div>
 </div>
 

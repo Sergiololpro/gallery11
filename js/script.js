@@ -104,7 +104,7 @@ $(document).ready(function () {
 
     // Закрыть окно
     $(".r_modal__close").on("click", function() {
-        $(this).closest(".r_modal").removeClass("active");
+        $(this).closest(".r_modal, .c_modal").removeClass("active");
     });
 
     // Открыть окно
@@ -293,6 +293,11 @@ $(document).ready(function () {
         } else {
             $(".about_block__content").addClass("active");
         }
+    });
+
+    // Открыть окно
+    $(".open_form").on("click", function() {
+        $(".c_modal").addClass("active");
     });
 
     // События
