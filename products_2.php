@@ -28,13 +28,14 @@
     <div class="wrapper">
         <div class="tab_filters">
             <div class="tab_filters__els">
-                <div data-build="0" class="tab_filters__el active">Все здания</div>
+                <div data-build="all" class="tab_filters__el active">Все здания</div>
                 <div data-build="1" class="tab_filters__el">Здание 1</div>
                 <div data-build="2" class="tab_filters__el">Здание 2</div>
                 <div data-build="3" class="tab_filters__el">Здание 3</div>
             </div>
             <div class="tab_filters__els">
-                <div data-floor="0" class="tab_filters__el active">Все Этажи</div>
+                <div data-floor="all" class="tab_filters__el active">Все Этажи</div>
+                <div data-floor="0" class="tab_filters__el">Этаж 0</div>
                 <div data-floor="1" class="tab_filters__el">Этаж 1</div>
                 <div data-floor="2" class="tab_filters__el">Этаж 2</div>
                 <div data-floor="3" class="tab_filters__el">Этаж 3</div>
@@ -45,7 +46,7 @@
         <div class="prods">
             <img class="prods__img" src="img/prods__img.svg" alt="">
             <div class="prods__els">
-                <div data-build="1" data-floor="1" class="prods__el active">
+                <div data-build="1" data-floor="0" class="prods__el active">
                     <div class="prods__wp">
                         <div class="prods__image" style="background-image: url(img/prods__image-1.jpg)"></div>
                         <div class="prods__content">

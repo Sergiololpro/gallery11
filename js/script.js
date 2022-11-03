@@ -71,8 +71,8 @@ $(document).ready(function () {
     });
 
     // Фильтр
-    var build = 0,
-        floor = 0,
+    var build = "all",
+        floor = "all",
         row = "";
 
     $(".tab_filters__el").on("click", function() {
@@ -91,11 +91,11 @@ $(document).ready(function () {
 
         $(this).addClass("active");
 
-        if (build) {
+        if (typeof build == "number") {
             row += "[data-build='" + build + "']";
         }
 
-        if (floor) {
+        if (typeof floor == "number") {
             row += "[data-floor='" + floor + "']";
         }
 
@@ -301,42 +301,59 @@ $(document).ready(function () {
     });
 
     // События
-    var vue = new Vue({
-        el: '#vue',
-        data: {
-            elements: elements.length ? elements : [],
-            f_elements: [],
-            more: false,
-        },
-        mounted: function() {
-            this.f_elements = this.elements;
-            console.log(this.f_elements)
-        },
-        computed: {
- 
-        },
-        methods:{
-            filter(id) {
-                var self = this,
-                    array = [];
-
-                if (id) {
-                    self.elements.forEach((element) => {
-                        if (element.type == id) {
-                            array.push(element);
-                        }
-                    });
-
-                    self.f_elements = array;
-                } else {
-                    self.f_elements = elements; 
-                }
+    if (typeof elements !== 'undefined') {
+        var vue = new Vue({
+            el: '#vue',
+            data: {
+                elements: elements.length ? elements : [],
+                f_elements: [],
+                type: window.location.hash ? window.location.hash.substring(1) : 0,
+                more: false,
             },
+            mounted: function() {
+                this.f_elements = this.elements;
+                console.log(this.f_elements)
 
-            loadMore() {
-                this.more = true;
+                this.filter(this.type);
             },
-        }
-    })
+            computed: {
+    
+            },
+            methods:{
+                filter(id) {
+                    var self = this,
+                        array = [];
+
+                    self.type = +id;
+
+                    if (self.type) {
+                        self.elements.forEach((element) => {
+                            if (element.type == self.type) {
+                                array.push(element);
+                            }
+                        });
+
+                        self.f_elements = array;
+                    } else {
+                        self.f_elements = elements; 
+                    }
+
+                    $(".event__wp").removeClass("active");
+
+                    setTimeout(function(){
+                        $(".event__wp").addClass("active");
+                    }, 300);
+                },
+
+                loadMore() {
+                    this.more = true;
+
+                    setTimeout(function(){
+                        $(".event__wp").addClass("active");
+                    }, 1);
+                },
+            }
+        });
+    }
 
 });

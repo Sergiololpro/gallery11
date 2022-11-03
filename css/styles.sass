@@ -141,9 +141,16 @@ body
         color: #37474F
         margin: 0 0 5px
     &__address
-        font-size: 13px
+        max-width: 160px
+        min-height: 38px
+        display: flex
+        align-items: center
+        background: url(../img/address.svg) left center no-repeat
+        background-size: 38px
+        font-size: 14px
         color: #37474F
         font-weight: 500
+        padding: 0 0 0 54px
     &__buttons
         display: flex
         margin: 0 0 0 40px
@@ -507,6 +514,16 @@ body
                     margin: 0
             &__content
                 min-height: inherit
+
+#vue
+    .event
+        &__wp
+            opacity: 0
+            transform: translateX(-100%)
+            transition: opacity .3s ease-out, transform .3s ease-out
+            &.active
+                opacity: 1
+                transform: translateX(0)
 
 .news
     display: flex
@@ -2362,6 +2379,7 @@ body
     &__content
         width: 1120px
         max-width: 90%
+        height: 800px
         max-height: 90%
         background: #fff
         border-radius: 4px
@@ -2385,10 +2403,12 @@ body
         overflow: hidden
 
 .r_slider_1
+    height: calc(100% - 105px)
     position: relative
     margin: 0 0 30px
     &__slide
-        height: 570px
+        height: 100%
+        max-height: 570px
         background-position: center
         background-repeat: no-repeat
         background-size: cover
@@ -2413,6 +2433,11 @@ body
         &-next
             right: -50px
             transform: scale(-1, 1)
+    .slick
+        &-list
+            height: 100%
+        &-track
+            height: 100%
 
 .r_slider_2
     width: 95%
@@ -2945,14 +2970,14 @@ body
             &:checked + label:after
                 opacity: 1
 
-@media (max-width: 1500px)
+@media (max-width: 1400px)
     .navigate
         &:before
             top: 30px
         &__nav
             font-size: 14px
 
-@media (max-width: 1400px)
+@media (max-width: 1300px)
     .navigate
         &:before
             top: 29px
@@ -2960,7 +2985,7 @@ body
             font-size: 12px
             margin: 0 14px
 
-@media (max-width: 1250px)
+@media (max-width: 1150px)
     .header
         height: 130px
         padding: 30px 0 0
@@ -2996,7 +3021,7 @@ body
             top: 30px
             transition: opacity .3s ease-out
             &:hover
-                opacity: .7
+                opacity: .4
 
     .navigate
         display: none
@@ -3433,10 +3458,6 @@ body
             width: 100%
         &__slide
             height: 240px
-
-    .r_modal
-        &__content
-            padding: 40px
 
     .contacts
         &_parking
@@ -3948,6 +3969,7 @@ body
             right: 10px
             top: 10px
         &__content
+            height: auto
             padding: 30px
 
     .r_slider_1

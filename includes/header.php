@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="js/libs/slick/slick.css">
-  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/styles.css?v=5">
   <title>Gallery11</title>
 </head>
 
@@ -38,12 +38,9 @@
         <div class="header__close"></div>
       </nav>
       <div class="header__right">
-        <div class="header__contacts">
-          <a href="tel:+73432173500" class="header__phone">+7 343 217 35 00</a>
-          <div class="header__address">Екатеринбург, Студенческая 11</div>
-        </div>
+        <div class="header__address">Екатеринбург, Студенческая 11</div>
         <div class="header__buttons">
-          <div class="header__button header__button-search"></div>
+          <!-- <div class="header__button header__button-search"></div> -->
           <div class="header__button header__button-cabinet"></div>
         </div>
       </div>
@@ -57,7 +54,7 @@
         <div class="mobile_menu__logo"></div>
       </div>
       <div class="header__buttons">
-        <div class="header__button header__button-search"></div>
+        <!-- <div class="header__button header__button-search"></div> -->
         <div class="header__button header__button-cabinet"></div>
       </div>
     </div>
@@ -140,12 +137,14 @@
       </div>
       <div class="navig__wp">
         <nav class="navig__navs">
-          <a href="#" class="navig__nav">Все события</a>
-          <a href="#" class="navig__nav">Новости</a>
-          <a href="#" class="navig__nav">Презентации</a>
-          <a href="#" class="navig__nav">Лекции</a>
-          <a href="#" class="navig__nav">Семинары</a>
-          <a href="#" class="navig__nav">Еще тип события</a>
+          <a href="/events/#0" class="navig__nav">Все события</a>
+          <a href="/events/#1" class="navig__nav">Акции</a>
+          <a href="/events/#2" class="navig__nav">Новости</a>
+          <a href="/events/#3" class="navig__nav">События</a>
+          <a href="/events/#4" class="navig__nav">Лекция</a>
+          <a href="/events/#5" class="navig__nav">Презентация</a>
+          <a href="/events/#6" class="navig__nav">Открытие выставки</a>
+          <a href="/events/#7" class="navig__nav">Обучение</a>
         </nav>
         <div class="navig__rgt">
           <div class="navig__under">Событие дня</div>

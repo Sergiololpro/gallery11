@@ -83,7 +83,8 @@
     <div class="wrapper">
     <div class="tab_filters">
             <div class="tab_filters__els">
-                <div data-floor="0" class="tab_filters__el active">Все</div>
+                <div data-floor="all" class="tab_filters__el active">Все</div>
+                <div data-floor="0" class="tab_filters__el">0 этаж</div>
                 <div data-floor="1" class="tab_filters__el">1 этаж</div>
                 <div data-floor="2" class="tab_filters__el">2 этаж</div>
                 <div data-floor="3" class="tab_filters__el">3 этаж</div>
@@ -122,7 +123,7 @@
                         <div class="prods__txt">Разнообразный и богатый опыт говорит нам, что внедрение современных методик, в своём классическом представлении, допускает внедрение новых предложений. Принимая во внимание показатели успешности, новая модель</div>
                     </div>
                 </div>
-                <div data-floor="2" class="prods__el prods__el-build active">
+                <div data-floor="0" class="prods__el prods__el-build active">
                     <div class="prods__wp">
                         <div class="prods__image" style="background-image: url(img/prods__image-2.jpg)"></div>
                         <div class="prods__content">
