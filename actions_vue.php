@@ -29,7 +29,7 @@
                             <div class="event__date">{{ f_elements[0].date }}</div>
                                 <h3 class="event__h3">{{ f_elements[0].title }}</h3>
                             </div>
-                            <div class="event__text">{{ f_elements[0].text }}</div>
+                            <div v-html="f_elements[0].text" class="event__text"></div>
                         </div>
                     </a>
                     <div v-if="f_elements.length > 1" class="event__col">
@@ -41,7 +41,7 @@
                                 <div class="event__date">{{ f_elements[1].date }}</div>
                                     <h3 class="event__h3">{{ f_elements[1].title }}</h3>
                                 </div>
-                                <div class="event__text">{{ f_elements[1].text }}</div>
+                                <div v-html="f_elements[1].text" class="event__text"></div>
                             </div>
                         </a>
                         <template v-if="f_elements.length > 2">
@@ -53,7 +53,7 @@
                                     <div class="event__date">{{ f_elements[2].date }}</div>
                                         <h3 class="event__h3">{{ f_elements[2].title }}</h3>
                                     </div>
-                                    <div class="event__text">{{ f_elements[2].text }}</div>
+                                    <div v-html="f_elements[2].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -67,7 +67,7 @@
                         <div class="news__content">
                             <div class="news__date">{{ f_elements[3].date }}</div>
                             <h3 class="news__h3">{{ f_elements[3].title }}</h3>
-                            <div class="news__text">{{ f_elements[3].text }}</div>
+                            <div class="news__text">{{ f_elements[3].text" class="event__text"></div>
                         </div>
                     </a>
                     <template v-if="f_elements.length > 4">
@@ -78,7 +78,7 @@
                             <div class="news__content">
                                 <div class="news__date">{{ f_elements[4].date }}</div>
                                 <h3 class="news__h3">{{ f_elements[4].title }}</h3>
-                                <div class="news__text">{{ f_elements[4].text }}</div>
+                                <div class="news__text">{{ f_elements[4].text" class="event__text"></div>
                             </div>
                         </a>
                     </template>
@@ -90,7 +90,7 @@
                             <div class="news__content">
                                 <div class="news__date">{{ f_elements[5].date }}</div>
                                 <h3 class="news__h3">{{ f_elements[5].title }}</h3>
-                                <div class="news__text">{{ f_elements[5].text }}</div>
+                                <div class="news__text">{{ f_elements[5].text" class="event__text"></div>
                             </div>
                         </a>
                     </template>
@@ -106,7 +106,7 @@
                             <div class="event__date">{{ f_elements[6].date }}</div>
                                 <h3 class="event__h3">{{ f_elements[6].title }}</h3>
                             </div>
-                            <div class="event__text">{{ f_elements[6].text }}</div>
+                            <div v-html="f_elements[6].text" class="event__text"></div>
                         </div>
                     </a>
                     <div v-if="f_elements.length > 7" class="event__col">
@@ -118,7 +118,7 @@
                                 <div class="event__date">{{ f_elements[7].date }}</div>
                                     <h3 class="event__h3">{{ f_elements[7].title }}</h3>
                                 </div>
-                                <div class="event__text">{{ f_elements[7].text }}</div>
+                                <div v-html="f_elements[7].text" class="event__text"></div>
                             </div>
                         </a>
                         <template v-if="f_elements.length > 8">
@@ -130,7 +130,7 @@
                                     <div class="event__date">{{ f_elements[8].date }}</div>
                                         <h3 class="event__h3">{{ f_elements[8].title }}</h3>
                                     </div>
-                                    <div class="event__text">{{ f_elements[8].text }}</div>
+                                    <div v-html="f_elements[8].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -144,7 +144,7 @@
                         <div class="news__content">
                             <div class="news__date">{{ f_elements[9].date }}</div>
                             <h3 class="news__h3">{{ f_elements[9].title }}</h3>
-                            <div class="news__text">{{ f_elements[9].text }}</div>
+                            <div class="news__text">{{ f_elements[9].text" class="event__text"></div>
                         </div>
                     </a>
                     <template v-if="f_elements.length > 10">
@@ -155,7 +155,7 @@
                             <div class="news__content">
                                 <div class="news__date">{{ f_elements[10].date }}</div>
                                 <h3 class="news__h3">{{ f_elements[10].title }}</h3>
-                                <div class="news__text">{{ f_elements[10].text }}</div>
+                                <div class="news__text">{{ f_elements[10].text" class="event__text"></div>
                             </div>
                         </a>
                     </template>
@@ -167,7 +167,7 @@
                             <div class="news__content">
                                 <div class="news__date">{{ f_elements[11].date }}</div>
                                 <h3 class="news__h3">{{ f_elements[11].title }}</h3>
-                                <div class="news__text">{{ f_elements[11].text }}</div>
+                                <div class="news__text">{{ f_elements[11].text" class="event__text"></div>
                             </div>
                         </a>
                     </template>
@@ -184,7 +184,7 @@
                                 <div class="event__date">{{ f_elements[12].date }}</div>
                                     <h3 class="event__h3">{{ f_elements[12].title }}</h3>
                                 </div>
-                                <div class="event__text">{{ f_elements[12].text }}</div>
+                                <div v-html="f_elements[12].text" class="event__text"></div>
                             </div>
                         </a>
                         <template v-if="f_elements.length > 13">
@@ -196,7 +196,7 @@
                                     <div class="event__date">{{ f_elements[13].date }}</div>
                                         <h3 class="event__h3">{{ f_elements[13].title }}</h3>
                                     </div>
-                                    <div class="event__text">{{ f_elements[13].text }}</div>
+                                    <div v-html="f_elements[13].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -209,7 +209,7 @@
                             <div class="event__date">{{ f_elements[14].date }}</div>
                                 <h3 class="event__h3">{{ f_elements[14].title }}</h3>
                             </div>
-                            <div class="event__text">{{ f_elements[14].text }}</div>
+                            <div v-html="f_elements[14].text" class="event__text"></div>
                         </div>
                     </a>
                 </div>
@@ -226,7 +226,7 @@
                                 <div class="event__date">{{ f_elements[15].date }}</div>
                                     <h3 class="event__h3">{{ f_elements[15].title }}</h3>
                                 </div>
-                                <div class="event__text">{{ f_elements[15].text }}</div>
+                                <div v-html="f_elements[15].text" class="event__text"></div>
                             </div>
                         </a>
                         <div v-if="f_elements.length > 16" class="event__col">
@@ -238,7 +238,7 @@
                                     <div class="event__date">{{ f_elements[16].date }}</div>
                                         <h3 class="event__h3">{{ f_elements[16].title }}</h3>
                                     </div>
-                                    <div class="event__text">{{ f_elements[16].text }}</div>
+                                    <div v-html="f_elements[16].text" class="event__text"></div>
                                 </div>
                             </a>
                             <template v-if="f_elements.length > 17">
@@ -250,7 +250,7 @@
                                         <div class="event__date">{{ f_elements[17].date }}</div>
                                             <h3 class="event__h3">{{ f_elements[17].title }}</h3>
                                         </div>
-                                        <div class="event__text">{{ f_elements[17].text }}</div>
+                                        <div v-html="f_elements[17].text" class="event__text"></div>
                                     </div>
                                 </a>
                             </template>
@@ -264,7 +264,7 @@
                             <div class="news__content">
                                 <div class="news__date">{{ f_elements[18].date }}</div>
                                 <h3 class="news__h3">{{ f_elements[18].title }}</h3>
-                                <div class="news__text">{{ f_elements[18].text }}</div>
+                                <div class="news__text">{{ f_elements[18].text" class="event__text"></div>
                             </div>
                         </a>
                         <template v-if="f_elements.length > 19">
@@ -275,7 +275,7 @@
                                 <div class="news__content">
                                     <div class="news__date">{{ f_elements[19].date }}</div>
                                     <h3 class="news__h3">{{ f_elements[19].title }}</h3>
-                                    <div class="news__text">{{ f_elements[19].text }}</div>
+                                    <div class="news__text">{{ f_elements[19].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -287,7 +287,7 @@
                                 <div class="news__content">
                                     <div class="news__date">{{ f_elements[20].date }}</div>
                                     <h3 class="news__h3">{{ f_elements[20].title }}</h3>
-                                    <div class="news__text">{{ f_elements[20].text }}</div>
+                                    <div class="news__text">{{ f_elements[20].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -303,7 +303,7 @@
                                 <div class="event__date">{{ f_elements[21].date }}</div>
                                     <h3 class="event__h3">{{ f_elements[21].title }}</h3>
                                 </div>
-                                <div class="event__text">{{ f_elements[21].text }}</div>
+                                <div v-html="f_elements[21].text" class="event__text"></div>
                             </div>
                         </a>
                         <div v-if="f_elements.length > 22" class="event__col">
@@ -315,7 +315,7 @@
                                     <div class="event__date">{{ f_elements[22].date }}</div>
                                         <h3 class="event__h3">{{ f_elements[22].title }}</h3>
                                     </div>
-                                    <div class="event__text">{{ f_elements[22].text }}</div>
+                                    <div v-html="f_elements[22].text" class="event__text"></div>
                                 </div>
                             </a>
                             <template v-if="f_elements.length > 23">
@@ -327,7 +327,7 @@
                                         <div class="event__date">{{ f_elements[23].date }}</div>
                                             <h3 class="event__h3">{{ f_elements[23].title }}</h3>
                                         </div>
-                                        <div class="event__text">{{ f_elements[23].text }}</div>
+                                        <div v-html="f_elements[23].text" class="event__text"></div>
                                     </div>
                                 </a>
                             </template>
@@ -341,7 +341,7 @@
                             <div class="news__content">
                                 <div class="news__date">{{ f_elements[24].date }}</div>
                                 <h3 class="news__h3">{{ f_elements[24].title }}</h3>
-                                <div class="news__text">{{ f_elements[24].text }}</div>
+                                <div class="news__text">{{ f_elements[24].text" class="event__text"></div>
                             </div>
                         </a>
                         <template v-if="f_elements.length > 25">
@@ -352,7 +352,7 @@
                                 <div class="news__content">
                                     <div class="news__date">{{ f_elements[25].date }}</div>
                                     <h3 class="news__h3">{{ f_elements[25].title }}</h3>
-                                    <div class="news__text">{{ f_elements[25].text }}</div>
+                                    <div class="news__text">{{ f_elements[25].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -364,7 +364,7 @@
                                 <div class="news__content">
                                     <div class="news__date">{{ f_elements[26].date }}</div>
                                     <h3 class="news__h3">{{ f_elements[26].title }}</h3>
-                                    <div class="news__text">{{ f_elements[26].text }}</div>
+                                    <div class="news__text">{{ f_elements[26].text" class="event__text"></div>
                                 </div>
                             </a>
                         </template>
@@ -381,7 +381,7 @@
                                     <div class="event__date">{{ f_elements[27].date }}</div>
                                         <h3 class="event__h3">{{ f_elements[27].title }}</h3>
                                     </div>
-                                    <div class="event__text">{{ f_elements[27].text }}</div>
+                                    <div v-html="f_elements[27].text" class="event__text"></div>
                                 </div>
                             </a>
                             <template v-if="f_elements.length > 28">
@@ -393,7 +393,7 @@
                                         <div class="event__date">{{ f_elements[28].date }}</div>
                                             <h3 class="event__h3">{{ f_elements[28].title }}</h3>
                                         </div>
-                                        <div class="event__text">{{ f_elements[28].text }}</div>
+                                        <div v-html="f_elements[28].text" class="event__text"></div>
                                     </div>
                                 </a>
                             </template>
@@ -406,7 +406,7 @@
                                 <div class="event__date">{{ f_elements[29].date }}</div>
                                     <h3 class="event__h3">{{ f_elements[29].title }}</h3>
                                 </div>
-                                <div class="event__text">{{ f_elements[29].text }}</div>
+                                <div v-html="f_elements[29].text" class="event__text"></div>
                             </div>
                         </a>
                     </div>
@@ -421,7 +421,7 @@
         {
             title: "Выставка Юрия Первушина 1",
             date: "02 августа 2022",
-            text: "При поддержке Анны Кирен",
+            text: "test test <br/>22222",
             type: "1",
             type_text: "Акция",
             image: "img/event__image-1.jpg",
