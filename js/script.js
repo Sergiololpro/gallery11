@@ -301,6 +301,7 @@ $(document).ready(function () {
         data: {
             elements: elements.length ? elements : [],
             f_elements: [],
+            more: false,
         },
         mounted: function() {
             this.f_elements = this.elements;
@@ -325,6 +326,10 @@ $(document).ready(function () {
                 } else {
                     self.f_elements = elements; 
                 }
+            },
+
+            loadMore() {
+                this.more = true;
             },
         }
     })
