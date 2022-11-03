@@ -2653,15 +2653,20 @@ body
             justify-content: space-between
             align-items: flex-start
             background: #6D838E
+            border: 2px solid #6D838E
             border-radius: 4px
             padding: 8px 16px
             margin: 0 0 10px
+            transition: border .3s ease-out
+            &.error
+                border: 2px solid #FB6A6A
         &__label
             font-size: 12px
             color: #fff
             margin: 0 0 6px
         &__textarea,
         &__inp
+            width: 100%
             background: transparent
             font-size: 18px
             color: rgba(219, 219, 219, .5)
@@ -2693,6 +2698,8 @@ body
                 transition: opacity .3s ease-out
                 &:hover
                     opacity: .7
+        &__button
+            display: none
 
 .scheme
     margin: 0 0 100px
@@ -2935,6 +2942,10 @@ body
 
 .checkbox
     position: relative
+    &.error
+        label
+            &:before
+                border: 1px solid #FB6A6A
     label
         display: inline-block
         cursor: pointer
@@ -2949,6 +2960,7 @@ body
             position: absolute
             left: 0
             top: 5px
+            transition: border .3s ease-out
         &:after
             content: ''
             width: 19px

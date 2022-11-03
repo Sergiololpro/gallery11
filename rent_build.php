@@ -319,7 +319,8 @@
                         </label>
                     </div>
                 </div>
-                <div class="button button-banner button-map">Отправить</div>
+                <div class="button button-banner button-map make_order">Отправить</div>
+                <button class="contacts_map__button"></button>
             </div>
         </form>
     </div>

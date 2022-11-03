@@ -141,10 +141,16 @@
                 </div>
                 <div class="contacts_map__bottom">
                     <div class="contacts_map__txt">
-                        Нажимая кнопку "Отправить" я соглашаюсь
-                        с <a href="#" target="_blank">Положением о персональных данных и конфиденциальности</a>.
+                        <div class="checkbox">
+                            <input id="agree" value="agree" name="agree" type="checkbox" checked>
+                            <label for="agree">
+                                Нажимая кнопку "Отправить" я соглашаюсь
+                                с <a href="#" target="_blank">Положением о персональных данных и конфиденциальности</a>.
+                            </label>
+                        </div>
                     </div>
-                    <div class="button button-banner button-map">Отправить</div>
+                    <div class="button button-banner button-map make_order">Отправить</div>
+                    <button class="contacts_map__button"></button>
                 </div>
             </form>
         </div>

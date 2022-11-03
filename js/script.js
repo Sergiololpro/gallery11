@@ -356,4 +356,39 @@ $(document).ready(function () {
         });
     }
 
+    // Форма
+	$('.make_order').on("click", function () {
+        var $form = $(this).closest("form"),
+            name = $form.find('input[name="name"]').val(),
+            email = $form.find('input[name="email"]').val(),
+            phone = $form.find('input[name="phone"]').val(),
+            error = false;
+            
+        $form.find('input').parent().removeClass('error');
+
+        if (!name.length) {
+            $form.find('input[name="name"]').parent().addClass('error');
+            error = true;
+        }
+
+        if (!phone.length) {
+            $form.find('input[name="phone"]').parent().addClass('error');
+            error = true;
+        }
+
+        if (!email.length) {
+            $form.find('input[name="email"]').parent().addClass('error');
+            error = true;
+        }
+
+        if (!$("#agree").is(':checked')) {
+            $form.find('.checkbox').addClass('error');
+            error = true;
+        }
+
+        if (!error) {
+            $form.find('.contacts_map__button').click();
+        }
+    });
+
 });
