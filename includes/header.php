@@ -91,7 +91,7 @@
       </div>
       <div class="navig__els">
         <a href="#" class="navig__el" style="background-image: url(img/navig__el-1.jpg)">
-          Мягкая мебель
+          <span>Мягкая мебель</span>
         </a>
         <a href="#" class="navig__el" style="background-image: url(img/navig__el-2.jpg)">
           Спальни
