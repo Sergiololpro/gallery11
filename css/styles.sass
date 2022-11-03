@@ -911,6 +911,7 @@ body
         &__link
             font-size: 15px
             color: #F57D02
+            cursor: pointer
             margin: 0 70px 0 0
             transition: color .3s ease-out
             &:hover
@@ -2929,6 +2930,7 @@ body
             &-3
                 background: #4631CA
 
+.text_modal,
 .client_modal,
 .c_modal
     width: 100%
@@ -2952,6 +2954,10 @@ body
         max-height: 90%
         overflow-y: auto
         position: relative
+        &-text
+            width: 1620px
+            background: #fff
+            padding: 60px
 
 .checkbox
     position: relative
@@ -4066,12 +4072,19 @@ body
             &__scheme
                 height: 240px
 
+    .text_modal,
     .client_modal,
     .c_modal
         .title
             font-size: 28px
+            margin: 0 0 20px
             &:before
-                top: 35px
+                top: 28px
+
+    .text_modal
+        &__content
+            &-text
+                padding: 30px
 
 @media (max-width: 320px)
     .button

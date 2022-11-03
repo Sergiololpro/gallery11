@@ -162,46 +162,66 @@
   </div>
 
   <div class="client_modal">
-    <div class="client_modal__content">
-        <div class="r_modal__close"></div>
-        <form class="contacts_map__form">
-            <div class="title title-right title-map">Остались вопросы?</div>
-            <div class="contacts_map__text">Задайте их нашим специалистам</div>
-            <div class="contacts_map__input">
-                <label for="name" class="contacts_map__label">Ваше имя</label>
-                <input id="name" name="name" placeholder="Введите" class="contacts_map__inp" type="text">
-            </div>
-            <div class="contacts_map__inputs">
-                <div class="contacts_map__input">
-                    <label for="email" class="contacts_map__label">E-mail</label>
-                    <input id="email" name="email" placeholder="Sample@sample.com" class="contacts_map__inp" type="email">
-                </div>
-                <div class="contacts_map__input">
-                    <label for="phone" class="contacts_map__label">Телефон</label>
-                    <input id="phone" name="phone" placeholder="+ _ ___ ___ __ __" class="contacts_map__inp" type="text">
-                </div>  
-            </div>
-            <div class="contacts_map__input">
-                <label for="job" class="contacts_map__label">Род деятельности</label>
-                <input id="job" name="job" placeholder="Введите" class="contacts_map__inp" type="text">
-            </div>
-            <div class="contacts_map__input">
-                <label for="question" class="contacts_map__label">Опишите свой вопрос</label>
-                <textarea id="question" name="question" placeholder="Введите" class="contacts_map__textarea"></textarea>
-            </div>
-            <div class="contacts_map__bottom">
-                <div class="contacts_map__txt">
-                    <div class="checkbox">
-                        <input id="agree" value="agree" name="agree" type="checkbox" checked>
-                        <label for="agree">
-                            Нажимая кнопку "Отправить" я соглашаюсь
-                            с <a href="#" target="_blank">Положением о персональных данных и конфиденциальности</a>.
-                        </label>
-                    </div>
-                </div>
-                <div class="button button-banner button-map make_order">Отправить</div>
-                <button class="contacts_map__button"></button>
-            </div>
-        </form>
-    </div>
-</div>
+      <div class="client_modal__content">
+          <div class="r_modal__close"></div>
+          <form class="contacts_map__form">
+              <div class="title title-right title-map">Остались вопросы?</div>
+              <div class="contacts_map__text">Задайте их нашим специалистам</div>
+              <div class="contacts_map__input">
+                  <label for="name" class="contacts_map__label">Ваше имя</label>
+                  <input id="name" name="name" placeholder="Введите" class="contacts_map__inp" type="text">
+              </div>
+              <div class="contacts_map__inputs">
+                  <div class="contacts_map__input">
+                      <label for="email" class="contacts_map__label">E-mail</label>
+                      <input id="email" name="email" placeholder="Sample@sample.com" class="contacts_map__inp" type="email">
+                  </div>
+                  <div class="contacts_map__input">
+                      <label for="phone" class="contacts_map__label">Телефон</label>
+                      <input id="phone" name="phone" placeholder="+ _ ___ ___ __ __" class="contacts_map__inp" type="text">
+                  </div>  
+              </div>
+              <div class="contacts_map__input">
+                  <label for="job" class="contacts_map__label">Род деятельности</label>
+                  <input id="job" name="job" placeholder="Введите" class="contacts_map__inp" type="text">
+              </div>
+              <div class="contacts_map__input">
+                  <label for="question" class="contacts_map__label">Опишите свой вопрос</label>
+                  <textarea id="question" name="question" placeholder="Введите" class="contacts_map__textarea"></textarea>
+              </div>
+              <div class="contacts_map__bottom">
+                  <div class="contacts_map__txt">
+                      <div class="checkbox">
+                          <input id="agree" value="agree" name="agree" type="checkbox" checked>
+                          <label for="agree">
+                              Нажимая кнопку "Отправить" я соглашаюсь
+                              с <a href="#" target="_blank">Положением о персональных данных и конфиденциальности</a>.
+                          </label>
+                      </div>
+                  </div>
+                  <div class="button button-banner button-map make_order">Отправить</div>
+                  <button class="contacts_map__button"></button>
+              </div>
+          </form>
+      </div>
+  </div>
+
+  <div id="perosonal_modal" class="text_modal">
+      <div class="text_modal__content text_modal__content-text">
+          <div class="r_modal__close"></div>
+          <div class="title title-new">Политика конфиденциальности</div>
+          <div class="seo_text">
+            Противоположная точка зрения подразумевает, что стремящиеся вытеснить традиционное производство, нанотехнологии набирают популярность среди определенных слоев населения, а значит, должны быть функционально разнесены на независимые элементы. Лишь предприниматели в сети интернет освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, указаны как претенденты на роль ключевых факторов. Безусловно, постоянный количественный рост и сфера нашей активности является качественно новой ступенью инновационных методов управления процессами. Безусловно, высокотехнологичная концепция общественного уклада позволяет оценить значение прогресса профессионального сообщества. Равным образом, экономическая повестка сегодняшнего дня позволяет оценить значение вывода текущих активов. Противоположная точка зрения подразумевает, что ключевые особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, подвергнуты целой серии независимых исследований. Внезапно, некоторые особенности внутренней политики лишь добавляют фракционных разногласий и функционально разнесены на независимые элементы. Значимость этих проблем настолько очевидна, что консультация с широким активом является качественно новой ступенью инновационных методов управления процессами. В своём стремлении повысить качество жизни, они забывают, что разбавленное изрядной долей эмпатии, рациональное мышление влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Равным образом, внедрение современных методик играет определяющее значение для своевременного выполнения сверхзадачи. Безусловно, глубокий уровень погружения представляет собой интересный эксперимент проверки направлений прогрессивного развития. Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для инновационных методов управления процессами. Есть над чем задуматься: сторонники тоталитаризма в науке обнародованы. Следует отметить, что базовый вектор развития, в своём классическом представлении, допускает внедрение дальнейших направлений развития. С другой стороны, внедрение современных методик требует от нас анализа новых предложений.
+          </div>
+        </div>
+  </div>
+
+  <div id="agree_modal" class="text_modal">
+      <div class="text_modal__content text_modal__content-text">
+          <div class="r_modal__close"></div>
+          <div class="title title-new">Пользовательское соглашение</div>
+          <div class="seo_text">
+            Противоположная точка зрения подразумевает, что стремящиеся вытеснить традиционное производство, нанотехнологии набирают популярность среди определенных слоев населения, а значит, должны быть функционально разнесены на независимые элементы. Лишь предприниматели в сети интернет освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, указаны как претенденты на роль ключевых факторов. Безусловно, постоянный количественный рост и сфера нашей активности является качественно новой ступенью инновационных методов управления процессами. Безусловно, высокотехнологичная концепция общественного уклада позволяет оценить значение прогресса профессионального сообщества. Равным образом, экономическая повестка сегодняшнего дня позволяет оценить значение вывода текущих активов. Противоположная точка зрения подразумевает, что ключевые особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, подвергнуты целой серии независимых исследований. Внезапно, некоторые особенности внутренней политики лишь добавляют фракционных разногласий и функционально разнесены на независимые элементы. Значимость этих проблем настолько очевидна, что консультация с широким активом является качественно новой ступенью инновационных методов управления процессами. В своём стремлении повысить качество жизни, они забывают, что разбавленное изрядной долей эмпатии, рациональное мышление влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Равным образом, внедрение современных методик играет определяющее значение для своевременного выполнения сверхзадачи. Безусловно, глубокий уровень погружения представляет собой интересный эксперимент проверки направлений прогрессивного развития. Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для инновационных методов управления процессами. Есть над чем задуматься: сторонники тоталитаризма в науке обнародованы. Следует отметить, что базовый вектор развития, в своём классическом представлении, допускает внедрение дальнейших направлений развития. С другой стороны, внедрение современных методик требует от нас анализа новых предложений.
+          </div>
+        </div>
+  </div>

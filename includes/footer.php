@@ -50,8 +50,8 @@
       <div class="footer__bottom">
         <div class="footer__copy">© 2022. Galery 11</div>
         <div class="footer_links">
-          <a href="#" target="_blank" class="footer_links__link">Политика конфиденциальности</a>
-          <a href="#" target="_blank" class="footer_links__link">Пользовательское соглашение</a>
+          <div class="footer_links__link open_perosonal">Политика конфиденциальности</div>
+          <div class="footer_links__link open_agree">Пользовательское соглашение</div>
         </div>
       </div>
     </div>

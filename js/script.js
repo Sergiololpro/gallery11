@@ -104,11 +104,10 @@ $(document).ready(function () {
 
     // Закрыть окно
     $(".r_modal__close").on("click", function() {
-        $(this).closest(".r_modal, .c_modal, .client_modal").removeClass("active");
+        $(this).closest(".r_modal, .c_modal, .client_modal, .text_modal").removeClass("active");
     });
 
     // Открыть окно
-
     var can_click = true;
 
     $(".r_build__slide").on("click", function() {
@@ -303,6 +302,16 @@ $(document).ready(function () {
     // Открыть окно 2
     $(".open_form_2").on("click", function() {
         $(".client_modal").addClass("active");
+    });
+
+    // Открыть окно персональное
+    $(".open_perosonal").on("click", function() {
+        $("#perosonal_modal").addClass("active");
+    });
+
+    // Открыть окно соглашение
+    $(".open_agree").on("click", function() {
+        $("#agree_modal").addClass("active");
     });
 
     // События
