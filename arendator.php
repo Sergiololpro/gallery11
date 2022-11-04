@@ -80,20 +80,20 @@
             <h2 class="title title-new">Видео</h2>
             <div class="video__els">
                 <div class="video__el" style="background-image: url(img/video__el-1.jpg)">
-                    <div class="video__play"></div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IyNv0UJnrlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video__right">
                     <div class="video__el" style="background-image: url(img/video__el-2.jpg)">
-                        <div class="video__play"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IyNv0UJnrlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video__el" style="background-image: url(img/video__el-3.jpg)">
-                        <div class="video__play"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IyNv0UJnrlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video__el" style="background-image: url(img/video__el-4.jpg)">
-                        <div class="video__play"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IyNv0UJnrlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video__el" style="background-image: url(img/video__el-5.jpg)">
-                        <div class="video__play"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IyNv0UJnrlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

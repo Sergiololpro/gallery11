@@ -107,7 +107,7 @@
         </div>
         <div class="contacts_video">
             <div class="contacts_video__wrp" style="background-image: url(img/contacts_video.jpg)">
-                <div class="contacts_video__play"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IyNv0UJnrlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="contacts_video__text">Пояснение для видео в одну или несколько строк</div>
         </div>
