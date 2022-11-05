@@ -414,4 +414,9 @@ $(document).ready(function () {
         }
     });
 
+    // Маска телефона
+    if ($('input[name="phone"]').length) {
+        $('input[name="phone"]').mask('+0 000 000 00 00');
+    }
+
 });

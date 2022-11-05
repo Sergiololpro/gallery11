@@ -312,7 +312,7 @@
             <div class="contacts_map__bottom">
                 <div class="contacts_map__txt">
                     <div class="checkbox">
-                        <input id="agree" value="agree" name="agree" type="checkbox" checked>
+                        <input id="agree" value="agree" name="agree" type="checkbox">
                         <label for="agree">
                             Нажимая кнопку "Отправить" я соглашаюсь
                             с <a href="#" target="_blank">Положением о персональных данных и конфиденциальности</a>.
