@@ -17,8 +17,8 @@
     <div class="socials">
       <a href="#" target="_blank" class="socials__el socials__el-vk"></a>
       <a href="#" target="_blank" class="socials__el socials__el-tg"></a>
-      <a href="#" target="_blank" class="socials__el socials__el-vk"></a>
-      <a href="#" target="_blank" class="socials__el socials__el-tg"></a>
+      <a href="#" target="_blank" class="socials__el socials__el-insta"></a>
+      <a href="#" target="_blank" class="socials__el socials__el-you"></a>
     </div>
   </div>
 </div>

@@ -26,8 +26,8 @@
                     <div class="contacts_socials">
                         <a href="#" class="contacts_socials__el contacts_socials__el-vk"></a>
                         <a href="#" class="contacts_socials__el contacts_socials__el-tg"></a>
-                        <a href="#" class="contacts_socials__el contacts_socials__el-vk"></a>
-                        <a href="#" class="contacts_socials__el contacts_socials__el-tg"></a>
+                        <a href="#" class="contacts_socials__el contacts_socials__el-insta"></a>
+                        <a href="#" class="contacts_socials__el contacts_socials__el-you"></a>
                     </div>
                 </div>
             </div>

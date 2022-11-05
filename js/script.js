@@ -336,7 +336,6 @@ $(document).ready(function () {
                         self.type = +window.location.hash.substring(1);
                         self.filter(self.type);
                     }
-                    console.log(self.type )
                 });
             },
             computed: {
@@ -417,6 +416,27 @@ $(document).ready(function () {
     // Маска телефона
     if ($('input[name="phone"]').length) {
         $('input[name="phone"]').mask('+0 000 000 00 00');
+    }
+
+    // Навигация на странице "О центре"
+    if ($(".a_tabs").length) {
+        $(".navig__nav").on("click", function() {
+            var id = window.location.hash ? window.location.hash.substring(1) : 0;
+    
+            $(".a_tabs__tab, .about_block__content").removeClass("active");
+    
+            $(".a_tabs__tab[data-id=" + id + "]").addClass("active");
+            $(".about_block__content[data-id=" + id + "]").addClass("active");
+
+            setTimeout(function(){
+                var id = window.location.hash.substring(1);
+
+                $(".a_tabs__tab, .about_block__content").removeClass("active");
+
+                $(".a_tabs__tab[data-id=" + id + "]").addClass("active");
+                $(".about_block__content[data-id=" + id + "]").addClass("active");
+            }, 100)
+        });
     }
 
 });
