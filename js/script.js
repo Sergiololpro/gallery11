@@ -435,6 +435,12 @@ $(document).ready(function () {
 
                 $(".a_tabs__tab[data-id=" + id + "]").addClass("active");
                 $(".about_block__content[data-id=" + id + "]").addClass("active");
+
+                $(".navig").removeClass("active");
+
+                $('html, body').animate({  
+                    'scrollTop': $(".a_tabs").offset().top - $(".header").height() - 110
+                }, 500);
             }, 100)
         });
     }
