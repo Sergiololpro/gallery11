@@ -420,7 +420,7 @@ $(document).ready(function () {
 
     // Навигация на странице "О центре"
     if ($(".a_tabs").length) {
-        var id = window.location.hash ? window.location.hash.substring(1) : 0;
+        var id = window.location.hash ? window.location.hash.substring(1) : 1;
     
         $(".a_tabs__tab, .about_block__content").removeClass("active");
 
