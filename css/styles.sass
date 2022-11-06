@@ -91,7 +91,7 @@ body
 .header
     width: 100%
     height: 150px
-    background: rgba(255, 255, 255, .8)
+    background: rgba(255, 255, 255, .95)
     z-index: 5
     position: fixed
     left: 0
@@ -101,7 +101,7 @@ body
     margin: 0 auto
     transition: background .3s ease-out
     &-main
-        background: rgba(0, 0, 0, .8)
+        background: rgba(0, 0, 0, .95)
         .header
             &__phone
                 color: #fff
@@ -1133,8 +1133,6 @@ body
         position: absolute
         right: 0
         top: 80px
-        &-2
-            width: 80%
     &__image
         width: 100%
         height: 100%
@@ -3028,14 +3026,23 @@ body
             top: 30px
         &__nav
             font-size: 14px
+            &:before
+                bottom: -14px
+        &__help
+            left: -38px
 
 @media (max-width: 1300px)
     .navigate
         &:before
+            right: 14px
             top: 29px
         &__nav
             font-size: 12px
             margin: 0 14px
+            &:before
+                bottom: -16px
+        &__help
+            left: -45px
 
 @media (max-width: 1150px)
     .header

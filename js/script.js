@@ -420,14 +420,14 @@ $(document).ready(function () {
 
     // Навигация на странице "О центре"
     if ($(".a_tabs").length) {
-        $(".navig__nav").on("click", function() {
-            var id = window.location.hash ? window.location.hash.substring(1) : 0;
+        var id = window.location.hash ? window.location.hash.substring(1) : 0;
     
-            $(".a_tabs__tab, .about_block__content").removeClass("active");
-    
-            $(".a_tabs__tab[data-id=" + id + "]").addClass("active");
-            $(".about_block__content[data-id=" + id + "]").addClass("active");
+        $(".a_tabs__tab, .about_block__content").removeClass("active");
 
+        $(".a_tabs__tab[data-id=" + id + "]").addClass("active");
+        $(".about_block__content[data-id=" + id + "]").addClass("active");
+
+        $(".navig__nav").on("click", function() {
             setTimeout(function(){
                 var id = window.location.hash.substring(1);
 
