@@ -460,4 +460,17 @@ $(document).ready(function () {
         });
     }
 
+    // Карта
+    $(".sector").on("click", function(event) {
+        $(".building_window__title").html($(this).data("title"));
+        $(".building_window__text").html($(this).data("text"));
+        $(".building_window__link").attr("href", $(this).data("link"));
+
+        $(".building_window").addClass("active");
+    });
+
+    $(".building_window__close").on("click", function() {
+        $(".building_window").removeClass("active");
+    });
+
 });

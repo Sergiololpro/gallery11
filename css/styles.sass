@@ -2200,7 +2200,7 @@ body
             margin: 0
         &.active
             display: flex
-        &-dark
+        &:nth-child(2n)
             background: #37474F
             color: #fff
             .r_build
@@ -2858,9 +2858,11 @@ body
             justify-content: space-between
             margin: 0 auto
         &__left
-            width: calc(50% - 100px)
+            width: 420px
+            max-width: calc(50% - 100px)
         &__right
             width: 50%
+            position: relative
         &__row
             display: flex
             justify-content: space-between
@@ -2877,8 +2879,16 @@ body
         &__scheme
             width: 100%
             height: 420px
-            background: #fff
-            opacity: .5
+            svg
+                width: 100%
+                max-height: 100%
+                .sector
+                    fill: #F57D02
+                    stroke: #F57D02
+                    cursor: pointer
+                    transition: fill .3s ease-out
+                    &:hover
+                        fill: transparent
         &__top
             width: 46px
             font-size: 11px
@@ -2890,13 +2900,16 @@ body
             display: flex
             justify-content: space-between
             align-items: self-end
+        &__t
+            display: flex
+            justify-content: space-between
     &_nav
         display: flex
         flex-direction: column
         align-items: flex-start
         white-space: nowrap
         overflow-x: auto
-        margin: 0 0 30px
+        margin: 0 0 70px
         &__el
             display: flex
             align-items: center
@@ -2957,6 +2970,7 @@ body
         &__color
             width: 20px
             height: 20px
+            border-radius: 100%
             margin: 0 20px 0 0
             &-1
                 background: #165274
@@ -2964,6 +2978,50 @@ body
                 background: #00B548
             &-3
                 background: #4631CA
+            &-4
+                background: #F57D02
+    &_window
+        width: 440px
+        background: #fff
+        font-size: 13px
+        color: #717171
+        line-height: 150%
+        box-shadow: 0 5px 24px rgba(0, 0, 0, .25)
+        opacity: 0
+        pointer-events: none
+        z-index: 5
+        position: absolute
+        left: 0
+        right: 0
+        top: -200px
+        margin: 0 auto
+        padding: 30px 20px
+        &.active
+            opacity: 1
+            pointer-events: auto
+        &__close
+            width: 14px
+            height: 14px
+            background: url(../img/cross.svg) center no-repeat
+            background-size: contain
+            display: block
+            cursor: pointer
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: opacity .3s ease-out
+            &:hover
+                opacity: .4
+        &__title
+            font-family: "OptimaCyr"
+            font-size: 32px
+            line-height: 100%
+            text-transform: uppercase
+            margin: 0 0 10px
+        &__text
+            font-size: 15px
+            line-height: 140%
+            margin: 0 0 20px
 
 .text_modal,
 .client_modal,
@@ -3573,12 +3631,18 @@ body
                 flex-direction: column
             &__left
                 width: 100%
+                max-width: 100%
+                margin: 0 0 50px
+            &__t
+                flex-direction: column
                 margin: 0 0 50px
             &__right
                 width: 100%
             &__bottom
                 flex-direction: column
                 align-items: flex-start
+            &__top
+                margin: 15px 40px 0 0
         &_nav
             flex-direction: row
             margin: 0 0 50px
@@ -3592,7 +3656,6 @@ body
                 margin: 0 0 10px
         &_desc
             display: flex
-            margin: 0 0 30px
             &__el
                 margin: 0 20px 0 0
         &_colors

@@ -215,7 +215,7 @@
                         </div>
                         <div class="r_build__col r_build__col_4">
                             <div class="r_build__size">150 м2</div>
-                            <div class="butto open_form">Отправить запрос </div>
+                            <div class="button open_form">Отправить запрос </div>
                         </div>
                     </div>
                     <div class="r_build__bottom">
