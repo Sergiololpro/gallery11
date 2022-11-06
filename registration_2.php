@@ -64,8 +64,33 @@
                 <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
                 <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
                 <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+
+                <div class="photos__blocks">
+                    <div class="photos__block">
+                        <div class="photos__col">
+                            <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                            <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+                        </div>
+                        <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+                        <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+                        <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+                        <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+                        <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div> 
+                    </div>
+                    <div class="photos__block">
+                        <div class="photos__col">
+                            <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                            <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+                        </div>
+                        <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+                        <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+                        <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+                        <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+                        <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div> 
+                    </div>
+                </div>
             </div>
-            <div class="button">Показать еще</div>
+            <div class="button photos__more">Показать еще</div>
         </div>
         <div class="video">
             <img class="video__image" src="img/video.svg" alt="">

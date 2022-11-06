@@ -336,6 +336,7 @@ body
 .socials
     display: flex
     flex-direction: column
+    z-index: 4
     position: fixed
     right: 20px
     top: 160px
@@ -1321,6 +1322,21 @@ body
             &__el
                 width: 100%
                 height: calc((100% - 30px) / 2)
+    &__blocks
+        width: 100%
+    &__block
+        width: 100%
+        height: 0
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        opacity: 0
+        transform: translateX(-100%)
+        transition: opacity .3s ease-out,transform .3s ease-out
+        &.active
+            height: auto
+            opacity: 1
+            transform: translateX(0)
 
 .video
     position: relative
@@ -3167,6 +3183,8 @@ body
         &__el
             width: calc((100% - 30px) / 2)
             height: 400px
+            &-large
+                width: 100%
         &__col
             width: 100%
             flex-direction: row
@@ -3175,6 +3193,10 @@ body
                     width: calc((100% - 30px) / 2)
                     height: 400px
                     margin: 0
+        &__block
+            margin: 0 0 30px
+            &:last-child
+                margin: 0
 
     .video
         margin: 100px 0 0

@@ -445,4 +445,19 @@ $(document).ready(function () {
         });
     }
 
+    // Подгрузка фото
+    if ($(".photos__more").length) {
+        var photo_id = 1;
+        
+        $(".photos__more").on("click", function() {
+            $(".photos__block:nth-child(" + photo_id + ")").addClass("active");
+
+            photo_id ++;
+
+            if ($(".photos__block").length < photo_id) {
+                $(".photos__more").hide();
+            }
+        });
+    }
+
 });
