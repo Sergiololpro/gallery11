@@ -110,7 +110,7 @@
                         </div>
                     </a>
                     <div v-if="f_elements.length > 7" class="event__col">
-                        <a :href="f_elements[1].link" class="event__el">
+                        <a :href="f_elements[7].link" class="event__el">
                             <div class="event__image" :style="`background-image: url(${f_elements[7].image})`"></div>
                             <div v-if="f_elements[7].type_text" class="event__label">{{ f_elements[7].type_text }}</div>
                             <div class="event__content">
