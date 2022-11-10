@@ -3134,6 +3134,42 @@ body
         height: 10px
         margin: 0 0 0 18px
 
+.error
+    background: #37474F
+    padding: 230px 0
+    &__wrp
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__img
+        width: calc(100% - 680px)
+        position: relative
+        &:before
+            content: ""
+            width: calc(100% + 700px)
+            height: 1px
+            background: #F57D02
+            position: absolute
+            right: 15%
+            bottom: 25%
+    &__image
+        width: 100%
+    &__right
+        width: 620px
+        max-width: 100%
+    &__title
+        font-family: 'OptimaCyr'
+        font-size: 32px
+        color: #fff
+        font-weight: 400
+        margin: 0 0 30px
+    &__text
+        max-width: 420px
+        font-size: 15px
+        color: #DBDBDB
+        line-height: 140%
+        margin: 0 0 50px
+
 @media (max-width: 1400px)
     .navigate
         &:before
@@ -3710,6 +3746,13 @@ body
             &__el
                 margin: 0 20px 0 0
 
+    .error
+        padding: 200px 0 100px
+        &__wrp
+            flex-direction: column
+        &__img
+            width: 100%
+
 @media (max-width: 640px)
     .wrapper
         &-banner
@@ -4269,6 +4312,15 @@ body
         &__content
             &-text
                 padding: 30px
+
+    .error
+        padding: 100px 0 60px
+        &__title
+            font-size: 24px
+            margin: 0 0 20px
+        &__text
+            font-size: 13px
+            margin: 0 0 30px
 
 @media (max-width: 320px)
     .button
