@@ -293,21 +293,21 @@
             <div class="contacts_map__text">Задайте их нашим специалистам</div>
             <div class="contacts_map__input">
                 <label for="name" class="contacts_map__label">Ваше имя</label>
-                <input id="name" name="name" placeholder="Введите" class="contacts_map__inp" type="text">
+                <input id="name" name="name" class="contacts_map__inp" type="text">
             </div>
             <div class="contacts_map__inputs">
                 <div class="contacts_map__input">
                     <label for="email" class="contacts_map__label">E-mail</label>
-                    <input id="email" name="email" placeholder="Sample@sample.com" class="contacts_map__inp" type="email">
+                    <input id="email" name="email" class="contacts_map__inp" type="email">
                 </div>
                 <div class="contacts_map__input">
                     <label for="phone" class="contacts_map__label">Телефон</label>
-                    <input id="phone" name="phone" placeholder="+ _ ___ ___ __ __" class="contacts_map__inp" type="text">
+                    <input id="phone" name="phone" class="contacts_map__inp" type="text">
                 </div>  
             </div>
             <div class="contacts_map__input">
                 <label for="question" class="contacts_map__label">Опишите свой вопрос</label>
-                <textarea id="question" name="question" placeholder="Введите" class="contacts_map__textarea"></textarea>
+                <textarea id="question" name="question" class="contacts_map__textarea"></textarea>
             </div>
             <div class="contacts_map__bottom">
                 <div class="contacts_map__txt">
