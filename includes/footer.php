@@ -49,6 +49,10 @@
       </div>
       <div class="footer__bottom">
         <div class="footer__copy">© 2022. Galery 11</div>
+        <a href="#" class="millor">
+          Дизайн и разработка
+          <img src="img/millor.svg" alt="">
+        </a>
         <div class="footer_links">
           <div class="footer_links__link open_perosonal">Политика конфиденциальности</div>
           <div class="footer_links__link open_agree">Пользовательское соглашение</div>
@@ -61,7 +65,7 @@
   <script src="js/libs/slick/slick.min.js"></script>
   <script src="js/libs/mask/mask.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js" integrity="sha512-PwQ5+jgXxxprNGc80ycHE3spgj6TuDieHe/yTkbEJ+U5aol7dTupi/4VbwHHzlQVW77Vb0GLOIsiYigHgC5vcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js?v=6"></script>
+  <script src="js/script.js?v=8"></script>
 </body>
 
 </html>

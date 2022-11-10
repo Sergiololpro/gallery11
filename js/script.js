@@ -473,4 +473,16 @@ $(document).ready(function () {
         $(".building_window").removeClass("active");
     });
 
+    // Схема здания
+    $(".building_nav__el").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".building_window").removeClass("active");
+
+        $(".building_nav__el, .building_top__wrp").removeClass("active");
+
+        $(this).addClass("active");
+        $(".building_top__wrp[data-id=" + id + "]").addClass("active");
+    });
+
 });

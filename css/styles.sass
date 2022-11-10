@@ -2864,8 +2864,8 @@ body
             width: 50%
             position: relative
         &__row
+            width: 100%
             display: flex
-            justify-content: space-between
             align-items: baseline
             margin: 0 0 20px
         &__lft
@@ -2874,21 +2874,31 @@ body
             color: #fff
         &__rgt
             font-size: 20px
-            color: #fff
             text-transform: uppercase
+            margin: 0 0 0 10px
         &__scheme
             width: 100%
             height: 420px
             svg
-                width: 100%
+                max-width: 100%
                 max-height: 100%
+                *
+                    pointer-events: none
                 .sector
                     fill: #F57D02
                     stroke: #F57D02
+                    stroke-width: 2px
                     cursor: pointer
+                    pointer-events: auto
                     transition: fill .3s ease-out
                     &:hover
                         fill: transparent
+                    &-green
+                        fill: #00B548
+                        stroke: #00B548
+                    &-blue
+                        fill: #4631CA
+                        stroke: #4631CA
         &__top
             width: 46px
             font-size: 11px
@@ -2903,6 +2913,15 @@ body
         &__t
             display: flex
             justify-content: space-between
+        &__wrp
+            height: 0
+            opacity: 0
+            transform: translateX(100%)
+            transition: opacity .3s ease-out, transform .3s ease-out
+            &.active
+                height: auto
+                opacity: 1
+                transform: translateX(0)
     &_nav
         display: flex
         flex-direction: column
@@ -2982,6 +3001,12 @@ body
                 background: #F57D02
     &_window
         width: 440px
+        max-width: 100%
+        height: 275px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
         background: #fff
         font-size: 13px
         color: #717171
@@ -3093,6 +3118,19 @@ body
             display: none
             &:checked + label:after
                 opacity: 1
+
+.millor
+    display: flex
+    align-items: center
+    font-size: 12px
+    color: #7A7A7A
+    font-weight: 500
+    transition: opacity .3s ease-out
+    &:hover
+        opacity: .7
+    img
+        height: 10px
+        margin: 0 0 0 18px
 
 @media (max-width: 1400px)
     .navigate
@@ -3452,8 +3490,15 @@ body
         &__center
             flex-direction: column
             align-items: flex-start
+        &__bottom
+            flex-direction: column-reverse
         &_subscribe
             margin: 0 0 30px
+        &_links
+            margin: 0 0 20px
+    
+    .millor
+        margin: 0 0 20px
 
     .products
         &__el
@@ -3865,10 +3910,6 @@ body
             margin: 0 0 40px
         &__center
             margin: 0 0 30px
-        &__bottom
-            flex-direction: column
-        &__copy
-            margin: 0 0 10px
         &_navs
             flex-direction: column
             &__col
@@ -4193,6 +4234,25 @@ body
             margin: 0 0 50px
             &__scheme
                 height: 240px
+            &__top
+                position: absolute
+                left: 0
+                top: 0
+                margin: 0
+        &_nav
+            position: relative
+            padding: 30px 0
+            margin: 0 0 20px
+        &_colors
+            &__el
+                flex-direction: column
+                text-align: center
+            &__color
+                margin: 0 0 10px
+        &_window
+            top: -230px
+            &__text
+                font-size: 13px
 
     .text_modal,
     .client_modal,
