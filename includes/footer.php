@@ -25,10 +25,11 @@
         </nav>
         <div class="footer__right">
           <a href="tel:+73432173500" class="footer__phone">+7 343 217 35 00</a>
-          <div class="footer__time">ПН-ВС, с 9:00 - 18:00   Без выходных</div>
+          <div class="footer__time">ПН.- СБ.: 10.00 ДО 20.00, ВС.: 11.00 – 19.00</div>
           <div class="footer__address">Екатеринбург, Студенческая 11</div>
           <a href="#" target="_blank" class="footer__link">схема проезда и парковки</a>
-          <a href="mailto:test@gmail.com" class="footer__email">Написать письмо</a>
+          <a href="mailto:Gallery11@list.ru" class="footer__email">Gallery11@list.ru</a>
+          <a href="mailto:info@gallery11.ru " class="footer__email">info@gallery11.ru</a>
         </div>
       </div>
       <div class="footer__center">
@@ -65,7 +66,7 @@
   <script src="js/libs/slick/slick.min.js"></script>
   <script src="js/libs/mask/mask.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js" integrity="sha512-PwQ5+jgXxxprNGc80ycHE3spgj6TuDieHe/yTkbEJ+U5aol7dTupi/4VbwHHzlQVW77Vb0GLOIsiYigHgC5vcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js?v=9"></script>
+  <script src="js/script.js?v=10"></script>
 </body>
 
 </html>

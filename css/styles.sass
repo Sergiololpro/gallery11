@@ -798,7 +798,7 @@ body
         background: url(../img/footer__t.svg) left top no-repeat
         background-size: 24px
         font-family: "OptimaCyr"
-        font-size: 20px
+        font-size: 19px
         color: #DBDBDB
         font-weight: 500
         text-transform: uppercase
@@ -829,6 +829,7 @@ body
         font-size: 20px
         color: #F57D02
         padding: 0 0 0 40px
+        margin: 0 0 20px
         transition: color .3s ease-out
         &:hover
             color: #fff
@@ -1092,6 +1093,7 @@ body
 .seo_text
     font-size: 24px
     line-height: 140%
+    ul,
     p
         margin: 0 0 30px
         &:last-child
@@ -2608,7 +2610,6 @@ body
             color: #7A7A7A
             margin: 0 0 10px
         &__name
-            max-width: 240px
             font-family: "OptimaCyr"
             font-size: 32px
             line-height: 100%
@@ -3137,12 +3138,9 @@ body
 .error
     background: #37474F
     padding: 230px 0
-    &__wrp
-        display: flex
-        justify-content: space-between
-        align-items: center
     &__img
-        width: calc(100% - 680px)
+        width: 600px
+        max-width: 100%
         position: relative
         &:before
             content: ""
@@ -3162,12 +3160,6 @@ body
         font-size: 32px
         color: #fff
         font-weight: 400
-        margin: 0 0 30px
-    &__text
-        max-width: 420px
-        font-size: 15px
-        color: #DBDBDB
-        line-height: 140%
         margin: 0 0 50px
 
 @media (max-width: 1400px)
@@ -4316,11 +4308,13 @@ body
     .error
         padding: 100px 0 60px
         &__title
-            font-size: 24px
-            margin: 0 0 20px
-        &__text
-            font-size: 13px
+            font-size: 18px
             margin: 0 0 30px
+
+@media (max-width: 375px)
+    .error
+        &__title
+            font-size: 16px
 
 @media (max-width: 320px)
     .button

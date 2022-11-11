@@ -19,10 +19,13 @@
                 <div class="products__right">
                     <h1 class="title title-products title-right">Контакты</h1>
                     <a href="tel:+73432173500" class="footer__phone">+7 343 217 35 00</a>
-                    <div class="footer__time">ПН-ВС, с 9:00 - 18:00   Без выходных</div>
+                    <a href="tel:217-35-01" class="footer__phone">217-35-01</a>
+                    <a href="tel:+79222157111 " class="footer__phone">+7 922 215 71 11</a>
+                    <div class="footer__time">ПН.- СБ.: 10.00 ДО 20.00, ВС.: 11.00 – 19.00</div>
                     <div class="footer__address">Екатеринбург, Студенческая 11</div>
                     <a href="#" target="_blank" class="footer__link">схема проезда и парковки</a>
-                    <a href="mailto:test@gmail.com" class="footer__email">Написать письмо</a>
+                    <a href="mailto:Gallery11@list.ru" class="footer__email">Gallery11@list.ru</a>
+                    <a href="mailto:info@gallery11.ru " class="footer__email">info@gallery11.ru</a>
                     <div class="contacts_socials">
                         <a href="#" class="contacts_socials__el contacts_socials__el-vk"></a>
                         <a href="#" class="contacts_socials__el contacts_socials__el-tg"></a>
@@ -46,63 +49,71 @@
         <div class="contacts_personal">
             <div class="contacts_personal__el">
                 <img class="contacts_personal__img" src="img/contacts_personal__img-1.svg" alt="">
-                <div class="contacts_personal__top">По вопросам Аренды</div>
-                <div class="contacts_personal__name">
-                    Колгина<br>
-                    Ольга Николаевна
+                <div class="contacts_personal__top">
+                    Директор <br>
+                    Аренда помещений, общие вопросы
                 </div>
-                <a href="tel:+78958985566" class="contacts_personal__phone">+7 895 898 55 66</a>
-                <a href="mailto:sample@sample.com" class="contacts_personal__email">sample@sample.com</a>
-            </div>
-            <div class="contacts_personal__el">
-                <img class="contacts_personal__img" src="img/contacts_personal__img-2.svg" alt="">
-                <div class="contacts_personal__top">По вопросам Аренды</div>
                 <div class="contacts_personal__name">
-                    Колгина<br>
-                    Ольга Николаевна
+                    Ольхов<br>
+                    Александр Леонидович 
                 </div>
-                <a href="tel:+78958985566" class="contacts_personal__phone">+7 895 898 55 66</a>
-                <a href="mailto:sample@sample.com" class="contacts_personal__email">sample@sample.com</a>
+                <a href="tel:+7343217-35-00" class="contacts_personal__phone">+7 343 217-35-00, доб. 1117</a>
+                <a href="mailto:fc66@list.ru" class="contacts_personal__email">fc66@list.ru</a>
             </div>
             <div class="contacts_personal__el">
                 <img class="contacts_personal__img" src="img/contacts_personal__img-3.svg" alt="">
-                <div class="contacts_personal__top">По вопросам Аренды</div>
+                <div class="contacts_personal__top">Начальник тех.службы</div>
                 <div class="contacts_personal__name">
-                    Колгина<br>
-                    Ольга Николаевна
+                    Карагеоргиев<br>
+                    Олег Дмитриевич 
                 </div>
-                <a href="tel:+78958985566" class="contacts_personal__phone">+7 895 898 55 66</a>
-                <a href="mailto:sample@sample.com" class="contacts_personal__email">sample@sample.com</a>
+                <a href="tel:+7343217-35-00" class="contacts_personal__phone">+7 343 217-35-00, доб. 104</a>
+                <a href="mailto:kod@gallery11.ru" class="contacts_personal__email">kod@gallery11.ru</a>
+            </div>
+            <div class="contacts_personal__el">
+                <img class="contacts_personal__img" src="img/contacts_personal__img-3.svg" alt="">
+                <div class="contacts_personal__top">Начальник охраны</div>
+                <div class="contacts_personal__name">
+                    Брайнин<br>
+                    Владимир Геннадьевич 
+                </div>
+                <a href="tel:+7343217-35-00" class="contacts_personal__phone">+7 343 217-35-00, доб. 116</a>
+            </div>
+            <div class="contacts_personal__el">
+                <img class="contacts_personal__img" src="img/contacts_personal__img-2.svg" alt="">
+                <div class="contacts_personal__top">
+                    Арт-директор<br>
+                    Маркетинг, реклама, event, сайт
+                </div>
+                <div class="contacts_personal__name">
+                    Орлова<br>
+                    Ирина
+                </div>
+                <a href="tel:+7343217-35-00" class="contacts_personal__phone">+7 343 217-35-00, доб. 101</a>
+                <a href="mailto:pr@gallery11.ru" class="contacts_personal__email">pr@gallery11.ru</a>
             </div>
             <div class="contacts_personal__el">
                 <img class="contacts_personal__img" src="img/contacts_personal__img-1.svg" alt="">
-                <div class="contacts_personal__top">По вопросам Аренды</div>
-                <div class="contacts_personal__name">
-                    Колгина<br>
-                    Ольга Николаевна
+                <div class="contacts_personal__top">
+                    Администратор, зам.директора<br>
+                    Обеспечение работы центра, общие вопросы
                 </div>
-                <a href="tel:+78958985566" class="contacts_personal__phone">+7 895 898 55 66</a>
-                <a href="mailto:sample@sample.com" class="contacts_personal__email">sample@sample.com</a>
+                <div class="contacts_personal__name">
+                    Власов<br>
+                    Дмитрий
+                </div>
+                <a href="tel:+7 9222157111 " class="contacts_personal__phone">+7 922 215-71-11</a>
+                <a href="mailto:g11.vlasov@mail.ru" class="contacts_personal__email">g11.vlasov@mail.ru</a>
+                <a href="mailto:info@gallery11.ru" class="contacts_personal__email">info@gallery11.ru</a>
             </div>
             <div class="contacts_personal__el">
                 <img class="contacts_personal__img" src="img/contacts_personal__img-2.svg" alt="">
-                <div class="contacts_personal__top">По вопросам Аренды</div>
+                <div class="contacts_personal__top">Вывески и навигация</div>
                 <div class="contacts_personal__name">
-                    Колгина<br>
-                    Ольга Николаевна
+                    Воронкова<br>
+                    Елена
                 </div>
-                <a href="tel:+78958985566" class="contacts_personal__phone">+7 895 898 55 66</a>
-                <a href="mailto:sample@sample.com" class="contacts_personal__email">sample@sample.com</a>
-            </div>
-            <div class="contacts_personal__el">
-                <img class="contacts_personal__img" src="img/contacts_personal__img-3.svg" alt="">
-                <div class="contacts_personal__top">По вопросам Аренды</div>
-                <div class="contacts_personal__name">
-                    Колгина<br>
-                    Ольга Николаевна
-                </div>
-                <a href="tel:+78958985566" class="contacts_personal__phone">+7 895 898 55 66</a>
-                <a href="mailto:sample@sample.com" class="contacts_personal__email">sample@sample.com</a>
+                <a href="mailto:vorоnkova@gallery11.ru" class="contacts_personal__email">vorоnkova@gallery11.ru</a>
             </div>
         </div>
         <div class="contacts_video">
