@@ -386,25 +386,25 @@ $(document).ready(function () {
             phone = $form.find('input[name="phone"]').val(),
             error = false;
             
-        $form.find('input').parent().removeClass('error');
+        $form.find('input').parent().removeClass('err');
 
         if (!name.length) {
-            $form.find('input[name="name"]').parent().addClass('error');
+            $form.find('input[name="name"]').parent().addClass('err');
             error = true;
         }
 
         if (!phone.length) {
-            $form.find('input[name="phone"]').parent().addClass('error');
+            $form.find('input[name="phone"]').parent().addClass('err');
             error = true;
         }
 
         if (!email.length) {
-            $form.find('input[name="email"]').parent().addClass('error');
+            $form.find('input[name="email"]').parent().addClass('err');
             error = true;
         }
 
         if (!$("#agree").is(':checked')) {
-            $form.find('.checkbox').addClass('error');
+            $form.find('.checkbox').addClass('err');
             error = true;
         }
 

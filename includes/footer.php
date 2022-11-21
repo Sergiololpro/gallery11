@@ -25,11 +25,13 @@
         </nav>
         <div class="footer__right">
           <a href="tel:+73432173500" class="footer__phone">+7 343 217 35 00</a>
-          <div class="footer__time">ПН.- СБ.: 10.00 ДО 20.00, ВС.: 11.00 – 19.00</div>
+          <div class="footer__time">
+            ПН.- СБ.: 10.00 ДО 20.00,<br />
+            ВС.: 11.00 – 19.00
+          </div>
           <div class="footer__address">Екатеринбург, Студенческая 11</div>
           <a href="#" target="_blank" class="footer__link">схема проезда и парковки</a>
-          <a href="mailto:Gallery11@list.ru" class="footer__email">Gallery11@list.ru</a>
-          <a href="mailto:info@gallery11.ru " class="footer__email">info@gallery11.ru</a>
+          <a href="mailto:Gallery11@list.ru,info@gallery11.ru" class="footer__email">Написать письмо</a>
         </div>
       </div>
       <div class="footer__center">

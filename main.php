@@ -26,7 +26,7 @@
 <section class="event">
   <div class="wrapper wrapper-event">
     <img class="event__img" src="img/event__img.svg" alt="">
-    <h2 class="title">Cобытия</h2>
+    <a href="#" class="title">Cобытия</a>
     <div class="event__wp">
       <div class="event__wrp">
         <a href="#" class="event__el event__el-large">

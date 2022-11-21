@@ -35,6 +35,10 @@ p
 a
     color: #212f4b
     text-decoration: none
+    &.title
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
 
 textarea,
 input
@@ -843,7 +847,7 @@ body
         display: flex
         justify-content: space-between
     &__copy
-        font-size: 15px
+        font-size: 18px
     &_navs
         display: flex
         &__col
@@ -892,11 +896,13 @@ body
                 background: url(../img/banner__button.svg) center no-repeat #37474F
                 background-size: 24px
     &_socials
+        width: 340px
+        max-width: 100%
         display: flex
         &__el
-            width: 56px
-            height: 56px
-            margin: 0 48px 0 0
+            width: 32px
+            height: 32px
+            margin: 0 25px 0 0
             transition: opacity .3s ease-out
             &:hover
                 opacity: .7
@@ -917,10 +923,10 @@ body
     &_links
         display: flex
         &__link
-            font-size: 15px
+            font-size: 18px
             color: #F57D02
             cursor: pointer
-            margin: 0 70px 0 0
+            margin: 0 50px 0 0
             transition: color .3s ease-out
             &:hover
                 color: #37474F
@@ -946,7 +952,7 @@ body
             top: 280px
 
 .breadcrumbs
-    font-size: 14px
+    font-size: 16px
     font-weight: 500
     margin: 0 0 60px
     &__sep
@@ -1297,7 +1303,6 @@ body
     &__els
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
         margin: 0 0 60px
     &__el
         width: calc((100% - 60px) / 3)
@@ -1305,9 +1310,11 @@ body
         background-position: center
         background-repeat: no-repeat
         background-size: cover
-        margin: 0 0 30px
+        margin: 0 30px 30px 0
         &:last-child
             margin: 0
+        &:nth-child(3n)
+            margin: 0 0 30px
         &-large
             width: calc((100% - 60px) / 4 * 2)
             height: 400px
@@ -1319,7 +1326,7 @@ body
         display: flex
         flex-direction: column
         justify-content: space-between
-        margin: 0 0 30px
+        margin: 0 30px 30px 0
         .photos
             &__el
                 width: 100%
@@ -2543,9 +2550,9 @@ body
         display: flex
         margin: 70px 0 0
         &__el
-            width: 24px
-            height: 24px
-            margin: 0 20px 0 0
+            width: 32px
+            height: 32px
+            margin: 0 25px 0 0
             transition: opacity .3s ease-out
             &:hover
                 opacity: .7
@@ -2707,7 +2714,7 @@ body
             padding: 8px 16px
             margin: 0 0 10px
             transition: border .3s ease-out
-            &.error
+            &.err
                 border: 2px solid #FB6A6A
         &__label
             font-size: 12px
@@ -3082,7 +3089,7 @@ body
 
 .checkbox
     position: relative
-    &.error
+    &.err
         label
             &:before
                 border: 1px solid #FB6A6A
@@ -3309,20 +3316,24 @@ body
         &__el
             width: calc((100% - 30px) / 2)
             height: 400px
+            &:nth-child(4n)
+                margin: 0 0 30px
             &-large
                 width: 100%
         &__col
             width: 100%
             flex-direction: row
+            margin: 0 0 30px
             .photos
                 &__el
                     width: calc((100% - 30px) / 2)
                     height: 400px
                     margin: 0
         &__block
-            margin: 0 0 30px
-            &:last-child
-                margin: 0
+            &.active
+                margin: 0 0 30px
+                &:last-child
+                    margin: 0
 
     .video
         margin: 100px 0 0
@@ -4056,6 +4067,7 @@ body
         &__el
             width: 100%
             height: 240px
+            margin: 0 0 30px
 
     .video
         margin: 50px 0 0
