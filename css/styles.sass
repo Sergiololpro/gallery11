@@ -336,6 +336,20 @@ body
             padding: 0 100px 0 20px
     &-map
         width: calc((100% - 10px) / 2)
+    &-cookies
+        padding: 0 60px 0 20px
+        &:hover
+            padding: 0 60px 0 20px
+    &-modal
+        width: 100%
+        background: transparent
+        border: 1px solid #F57D02
+        color: #F57D02
+        text-align: center
+        padding: 0
+        &:hover
+            color: #fff
+            padding: 0
 
 .socials
     display: flex
@@ -424,6 +438,11 @@ body
         margin: 0 0 50px
         &:before
             top: 65px
+    &-success_modal
+        font-size: 32px
+        margin: 0 0 50px
+        &:before
+            top: 50px
 
 .event
     overflow: hidden
@@ -3058,6 +3077,7 @@ body
             line-height: 140%
             margin: 0 0 20px
 
+.success_modal,
 .text_modal,
 .client_modal,
 .c_modal
@@ -3168,6 +3188,47 @@ body
         color: #fff
         font-weight: 400
         margin: 0 0 50px
+
+.cookies
+    width: 100%
+    background: rgba(20, 26, 30, .5)
+    z-index: 5
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 40px 0
+    margin: 0 auto
+    transform: translateY(100%)
+    transition: transform .3s ease-out
+    &.active
+        transform: translateY(0)
+        .cookies
+            &__text
+                color: #DBDBDB
+    &-grey
+        background: #2c3840
+    &__wrp
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__text
+        max-width: 980px
+        font-size: 12px
+        color: #fff
+        line-height: 150%
+        margin: 0 60px 0 0
+
+.success_modal
+    &__content
+        width: 580px
+        background: #1C262C
+        overflow: hidden
+        padding: 50px
+    &__text
+        font-size: 20px
+        color: #fff
+        margin: 0 0 40px
 
 @media (max-width: 1400px)
     .navigate
@@ -3284,6 +3345,9 @@ body
                 width: calc(100% + 140px)
                 left: inherit
                 right: 0
+        &-success_modal
+            &:before
+                left: 0
     
     .subscribe
         &__image
@@ -3471,6 +3535,9 @@ body
             display: none
             &_mobile
                 display: inline-block
+        &-success_modal
+            font-size: 32px
+            margin: 0 0 50px
 
     .event
         &__wrp
@@ -3756,6 +3823,13 @@ body
         &__img
             width: 100%
 
+    .cookies
+        &__wrp
+            flex-direction: column
+        &__text
+            max-width: 100%
+            margin: 0 0 30px
+
 @media (max-width: 640px)
     .wrapper
         &-banner
@@ -4022,6 +4096,8 @@ body
         padding: 0 80px 0 20px
         &-map
             width: auto
+        &-cookies
+            width: 100%
 
     .title
         &-short
@@ -4032,6 +4108,8 @@ body
             font-size: 36px
             &:before
                 top: 35px
+        &-success_modal
+            margin: 0 0 30px
 
     .registration
         &__top
@@ -4322,6 +4400,10 @@ body
         &__title
             font-size: 18px
             margin: 0 0 30px
+
+    .success_modal
+        &__content
+            padding: 30px
 
 @media (max-width: 375px)
     .error

@@ -103,8 +103,8 @@ $(document).ready(function () {
     });
 
     // Закрыть окно
-    $(".r_modal__close").on("click", function() {
-        $(this).closest(".r_modal, .c_modal, .client_modal, .text_modal").removeClass("active");
+    $(".r_modal__close, .button-modal").on("click", function() {
+        $(this).closest(".r_modal, .c_modal, .client_modal, .text_modal, .success_modal").removeClass("active");
     });
 
     // Открыть окно
@@ -483,6 +483,11 @@ $(document).ready(function () {
 
         $(this).addClass("active");
         $(".building_top__wrp[data-id=" + id + "]").addClass("active");
+    });
+
+    // Cookies
+	$('.button-cookies').on("click", function () {
+        $(this).closest(".cookies").removeClass("active");
     });
 
 });
