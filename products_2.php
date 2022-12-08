@@ -46,7 +46,7 @@
         <div class="prods">
             <img class="prods__img" src="img/prods__img.svg" alt="">
             <div class="prods__els">
-                <div data-build="1" data-floor="0" class="prods__el active">
+                <a href="/test/" data-build="1" data-floor="0" class="prods__el active">
                     <div class="prods__wp">
                         <div class="prods__image" style="background-image: url(img/prods__image-1.jpg)"></div>
                         <div class="prods__content">
@@ -61,6 +61,7 @@
                         </div>
                     </div>
                     <div class="prods__hover">
+                        <div class="prods__close"></div>
                         <div class="prods__top">
                             <div class="prods__logo" style="background-image: url(img/prods__logo.svg)"></div>
                             <div class="prods__rgt">
@@ -72,7 +73,7 @@
                         <div class="prods__ttl">PARRA</div>
                         <div class="prods__txt">Разнообразный и богатый опыт говорит нам, что внедрение современных методик, в своём классическом представлении, допускает внедрение новых предложений. Принимая во внимание показатели успешности, новая модель</div>
                     </div>
-                </div>
+                </a>
                 <div data-build="1" data-floor="2" class="prods__el active">
                     <div class="prods__wp">
                         <div class="prods__image" style="background-image: url(img/prods__image-2.jpg)"></div>
@@ -88,6 +89,7 @@
                         </div>
                     </div>
                     <div class="prods__hover">
+                        <div class="prods__close"></div>
                         <div class="prods__top">
                             <div class="prods__logo" style="background-image: url(img/prods__logo.svg)"></div>
                             <div class="prods__rgt">
@@ -115,6 +117,7 @@
                         </div>
                     </div>
                     <div class="prods__hover">
+                        <div class="prods__close"></div>
                         <div class="prods__top">
                             <div class="prods__logo" style="background-image: url(img/prods__logo.svg)"></div>
                             <div class="prods__rgt">
@@ -142,6 +145,7 @@
                         </div>
                     </div>
                     <div class="prods__hover">
+                        <div class="prods__close"></div>
                         <div class="prods__top">
                             <div class="prods__logo" style="background-image: url(img/prods__logo.svg)"></div>
                             <div class="prods__rgt">

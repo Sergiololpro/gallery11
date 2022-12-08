@@ -490,4 +490,33 @@ $(document).ready(function () {
         $(this).closest(".cookies").removeClass("active");
     });
 
+    // Hover mobile
+    $('.prods__el').on("click", function (e) {
+        e.preventDefault();
+
+        if ($(this).find(".prods__close").css('display') == "none") {
+            window.location.href = $(this).attr("href");
+        } else {
+            if (!$(this).find(".prods__hover").hasClass("active")) {
+                $(this).find(".prods__hover").addClass("active");
+            }
+        }
+    });
+
+    $('.prods__close').on("click", function () {
+        var $this = $(this);
+
+        setTimeout(function(){
+            $this.closest(".prods__hover").removeClass("active");
+        }, 100)
+    });
+
+    $('.prods__hover').on("click", function (e) {
+        var targetbox = $(this).find('.prods__close');
+
+        if (!targetbox.is(e.target) && targetbox.has(e.target).length === 0) {
+            window.location.href = $(this).closest(".prods__el").attr("href");
+        }
+    });
+
 });
