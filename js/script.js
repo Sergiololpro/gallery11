@@ -171,7 +171,7 @@ $(document).ready(function () {
                 });
 
                 $(".r_slider_2__slide").on("click", function(){
-                    var id = $(this).index() ;
+                    var id = $(this).data("slick-index");
 
                     $('.r_slider_1').slick('slickGoTo', id);
                 });
