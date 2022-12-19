@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="prods">
-            <img class="prods__img" src="img/prods__img.svg" alt="">
+            <!-- <img class="prods__img" src="img/prods__img.svg" alt=""> -->
             <div class="prods__els">
                 <a href="/test/" data-build="1" data-floor="0" class="prods__el active">
                     <div class="prods__wp">
