@@ -1121,15 +1121,6 @@ body
         z-index: 1
         position: relative
 
-.seo_text
-    font-size: 24px
-    line-height: 140%
-    ul,
-    p
-        margin: 0 0 30px
-        &:last-child
-            margin: 0
-
 .rent
     display: flex
     flex-wrap: wrap
@@ -3241,10 +3232,14 @@ body
         color: #fff
         margin: 0 0 40px
 
+.seo_text,
 .text
     font-size: 20px
     color: #37474F
     line-height: 150%
+    ul
+        list-style-type: disc
+        padding: 0 0 0 20px
     ul,
     p
         margin: 0 0 30px
@@ -3266,6 +3261,12 @@ body
     img
         width: 100%
         margin: 30px 0 60px
+    a
+        color: #F57D02
+        text-decoration: underline
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
 
 .quote
     width: 100%
@@ -4134,7 +4135,8 @@ body
         &__left
             height: 240px
 
-    .seo_text
+    .seo_text,
+    .text
         font-size: 16px
 
     .rent
