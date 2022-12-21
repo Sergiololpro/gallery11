@@ -794,8 +794,8 @@ body
     background-size: cover
     padding: 70px 0
     &__top
-        display: flex
-        justify-content: space-between
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
         margin: 0 0 30px
     &__logo
         width: 240px
@@ -861,12 +861,9 @@ body
             color: #fff
             text-decoration: underline
     &__center
-        display: flex
-        justify-content: space-between
-        align-items: flex-end
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
         margin: 0 0 70px
-    &__block
-        width: 286px
     &__bottom
         display: flex
         justify-content: space-between
@@ -877,7 +874,7 @@ body
         &__col
             display: flex
             flex-direction: column
-            margin: 0 40px
+            margin: 0 40px 0 0
         &__el
             font-family: "OptimaCyr"
             font-size: 24px
@@ -889,7 +886,6 @@ body
             &:last-child
                 margin: 0
     &_subscribe
-        width: 600px
         max-width: 100%
         &__text
             font-family: "OptimaCyr"
@@ -899,8 +895,8 @@ body
             text-transform: uppercase
             margin: 0 0 16px
         &__form
-            width: 410px
-            max-width: 100%
+            width: 100%
+            max-width: 410px
             display: flex
         &__input
             width: calc(100% - 48px)
@@ -921,7 +917,6 @@ body
                 background: url(../img/banner__button.svg) center no-repeat #37474F
                 background-size: 24px
     &_socials
-        width: 340px
         max-width: 100%
         display: flex
         &__el
@@ -3348,6 +3343,7 @@ body
     .footer
         padding: 180px 0 70px
         &__top
+            display: flex
             flex-direction: column
         &__left
             order: 3
@@ -3360,11 +3356,18 @@ body
             top: -110px
         &__block
             display: none
+        &__center
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
         &_navs
             order: 2
             margin: 0 0 30px
             &__col
                 margin: 0 40px 0 0
+        &_subscribe
+            width: 100%
+            max-width: 600px
 
     .news
         display: block
