@@ -2884,10 +2884,9 @@ body
             justify-content: space-between
             margin: 0 auto
         &__left
-            width: 420px
-            max-width: calc(50% - 100px)
+
         &__right
-            width: 50%
+            width: calc(100% - 420px)
             position: relative
         &__row
             width: 100%
@@ -2904,9 +2903,9 @@ body
             margin: 0 0 0 10px
         &__scheme
             width: 100%
-            height: 420px
             svg
                 max-width: 100%
+                height: auto
                 max-height: 100%
                 *
                     pointer-events: none
@@ -2920,11 +2919,17 @@ body
                     &:hover
                         fill: transparent
                     &-green
-                        fill: #00B548
-                        stroke: #00B548
+                        fill: #669833
+                        stroke: #669833
                     &-blue
-                        fill: #4631CA
-                        stroke: #4631CA
+                        fill: #165274
+                        stroke: #165274
+                    &-pink
+                        fill: #BD48D0
+                        stroke: #BD48D0
+                    &-purple
+                        fill: #6654D3
+                        stroke: #6654D3
                 text
                     font-family: "TTNormsPro"
         &__top
@@ -2938,15 +2943,18 @@ body
             display: flex
             justify-content: space-between
             align-items: self-end
+            display: none
         &__t
             display: flex
             justify-content: space-between
         &__wrp
+            width: 0
             height: 0
             opacity: 0
             transform: translateX(100%)
             transition: opacity .3s ease-out, transform .3s ease-out
             &.active
+                width: auto
                 height: auto
                 opacity: 1
                 transform: translateX(0)
@@ -2956,12 +2964,11 @@ body
         align-items: flex-start
         white-space: nowrap
         overflow-x: auto
-        margin: 0 0 70px
         &__el
             display: flex
             align-items: center
             cursor: pointer
-            margin: 0 0 20px
+            margin: 0 0 42px
             &:last-child
                 margin: 0
             &:hover,
@@ -2972,20 +2979,21 @@ body
                             background: transparent
                             border: 3px solid #fff
         &__circle
-            width: 46px
-            height: 46px
+            width: 55px
+            height: 55px
             background: #37474F
             border: 3px solid #37474F
             border-radius: 100%
             font-size: 22px
             color: #fff
             font-weight: 500
-            line-height: 40px
+            line-height: 50px
             text-align: center
             transition: background .3s ease-out, border .3s ease-out
         &__icons
             display: flex
             margin: 0 0 0 30px
+            display: none
         &__icon
             width: 23px
             margin: 0 10px 0 0
@@ -3005,32 +3013,38 @@ body
             width: 23px
             margin: 0 10px 0 0
     &_colors
+        margin: 34px 0 0 40px
         &__el
             display: flex
             align-items: center
-            font-size: 12px
-            color: #fff
-            font-weight: 500
             margin: 0 0 20px
             &:last-child
                 margin: 0
         &__color
-            width: 20px
-            height: 20px
+            width: 18px
+            height: 18px
             border-radius: 100%
             margin: 0 20px 0 0
             &-1
-                background: #165274
+                background: #FB952D
             &-2
-                background: #00B548
+                background: #165274
             &-3
-                background: #4631CA
+                background: #669833
             &-4
-                background: #F57D02
+                background: #6654D3
+            &-5
+                background: #BD48D0
+        &__txt
+            font-size: 18px
+            color: #fff
+            font-weight: 500
+            &-mobile
+                display: none
     &_window
-        width: 440px
+        width: 400px
         max-width: 100%
-        height: 275px
+        height: 220px
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -3043,15 +3057,29 @@ body
         opacity: 0
         pointer-events: none
         z-index: 5
-        position: absolute
-        left: 0
-        right: 0
-        top: -200px
-        margin: 0 auto
+        position: fixed
         padding: 30px 20px
+        transition: opacity .3s ease-out
         &.active
             opacity: 1
             pointer-events: auto
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            border-left: 20px solid transparent
+            border-right: 20px solid transparent
+            border-top: 20px solid #fff
+            position: absolute
+            left: 0
+            right: 0
+            bottom: -20px
+            margin: 0 auto
+        &.top
+            &:before
+                top: -20px
+                bottom: inherit
+                transform: rotate(180deg)
         &__close
             width: 14px
             height: 14px
@@ -3549,6 +3577,15 @@ body
             &__image
                 width: 100%
 
+    .building
+        &_nav
+            &__el
+                margin: 0 0 20px
+            &__circle
+                width: 48px
+                height: 48px
+                line-height: 42px
+
 @media (max-width: 768px)
     .wrapper
         &-banner
@@ -3840,17 +3877,17 @@ body
                 margin: 0 0 50px
             &__t
                 flex-direction: column
-                margin: 0 0 50px
             &__right
                 width: 100%
             &__bottom
                 flex-direction: column
                 align-items: flex-start
             &__top
-                margin: 15px 40px 0 0
+                display: none
         &_nav
             flex-direction: row
-            margin: 0 0 50px
+            justify-content: center
+            margin: 0 0 40px
             &__el
                 flex-direction: column
                 margin: 0 30px 0 0
@@ -3865,8 +3902,20 @@ body
                 margin: 0 20px 0 0
         &_colors
             display: flex
+            justify-content: center
+            margin: 0
             &__el
-                margin: 0 20px 0 0
+                width: 110px
+                flex-direction: column
+                margin: 0 10px
+                &:last-child
+                    margin: 0 10px
+            &__color 
+                margin: 0 0 20px
+            &__txt
+                display: none
+                &-mobile
+                    display: block
 
     .error
         padding: 200px 0 100px
@@ -4440,25 +4489,39 @@ body
         &_top
             padding: 80px 0 30px
             margin: 0 0 50px
-            &__scheme
-                height: 240px
             &__top
                 position: absolute
                 left: 0
                 top: 0
                 margin: 0
         &_nav
+            justify-content: space-between
             position: relative
-            padding: 30px 0
+            padding: 20px 0
             margin: 0 0 20px
+            &__el
+                display: inline-block
+                margin: 0
+            &__circle
+                width: 32px
+                height: 32px
+                font-size: 16px
+                line-height: 26px
         &_colors
             &__el
                 flex-direction: column
                 text-align: center
+                margin: 0 2px
             &__color
                 margin: 0 0 10px
+            &__txt
+                font-size: 10px
         &_window
+            width: 240px
+            height: 200px
             top: -230px
+            &__title
+                font-size: 20px
             &__text
                 font-size: 13px
 

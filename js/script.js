@@ -461,11 +461,25 @@ $(document).ready(function () {
     }
 
     // Карта
-    $(".sector").on("click", function(event) {
+    $(".sector").on("click", function() {
+        const rect = this.getBoundingClientRect();
+
         $(".building_window__title").html($(this).data("title"));
         $(".building_window__text").html($(this).data("text"));
         $(".building_window__link").attr("href", $(this).data("link"));
 
+        if ($(this).attr('class').includes("top")) {
+            $(".building_window").css("left", rect.left + (rect.width / 2) - ($(".building_window").outerWidth() / 2));
+            $(".building_window").css("top", rect.top + rect.height + 10);
+
+            $(".building_window").addClass("top");
+        } else {
+            $(".building_window").css("left", rect.left + (rect.width / 2) - ($(".building_window").outerWidth() / 2));
+            $(".building_window").css("top", rect.top - $(".building_window").outerHeight() - 10);
+
+            $(".building_window").removeClass("top");
+        }
+        
         $(".building_window").addClass("active");
     });
 
