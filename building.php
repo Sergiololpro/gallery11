@@ -222,7 +222,7 @@
                                     <text transform="translate(454.473 435.377)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0.0800781" y="15.57">Natuzzi Editions</tspan></text>
                                 </g>
                                 <g>
-                                    <path data-title="Title 3" data-text="Text" data-link="/test/" d="M76.8027 600.339V374.293H155.482V518.538H295.356V600.339H76.8027Z" class="sector"/>
+                                    <path data-title="Title 3" data-text="Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле." data-link="/test/" d="M76.8027 600.339V374.293H155.482V518.538H295.356V600.339H76.8027Z" class="sector"/>
                                     <text transform="translate(135.596 547.092)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0.0449219" y="15.57">Alcamo</tspan></text>
                                 </g>
                                 <g>
