@@ -1156,7 +1156,7 @@
                             <div class="building_window__title"></div>
                             <div class="building_window__text"></div>
                         </div>
-                        <a href="#" class="button button-banner building_window__link">Перейти</a>
+                        <a href="#" target="_blank" class="button button-banner building_window__link">Перейти</a>
                     </div>
                 </div>
             </div>

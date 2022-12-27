@@ -469,20 +469,22 @@ $(document).ready(function () {
 
     // Карта
     $(".sector").on("click", function() {
-        const rect = this.getBoundingClientRect();
+        const rect = this.getBoundingClientRect(),
+              wrp = $(".building_top__right")[0].getBoundingClientRect();
 
         $(".building_window__title").html($(this).data("title"));
         $(".building_window__text").html($(this).data("text"));
         $(".building_window__link").attr("href", $(this).data("link"));
 
         if ($(this).attr('class').includes("top")) {
-            $(".building_window").css("left", rect.left + (rect.width / 2) - ($(".building_window").outerWidth() / 2));
-            $(".building_window").css("top", rect.top + rect.height + 10);
+            console.log(rect.left)
+            $(".building_window").css("left", rect.left - wrp.left + (rect.width / 2) - ($(".building_window").outerWidth() / 2));
+            $(".building_window").css("top", rect.top - wrp.top + rect.height + 20);
 
             $(".building_window").addClass("top");
         } else {
-            $(".building_window").css("left", rect.left + (rect.width / 2) - ($(".building_window").outerWidth() / 2));
-            $(".building_window").css("top", rect.top - $(".building_window").outerHeight() - 10);
+            $(".building_window").css("left", rect.left - wrp.left + (rect.width / 2) - ($(".building_window").outerWidth() / 2));
+            $(".building_window").css("top", rect.top - wrp.top - $(".building_window").outerHeight() - 20);
 
             $(".building_window").removeClass("top");
         }
@@ -563,6 +565,10 @@ $(document).ready(function () {
         $(".scheme_nav__el[data-id=" + id + "]").addClass("active");
 
         $(".scheme_building[data-id=" + id + "]").addClass("active");
+
+        $('html, body').animate({  
+            'scrollTop': $(".scheme_building").offset().top - $(".header").height() - 50
+        }, 500);
     });
 
 
