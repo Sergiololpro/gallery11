@@ -100,6 +100,13 @@ $(document).ready(function () {
         }
 
         $(".prods__el" + row).addClass("active");
+
+        if ($(".building_nav").length && $(".building_nav__el[data-id=" + floor + "]").length) {
+            $(".building_window, .building_nav__el, .building_top__wrp").removeClass("active");
+
+            $(".building_nav__el[data-id=" + floor + "]").addClass("active");
+            $(".building_top__wrp[data-id=" + floor + "]").addClass("active");
+        }
     });
 
     // Закрыть окно
@@ -491,12 +498,13 @@ $(document).ready(function () {
     $(".building_nav__el").on("click", function() {
         var id = $(this).data("id");
 
-        $(".building_window").removeClass("active");
-
-        $(".building_nav__el, .building_top__wrp").removeClass("active");
+        $(".building_window, .building_nav__el, .building_top__wrp, .tab_filters__el, .prods__el").removeClass("active");
 
         $(this).addClass("active");
         $(".building_top__wrp[data-id=" + id + "]").addClass("active");
+
+        $(".tab_filters__el[data-floor=" + id + "]").addClass("active");
+        $(".prods__el[data-floor=" + id + "]").addClass("active");
     });
 
     // Cookies
