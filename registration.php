@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="registration__image" style="background-image: url(img/registration__image.jpg)"></div>
-                <img class="registration__img" src="img/registration__img-2.svg" alt="">
+                <img class="registration__img" src="img/registration__img-new.svg" alt="">
             </div>
         </div>
     </div>

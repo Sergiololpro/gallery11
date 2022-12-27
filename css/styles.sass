@@ -1325,8 +1325,6 @@ body
         background-repeat: no-repeat
         background-size: cover
         margin: 0 30px 30px 0
-        &:last-child
-            margin: 0
         &:nth-child(3n)
             margin: 0 0 30px
         &-large
@@ -1345,6 +1343,8 @@ body
             &__el
                 width: 100%
                 height: calc((100% - 30px) / 2)
+                &:last-child
+                    margin: 0
     &__blocks
         width: 100%
     &__block
