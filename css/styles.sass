@@ -2776,6 +2776,7 @@ body
             display: none
 
 .scheme
+    overflow: hidden
     margin: 0 0 100px
     &_top
         background: #222D32
@@ -2784,10 +2785,11 @@ body
         &__wp
             display: flex
             justify-content: space-between
+            align-items: flex-start
         &__left
             width: calc(100% - 530px)
         &__right
-            width: 430px
+            width: 320px
         &__title
             font-family: "OptimaCyr"
             font-size: 50px
@@ -2800,12 +2802,6 @@ body
             font-size: 32px
             line-height: 100%
             margin: 0 0 30px
-        &__img
-            width: 100%
-            height: 220px
-            background: #fff
-            opacity: .5
-            margin: 0 0 30px
         &__ttl
             font-family: "OptimaCyr"
             font-size: 38px
@@ -2816,7 +2812,7 @@ body
             font-size: 15px
             color: #EDEDED
             line-height: 150%
-            margin: 0 0 20px
+            margin: 0 0 40px
         &__els
             margin: 0 0 30px
         &__el
@@ -2829,24 +2825,84 @@ body
                 font-family: "OptimaCyr"
                 font-size: 20px
                 color: #F57D02
-    &_nav
-        white-space: nowrap
-        overflow-x: auto
-        &__el
-            display: inline-block
-            border-bottom: 1px solid transparent
-            font-family: "OptimaCyr"
-            font-size: 20px
+        &__map
+            width: calc(100% - 200px)
+            max-width: 1200px
+            position: relative
+            margin: 0 0 0 30px
+        &__img
+            width: 100%
+        &__sector
+            opacity: 0
+            z-index: 1
             cursor: pointer
-            padding: 0 0 4px
-            margin: 0 40px 0 0
-            transition: border .3s ease-out, color .3s ease-out
+            position: absolute
+            transition: opacity .3s ease-out
+            &.active,
+            &:hover
+                opacity: 1
+            &-0
+                width: 34%
+                top: 23%
+                left: 48.5%
+            &-1
+                width: 17.5%
+                top: 53.5%
+                left: 11.5%
+            &-2
+                width: 11.5%
+                top: 47%
+                left: 30.8%
+            &-3
+                width: 10.3%
+                top: 28.5%
+                left: 32.5%
+            &-4
+                width: 7.3%
+                top: 10.8%
+                left: 38.2%
+            &-5
+                width: 10.5%
+                top: 12.5%
+                left: 45.4%
+            &-6
+                width: 18.2%
+                top: 13.5%
+                left: 13%
+    &_nav
+        display: flex
+        flex-direction: column
+        &__el
+            display: flex
+            align-items: center
+            cursor: pointer
+            margin: 0 0 30px
             &:last-child
                 margin: 0
             &:hover,
             &.active
-                border-bottom: 1px solid #F57D02
-                color: #F57D02
+                .scheme
+                    &_nav
+                        &__circle
+                            background: transparent
+                            border: 3px solid #fff
+        &__circle
+            width: 55px
+            height: 55px
+            background: #37474F
+            border: 3px solid #37474F
+            border-radius: 100%
+            font-size: 22px
+            color: #fff
+            font-weight: 500
+            line-height: 50px
+            text-align: center
+            transition: background .3s ease-out, border .3s ease-out
+        &__text
+            font-size: 16px
+            color: #fff
+            font-weight: 700
+            margin: 0 0 0 20px
     &_block
         display: flex
         justify-content: space-between
@@ -2870,6 +2926,15 @@ body
             background-position: center
             background-repeat: no-repeat
             background-size: cover
+    &_building
+        height: 0
+        opacity: 0
+        transform: translateX(100%)
+        transition: opacity .3s ease-out, transform .3s ease-out
+        &.active
+            height: auto
+            opacity: 1
+            transform: translateX(0)
 
 .building
     overflow: hidden
@@ -2879,7 +2944,6 @@ body
         padding: 130px 0 120px
         margin: 0 0 100px
         &__wp
-            max-width: 1200px
             display: flex
             justify-content: space-between
             margin: 0 auto
@@ -3861,10 +3925,27 @@ body
     .scheme
         &_top
             &__wp
-                flex-direction: column
+                display: block
             &__left
                 width: 100%
                 margin: 0 0 50px
+            &__map
+                width: 100%
+                margin: 0
+        &_nav
+            display: block
+            white-space: nowrap
+            overflow-x: auto
+            padding: 0 0 20px
+            margin: 0 0 30px
+            &__el
+                display: inline-flex
+                flex-direction: column
+                margin: 0 20px
+                &:last-child
+                    margin: 0 20px
+            &__text
+                margin: 10px 0 0
 
     .building
         &_top
@@ -4484,6 +4565,12 @@ body
             margin: 0 0 50px
             &__image
                 height: 240px
+        &_nav
+            &__circle
+                width: 32px
+                height: 32px
+                font-size: 16px
+                line-height: 26px
 
     .building
         &_top

@@ -541,4 +541,30 @@ $(document).ready(function () {
         }
     });
 
+    // Схема территории
+    $(".scheme_nav__el").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".scheme_nav__el, .scheme_top__sector, .scheme_building").removeClass("active");
+
+        $(this).addClass("active");
+        $(".scheme_top__sector[data-id=" + id + "]").addClass("active");
+
+        $(".scheme_building[data-id=" + id + "]").addClass("active");
+    });
+
+    // Схема территории
+    $(".scheme_top__sector").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".scheme_nav__el, .scheme_top__sector, .scheme_building").removeClass("active");
+
+        $(this).addClass("active");
+        $(".scheme_nav__el[data-id=" + id + "]").addClass("active");
+
+        $(".scheme_building[data-id=" + id + "]").addClass("active");
+    });
+
+
+
 });
