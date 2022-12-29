@@ -513,32 +513,44 @@ $(document).ready(function () {
     if ($(".building").length) {
         var floor = window.location.hash;
 
-        $(".building_window, .building_nav__el, .building_top__wrp").removeClass("active");
+        $(".building_window, .building_nav__el, .building_top__wrp, .tab_filters__el, .prods__el").removeClass("active");
 
         switch (floor) {
             case "#floor0":
                 $(".building_nav__el[data-id=0]").addClass("active");
                 $(".building_top__wrp[data-id=0]").addClass("active");
+                $(".tab_filters__el[data-floor=0]").addClass("active");
+                $(".prods__el[data-floor=0]").addClass("active");
                 break;
             case "#floor2":
                 $(".building_nav__el[data-id=2]").addClass("active");
                 $(".building_top__wrp[data-id=2]").addClass("active");
+                $(".tab_filters__el[data-floor=2]").addClass("active");
+                $(".prods__el[data-floor=2]").addClass("active");
                 break;
             case "#floor3":
                 $(".building_nav__el[data-id=3]").addClass("active");
                 $(".building_top__wrp[data-id=3]").addClass("active");
+                $(".tab_filters__el[data-floor=3]").addClass("active");
+                $(".prods__el[data-floor=3]").addClass("active");
                 break;
             case "#floor4":
                 $(".building_nav__el[data-id=4]").addClass("active");
                 $(".building_top__wrp[data-id=4]").addClass("active");
+                $(".tab_filters__el[data-floor=4]").addClass("active");
+                $(".prods__el[data-floor=4]").addClass("active");
                 break;
             case "#floor5":
                 $(".building_nav__el[data-id=5]").addClass("active");
                 $(".building_top__wrp[data-id=5]").addClass("active");
+                $(".tab_filters__el[data-floor=5]").addClass("active");
+                $(".prods__el[data-floor=5]").addClass("active");
                 break;
             default:
                 $(".building_nav__el[data-id=1]").addClass("active");
                 $(".building_top__wrp[data-id=1]").addClass("active");
+                $(".tab_filters__el[data-floor=1]").addClass("active");
+                $(".prods__el[data-floor=1]").addClass("active");
           }
     }
 
