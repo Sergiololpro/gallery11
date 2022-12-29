@@ -471,11 +471,13 @@ $(document).ready(function () {
     $(".p_tabs__tab").on("click", function() {
         var id = $(this).data("id");
 
-        $(".p_tabs__tab, .photos__wrp").removeClass("active");
+        $(".p_tabs__tab, .photos__wrp, .building_nav__el, .building_top__wrp").removeClass("active");
 
         $(this).addClass("active");
-
         $(".photos__wrp[data-id=" + id + "]").addClass("active");
+
+        $(".building_nav__el[data-id=" + id + "]").addClass("active");
+        $(".building_top__wrp[data-id=" + id + "]").addClass("active");
     });
 
     // Карта
@@ -511,13 +513,16 @@ $(document).ready(function () {
     $(".building_nav__el").on("click", function() {
         var id = $(this).data("id");
 
-        $(".building_window, .building_nav__el, .building_top__wrp, .tab_filters__el, .prods__el").removeClass("active");
+        $(".building_window, .building_nav__el, .building_top__wrp, .tab_filters__el, .prods__el, .p_tabs__tab, .photos__wrp").removeClass("active");
 
         $(this).addClass("active");
         $(".building_top__wrp[data-id=" + id + "]").addClass("active");
 
         $(".tab_filters__el[data-floor=" + id + "]").addClass("active");
         $(".prods__el[data-floor=" + id + "]").addClass("active");
+
+        $(".p_tabs__tab[data-id=" + id + "]").addClass("active");
+        $(".photos__wrp[data-id=" + id + "]").addClass("active");
     });
 
     // Этажи
