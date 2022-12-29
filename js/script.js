@@ -467,6 +467,17 @@ $(document).ready(function () {
         });
     }
 
+    // Фото табуляция
+    $(".p_tabs__tab").on("click", function() {
+        var id = $(this).data("id");
+
+        $(".p_tabs__tab, .photos__wrp").removeClass("active");
+
+        $(this).addClass("active");
+
+        $(".photos__wrp[data-id=" + id + "]").addClass("active");
+    });
+
     // Карта
     $(".sector").on("click", function() {
         const rect = this.getBoundingClientRect(),

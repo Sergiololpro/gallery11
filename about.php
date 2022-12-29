@@ -137,18 +137,98 @@
     <div class="photos">
         <img class="photos__image" src="img/photos__image.svg" alt="">
         <h2 class="title title-new">Фото центра</h2>
-        <div class="photos__els">
-            <div class="photos__col">
-                <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
-                <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
-            </div>
-            <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
-            <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
-            <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
-            <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
-            <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+        <div class="p_tabs">
+            <div data-id="0" class="p_tabs__tab active">0 этаж</div>
+            <div data-id="1" class="p_tabs__tab">1 этаж</div>
+            <div data-id="2" class="p_tabs__tab">2 этаж</div>
+            <div data-id="3" class="p_tabs__tab">3 этаж</div>
+            <div data-id="4" class="p_tabs__tab">4 этаж</div>
+            <div data-id="5" class="p_tabs__tab">5 этаж</div>
         </div>
-        <div class="button button-banner">Показать еще</div>
+        <div data-id="0" class="photos__wrp active">
+          <div class="photos__els">
+              <div class="photos__col">
+                  <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                  <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+              </div>
+              <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+              <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+              <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+          </div>
+          <div class="button button-banner">Показать еще</div>
+        </div>
+        <div data-id="1" class="photos__wrp">
+          <div class="photos__els">
+              <div class="photos__col">
+                  <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                  <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+              </div>
+              <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+              <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+              <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+          </div>
+          <div class="button button-banner">Показать еще</div>
+        </div>
+        <div data-id="2" class="photos__wrp">
+          <div class="photos__els">
+              <div class="photos__col">
+                  <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                  <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+              </div>
+              <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+              <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+              <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+          </div>
+          <div class="button button-banner">Показать еще</div>
+        </div>
+        <div data-id="3" class="photos__wrp">
+          <div class="photos__els">
+              <div class="photos__col">
+                  <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                  <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+              </div>
+              <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+              <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+              <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+          </div>
+          <div class="button button-banner">Показать еще</div>
+        </div>
+        <div data-id="4" class="photos__wrp">
+          <div class="photos__els">
+              <div class="photos__col">
+                  <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                  <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+              </div>
+              <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+              <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+              <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+          </div>
+          <div class="button button-banner">Показать еще</div>
+        </div>
+        <div data-id="5" class="photos__wrp">
+          <div class="photos__els">
+              <div class="photos__col">
+                  <div class="photos__el" style="background-image: url(img/photos__el-1.jpg)"></div>
+                  <div class="photos__el" style="background-image: url(img/photos__el-2.jpg)"></div>   
+              </div>
+              <div class="photos__el" style="background-image: url(img/photos__el-3.jpg)"></div>
+              <div class="photos__el" style="background-image: url(img/photos__el-4.jpg)"></div>
+              <div class="photos__el photos__el-large" style="background-image: url(img/photos__el-5.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-6.jpg)"></div>
+              <div class="photos__el photos__el-small" style="background-image: url(img/photos__el-7.jpg)"></div>
+          </div>
+          <div class="button button-banner">Показать еще</div>
+        </div>
     </div>
     <div class="video">
         <img class="video__image" src="img/video.svg" alt="">

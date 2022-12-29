@@ -794,7 +794,7 @@ body
     padding: 70px 0
     &__top
         display: grid
-        grid-template-columns: 400px 1fr 1fr
+        grid-template-columns: 350px 1fr 1fr
         margin: 0 0 30px
     &__logo
         width: 240px
@@ -861,7 +861,7 @@ body
             text-decoration: underline
     &__center
         display: grid
-        grid-template-columns: 400px 1fr 1fr
+        grid-template-columns: 350px 1fr 1fr
         margin: 0 0 70px
     &__bottom
         display: flex
@@ -873,7 +873,7 @@ body
         &__col
             display: flex
             flex-direction: column
-            margin: 0 40px 0 0
+            margin: 0 60px 0 0
         &__el
             min-width: 140px
             font-family: "OptimaCyr"
@@ -987,6 +987,7 @@ body
         a
             color: #fff
 
+.p_tabs,
 .ev_tabs,
 .a_tabs,
 .r_tabs,
@@ -1306,6 +1307,7 @@ body
                 color: #7A7A7A
 
 .photos
+    overflow: hidden
     position: relative
     margin: 150px 0
     &__image
@@ -1314,6 +1316,15 @@ body
         position: absolute
         left: 0
         top: 80px
+    &__wrp
+        height: 0
+        opacity: 0
+        transform: translateX(-100%)
+        transition: opacity .3s ease-out, transform .3s ease-out
+        &.active
+            height: auto
+            opacity: 1
+            transform: translateX(0)
     &__els
         display: flex
         flex-wrap: wrap
@@ -4249,6 +4260,7 @@ body
         &__image
             display: none
 
+    .p_tabs,
     .ev_tabs,
     .a_tabs,
     .r_tabs,
