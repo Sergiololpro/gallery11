@@ -509,6 +509,39 @@ $(document).ready(function () {
         $(".prods__el[data-floor=" + id + "]").addClass("active");
     });
 
+    // Этажи
+    if ($(".building").length) {
+        var floor = window.location.hash;
+
+        $(".building_window, .building_nav__el, .building_top__wrp").removeClass("active");
+
+        switch (floor) {
+            case "#floor0":
+                $(".building_nav__el[data-id=0]").addClass("active");
+                $(".building_top__wrp[data-id=0]").addClass("active");
+                break;
+            case "#floor2":
+                $(".building_nav__el[data-id=2]").addClass("active");
+                $(".building_top__wrp[data-id=2]").addClass("active");
+                break;
+            case "#floor3":
+                $(".building_nav__el[data-id=3]").addClass("active");
+                $(".building_top__wrp[data-id=3]").addClass("active");
+                break;
+            case "#floor4":
+                $(".building_nav__el[data-id=4]").addClass("active");
+                $(".building_top__wrp[data-id=4]").addClass("active");
+                break;
+            case "#floor5":
+                $(".building_nav__el[data-id=5]").addClass("active");
+                $(".building_top__wrp[data-id=5]").addClass("active");
+                break;
+            default:
+                $(".building_nav__el[data-id=1]").addClass("active");
+                $(".building_top__wrp[data-id=1]").addClass("active");
+          }
+    }
+
     // Cookies
 	$('.button-cookies').on("click", function () {
         $(this).closest(".cookies").removeClass("active");
