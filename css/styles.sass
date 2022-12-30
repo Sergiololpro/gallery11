@@ -1309,7 +1309,7 @@ body
 .photos
     overflow: hidden
     position: relative
-    margin: 150px 0
+    margin: 100px 0
     &__image
         width: 100%
         pointer-events: none
@@ -1318,6 +1318,7 @@ body
         top: 80px
     &__wrp
         height: 0
+        overflow: hidden
         opacity: 0
         transform: translateX(-100%)
         transition: opacity .3s ease-out, transform .3s ease-out
@@ -2536,6 +2537,11 @@ body
     &__top
         background: #37474F
         padding: 130px 0 0
+    &__buttons
+        display: flex
+        flex-wrap: wrap
+        .button
+            margin: 0 20px 20px 0
     &_block
         overflow: hidden
         margin: 0 0 100px
@@ -3381,8 +3387,8 @@ body
 
 .b_block
     background: #222D32
-    padding: 100px 0
-    margin: 100px 0
+    padding: 50px 0
+    margin: 50px 0
 
 @media (max-width: 1400px)
     .navigate
@@ -4027,10 +4033,6 @@ body
         &__text
             max-width: 100%
             margin: 0 0 30px
-
-    .b_block
-        padding: 50px 0
-        margin: 50px 0
 
 @media (max-width: 640px)
     .wrapper
