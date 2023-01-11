@@ -580,7 +580,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         if ($(this).find(".prods__close").css('display') == "none") {
-            window.location.href = $(this).attr("href");
+            window.open($(this).attr("href"));
         } else {
             if (!$(this).find(".prods__hover").hasClass("active")) {
                 $(this).find(".prods__hover").addClass("active");

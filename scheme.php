@@ -40,7 +40,7 @@
                         <div class="scheme_nav__text">Здание 5</div>
                     </div>
                     <div data-id="6" class="scheme_nav__el">
-                        <div class="scheme_nav__circle">6</div>
+                        <div class="scheme_nav__circle">7</div>
                         <div class="scheme_nav__text">Здание 7</div>
                     </div>
                 </div>
