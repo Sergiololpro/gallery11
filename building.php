@@ -241,6 +241,10 @@
                                     <path data-title="Title 7" data-text="Text" data-link="/test/" d="M161.73 118.897V58.9512H199.197V118.897H161.73Z" class="sector top"/>
                                     <text transform="translate(170.297 110.155) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="4.31236" y="15.57">Mall</tspan></text>
                                 </g>
+                                <g style="transform: translate(366px, 162px) rotate(90deg);">
+                                    <path data-title="Title 7" data-text="Text" data-link="/test/" d="M161.73 118.897V58.9512H199.197V118.897H161.73Z" class="sector sector-pink"/>
+                                    <text transform="translate(170.297 110.155) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0" y="15.57">Кафе</tspan></text>
+                                </g>
                                 <path d="M207 118.897V58.9512H295.67V118.897H207Z" fill="#7A7A7A"/>
                                 <path d="M115.525 50.2084H5L22.4843 288.119H66.1949V612.203H625.066V629.687H694.379V612.203H783.674V600.338H824.262V134.508H818.642V50.2084H705.619V36.4708H625.066V50.2084H302.232M115.525 50.2084V4H302.232V50.2084M115.525 50.2084H302.232" stroke="white" stroke-width="7.49325"/>
                                 <g clip-path="url(#clip0_10922_30644)">
