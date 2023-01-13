@@ -17,7 +17,7 @@
                 <img class="products__img" src="img/products-2.svg" alt="">
                 <div class="products__left" style="background-image: url(img/products__left.jpg)"></div>
                 <div class="products__right">
-                    <h1 class="title title-products title-right">Шоу-румы</h1>
+                    <h1 class="title title-products title-right">TECHNOSONUS</h1>
                     <div class="products__title">
                         Мебельные <span>магазины</span>
                     </div>

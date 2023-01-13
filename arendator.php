@@ -16,14 +16,14 @@
                 <span class="breadcrumbs__sep">//</span>
                 <span>Шатура</span>
             </div>
-            <h1 class="title title-arendator title-arendator_mobile">Шатура</h1>
+            <h1 class="title title-arendator title-arendator_mobile">TECHNOSONUS</h1>
             <div class="arendator__top">
                 <img class="arendator__img" src="img/arendator__img-2.svg" alt="">
                 <div class="arendator__image" style="background-image: url(img/arendator__image.jpg)">
                     <div class="arendator__logo" style="background-image: url(img/arendator__logo.jpg)"></div>
                 </div>
                 <div class="arendator__right">
-                    <h1 class="title title-arendator">Шатура</h1>
+                    <h1 class="title title-arendator">TECHNOSONUS</h1>
                     <div class="arendator__line">
                         <div class="arendator__floor">Эт. 3</div>
                         <div class="arendator__place">Пом. 3</div>

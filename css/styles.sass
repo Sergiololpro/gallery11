@@ -387,7 +387,6 @@ body
     color: #F57D02
     font-weight: 400
     font-size: 100px
-    word-break: break-word
     position: relative
     margin: 0 0 70px
     &:before
@@ -1724,7 +1723,7 @@ body
                 border-radius: 100%
                 position: absolute
                 left: 0
-                top: 8px
+                top: 6px
 
 .dark
     background: #37474F
@@ -3343,16 +3342,24 @@ body
     font-size: 20px
     color: #37474F
     line-height: 150%
-    ul
-        list-style-type: disc
-        padding: 0 0 0 20px
     ul,
     p
         margin: 0 0 30px
     li
+        position: relative
+        padding: 0 0 0 25px
         margin: 0 0 10px
         &:last-child
             margin: 0
+        &:before
+            content: ""
+            width: 8px
+            height: 8px
+            background: #F57D02
+            border-radius: 100%
+            position: absolute
+            left: 0
+            top: 10px
     h2,
     h3      
         font-family: 'OptimaCyr'
@@ -3390,6 +3397,14 @@ body
     padding: 50px 0
     margin: 50px 0
 
+@media (max-width: 1800px)
+    .title
+        &-arendator,
+        &-products
+            font-size: 60px
+            &:before
+                top: 56px
+
 @media (max-width: 1400px)
     .navigate
         &:before
@@ -3400,6 +3415,10 @@ body
                 bottom: -14px
         &__help
             left: -38px
+
+    .arendator
+        &__image
+            width: calc(65% - 50px)
 
 @media (max-width: 1300px)
     .navigate
@@ -3413,6 +3432,13 @@ body
                 bottom: -16px
         &__help
             left: -45px
+
+    .title
+        &-arendator,
+        &-products
+            font-size: 48px
+            &:before
+                top: 45px
 
 @media (max-width: 1150px)
     .header
@@ -3514,6 +3540,15 @@ body
         &-success_modal
             &:before
                 left: 0
+        &-arendator
+            display: none
+            &_mobile
+                display: inline-block
+        &-products
+            display: none
+            &_mobile
+                display: inline-block
+                margin: 0 0 30px
     
     .subscribe
         &__image
@@ -3522,6 +3557,19 @@ body
             width: 45%
 
     .products
+        &__top
+            margin: 0 0 100px
+        &__wrp
+            flex-direction: column
+        &__left
+            width: 100%
+            height: 400px
+            bottom: 0
+            margin: 0 0 30px
+        &__right
+            width: 100%
+            padding: 0 0 50px
+            margin: 0
         &__el
             width: calc((100% - 60px) / 3)
             &:nth-child(4n)
@@ -3590,9 +3638,35 @@ body
 
     .arendator
         &__under
+            padding: 130px 0 50px
             margin: 0 0 100px
+        &__img
+            display: none
+        &__bottom
+            min-height: inherit
+        &__text
+            width: 100%
+            max-width: 100%
+        &__dec
+            display: none
+        &__top
+            flex-wrap: wrap
         &__image
-            width: calc(65% - 50px)
+            width: 100%
+            height: 400px
+            bottom: 0
+            margin: 0 0 30px
+        &__right
+            width: 100%
+            margin: 0
+        &__wp
+            flex-wrap: wrap
+        &__txt
+            width: 100%
+            margin: 0 0 30px
+        &__ul
+            width: auto
+            max-width: inherit
 
     .r_build
         &__el
@@ -3693,23 +3767,16 @@ body
                 top: 55px
         &-arendator
             font-size: 60px
-            display: none
             &:before
                 left: inherit
                 right: 0
                 top: 55px
-            &_mobile
-                display: inline-block
         &-design
             position: absolute
             left: 0
             top: 0
             &:before
                 left: initial
-        &-products
-            display: none
-            &_mobile
-                display: inline-block
         &-success_modal
             font-size: 32px
             margin: 0 0 50px
@@ -3811,38 +3878,6 @@ body
             width: calc((100% - 60px) / 2)
             height: 400px
 
-    .arendator
-        &__under
-            padding: 130px 0 50px
-            margin: 0 0 100px
-        &__img
-            display: none
-        &__bottom
-            min-height: inherit
-        &__text
-            width: 100%
-            max-width: 100%
-        &__dec
-            display: none
-        &__top
-            flex-wrap: wrap
-        &__image
-            width: 100%
-            height: 400px
-            bottom: 0
-            margin: 0 0 30px
-        &__right
-            width: 100%
-            margin: 0
-        &__wp
-            flex-wrap: wrap
-        &__txt
-            width: 100%
-            margin: 0 0 30px
-        &__ul
-            width: auto
-            max-width: inherit
-
     .design
         margin: 0 0 80px
         &__top
@@ -3887,21 +3922,6 @@ body
             left: 0
             top: 100px
             bottom: inherit
-
-    .products
-        &__top
-            margin: 0 0 100px
-        &__wrp
-            flex-direction: column
-        &__left
-            width: 100%
-            height: 400px
-            bottom: 0
-            margin: 0 0 30px
-        &__right
-            width: 100%
-            padding: 0 0 50px
-            margin: 0
 
     .prod_top
         &__wp
