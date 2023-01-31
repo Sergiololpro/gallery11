@@ -566,13 +566,13 @@ $(document).ready(function () {
                 $(".building_nav__el[data-id=1]").addClass("active");
                 $(".building_top__wrp[data-id=1]").addClass("active");
                 $(".tab_filters__el[data-floor=6]").addClass("active");
-                $(".prods__el[data-floor=1]").addClass("active");
+                $(".prods__el[data-floor=6]").addClass("active");
                 break;
             case "#comm":
                 $(".building_nav__el[data-id=1]").addClass("active");
                 $(".building_top__wrp[data-id=1]").addClass("active");
                 $(".tab_filters__el[data-floor=7]").addClass("active");
-                $(".prods__el[data-floor=1]").addClass("active");
+                $(".prods__el[data-floor=7]").addClass("active");
                 break;
             default:
                 $(".building_nav__el[data-id=1]").addClass("active");
