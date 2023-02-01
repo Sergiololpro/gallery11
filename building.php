@@ -1004,6 +1004,7 @@
                                 </g>
                                 <g> 
                                     <path data-title="Title 1" data-text="Text" data-link="/test/" d="M357.897 197.174L391.412 197.174L391.412 257.46L357.897 257.46L357.897 197.174Z" class="sector sector-pink"/>
+                                    <text transform="translate(360 261) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="13.7376" letter-spacing="0em"><tspan x="14.2695" y="12.4601">Пере- </tspan><tspan x="4.54989" y="26.4601">говорная</tspan></text>
                                 </g>
                                 <g>
                                     <path data-title="Title 1" data-text="Text" data-link="/test/" d="M197.518 113.773L197.518 26.3516L260.139 26.3516L260.139 113.773L197.518 113.773Z" class="sector sector-blue top"/>
