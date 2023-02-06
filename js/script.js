@@ -70,6 +70,11 @@ $(document).ready(function () {
         }, 100)
     });
 
+     // Закрыть навигацию
+	$('.navig__close').on("click", function () {
+        $(this).closest(".navig").removeClass("active");
+    });
+
     // Фильтр
     var build = "all",
         floor = "all",
@@ -643,7 +648,5 @@ $(document).ready(function () {
             'scrollTop': $(".scheme_building").offset().top - $(".header").height() - 50
         }, 500);
     });
-
-
 
 });

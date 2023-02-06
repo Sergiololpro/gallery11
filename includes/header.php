@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="js/libs/slick/slick.css">
-  <link rel="stylesheet" href="css/styles.css?v=20">
+  <link rel="stylesheet" href="css/styles.css?v=21">
   <title>Gallery11</title>
 </head>
 
@@ -82,6 +82,7 @@
 
   <div class="navig" data-id="3">
     <div class="wrapper">
+      <div class="navig__close"></div>
       <div class="navig__top">
         <div class="navig__title">Шоу-румы</div>
         <div class="navig__right">
@@ -132,6 +133,7 @@
   
   <div class="navig" data-id="1">
     <div class="wrapper">
+      <div class="navig__close"></div>
       <div class="navig__top">
         <div class="navig__title">Шоу-румы</div>
       </div>

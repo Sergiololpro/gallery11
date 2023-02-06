@@ -1899,13 +1899,14 @@ body
 
 .navig
     width: 100%
-    height: calc(100vh - 112px)
+    height: calc(100vh - 120px)
     background: rgba(55, 71, 79, .78)
+    overflow-y: auto
     z-index: 5
     position: fixed
     left: 0
     right: 0
-    top: 112px
+    top: 120px
     padding: 60px 0
     margin: 0 auto
     transform: scale(0)
@@ -1913,6 +1914,18 @@ body
     transition: transform .3s ease-out
     &.active
         transform: scale(1)
+    &__close
+        width: 17px
+        height: 17px
+        background: url(../img/close.svg) center no-repeat
+        background-size: contain
+        cursor: pointer
+        position: absolute
+        right: 20px
+        top: -37px
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: .7
     &__top
         display: flex
         justify-content: space-between
