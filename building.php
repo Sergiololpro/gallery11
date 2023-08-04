@@ -839,7 +839,7 @@
                                     <text transform="translate(85 230)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">Древиз</text>
                                 </g>
                                                                                        <g>
-                                    <path data-title="Akilova Beauty" data-text="Студия маникюра и педикюра Akilova Beauty" data-link="https://gallery11.ru/offices/beauty-feshn/akilova-beauty/" d="M449.101 418.625L591.473 418.625L591.473 570.988L449.101 570.988L449.101 418.625Z" fill="#313F46" class="sector-blue sector top"></path>
+                                    <path data-title="Akilova Beauty" data-text="Студия маникюра и педикюра Akilova Beauty" data-link="https://gallery11.ru/offices/beauty-feshn/akilova-beauty/" d="M449.101 418.625L591.473 418.625L591.473 570.988L449.101 570.988L449.101 418.625Z" fill="#313F46" class="sector-blue sector"></path>
                                     <text transform="translate(460 500)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">Akilova Beauty</text>
                                 </g>
                                 <path d="M35.7188 259.395V17.7376H85.0493H271.756H594.59V4H675.143V17.7376H770.682V567.867V579.732H753.198H663.903V597.216H594.59V579.732H35.7188V259.395Z" stroke="white" stroke-width="7.49325"></path>
