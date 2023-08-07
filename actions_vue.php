@@ -10,7 +10,7 @@
         <h1 class="title title-new">Cобытия</h1>
         <div id="vue">
             <div class="tabs">
-                <div class="tabs__tab" :class="{ 'active' : type == 0 }" @click="filter(0)">Все</div>
+                <!-- <div class="tabs__tab" :class="{ 'active' : type == 0 }" @click="filter(0)">Все</div> -->
                 <div class="tabs__tab" :class="{ 'active' : type == 1 }" @click="filter(1)">Акции</div>
                 <div class="tabs__tab" :class="{ 'active' : type == 2 }" @click="filter(2)">Новости</div>
                 <div class="tabs__tab" :class="{ 'active' : type == 3 }" @click="filter(3)">События</div>
