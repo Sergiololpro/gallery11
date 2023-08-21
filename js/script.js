@@ -333,7 +333,7 @@ $(document).ready(function () {
             data: {
                 elements: elements.length ? elements : [],
                 f_elements: [],
-                type: window.location.hash ? window.location.hash.substring(1) : 1,
+                type: window.location.hash ? window.location.hash.substring(1) : $(".tabs__tab:first-child").data("id"),
                 more: false,
             },
             mounted: function() {

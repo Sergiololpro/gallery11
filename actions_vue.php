@@ -11,13 +11,13 @@
         <div id="vue">
             <div class="tabs">
                 <!-- <div class="tabs__tab" :class="{ 'active' : type == 0 }" @click="filter(0)">Все</div> -->
-                <div class="tabs__tab" :class="{ 'active' : type == 1 }" @click="filter(1)">Акции</div>
-                <div class="tabs__tab" :class="{ 'active' : type == 2 }" @click="filter(2)">Новости</div>
-                <div class="tabs__tab" :class="{ 'active' : type == 3 }" @click="filter(3)">События</div>
-                <div class="tabs__tab" :class="{ 'active' : type == 4 }" @click="filter(4)">Лекция</div>
-                <div class="tabs__tab" :class="{ 'active' : type == 5 }" @click="filter(5)">Презентация</div>
-                <div class="tabs__tab" :class="{ 'active' : type == 6 }" @click="filter(6)">Открытие выставки</div>
-                <div class="tabs__tab" :class="{ 'active' : type == 7 }" @click="filter(7)">Обучение</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 1 }" data-id="1" @click="filter(1)">Акции</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 2 }" data-id="2" @click="filter(2)">Новости</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 3 }" data-id="3" @click="filter(3)">События</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 4 }" data-id="4" @click="filter(4)">Лекция</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 5 }" data-id="5" @click="filter(5)">Презентация</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 6 }" data-id="6" @click="filter(6)">Открытие выставки</div>
+                <div class="tabs__tab" :class="{ 'active' : type == 7 }" data-id="7" @click="filter(7)">Обучение</div>
             </div>
             <div v-if="f_elements.length" class="event__wp">
                 <div class="event__wrp">
