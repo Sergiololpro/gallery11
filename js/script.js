@@ -590,7 +590,16 @@ $(document).ready(function () {
     // Cookies
 	$('.button-cookies').on("click", function () {
         $(this).closest(".cookies").removeClass("active");
+        localStorage.setItem('cookies_modal', ' ');
     });
+
+    if ($('.cookies').length) {
+        if (!localStorage.getItem('cookies_modal')) {
+            $('.cookies').addClass('active');
+        } else {
+            $('.cookies').removeClass('active');
+        }
+    }
 
     // Hover mobile
     $('.prods__el').on("click", function (e) {
