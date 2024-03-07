@@ -446,8 +446,17 @@
                                 <text transform="translate(179.74 447.196)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0.371094" y="15.57">Perfect Décor</tspan></text>
                             </g>
                             <g>
-                                <path data-title="O'Prime" data-text="" data-link="https://gallery11.ru/show-rooms/store-o-prime/" d="M450.355 568.493V332.315H524.026V344.945H588.981V568.493H450.355Z" fill="#313F46" class=" sector"></path>
-                                <text transform="translate(510 500) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">O'Prime</text>
+                                <path data-title="O'Prime" data-text="" data-link="https://gallery11.ru/show-rooms/store-o-prime/" xmlns="http://www.w3.org/2000/svg" d="M589 345.631L588.496 478H450V333H523.529V345.631H589Z" class=" sector"/>
+                                <text transform="translate(490 420)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">O'Prime</text>
+                            </g>
+                            <g>
+                                <path data-title="Rice Wear" data-text="" data-link="" xmlns="http://www.w3.org/2000/svg" d="M450 568V482H517V568H450Z" fill="#FB952D" class=" sector"/>
+                                <text transform="translate(461 520)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">Rice</text>
+                                <text transform="translate(462 540)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">Wear</text>
+                            </g>
+                            <g>
+                                <path data-title="Baxi" data-text="" data-link="" xmlns="http://www.w3.org/2000/svg" d="M588.5 568V492.5H521V568H588.5Z" fill="#FB952D" class=" sector"/>
+                                <text transform="translate(540 535)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">Baxi</text>
                             </g>
                             <path d="M713.793 496.473H724.768H730.865V505.666H719.402H713.793V503.419V496.473Z" fill="#7A7A7A"></path>
                             <path d="M761.07 518.537V569.116H675.151V518.537H694.094H744.655V496.473H761.07V518.537Z" fill="#7A7A7A"></path>
@@ -545,7 +554,8 @@
                             <path d="M16.5178 303.106H27.4455C28.0665 303.106 28.6621 303.353 29.1013 303.792C29.5404 304.231 29.7871 304.827 29.7871 305.448V319.498C29.7871 320.119 29.5404 320.715 29.1013 321.154C28.6621 321.593 28.0665 321.84 27.4455 321.84H16.5178C15.8968 321.84 15.3012 321.593 14.862 321.154C14.4229 320.715 14.1762 320.119 14.1762 319.498V305.448C14.1762 304.827 14.4229 304.231 14.862 303.792C15.3012 303.353 15.8968 303.106 16.5178 303.106V303.106ZM22.7622 320.278H27.4455C27.6525 320.278 27.851 320.196 27.9974 320.05C28.1438 319.903 28.226 319.705 28.226 319.498V305.448C28.226 305.241 28.1438 305.043 27.9974 304.896C27.851 304.75 27.6525 304.668 27.4455 304.668H22.7622V320.278ZM15.7373 319.498C15.7373 319.705 15.8195 319.903 15.9659 320.05C16.1123 320.196 16.3108 320.278 16.5178 320.278H21.2011V304.668H16.5178C16.3108 304.668 16.1123 304.75 15.9659 304.896C15.8195 305.043 15.7373 305.241 15.7373 305.448V319.498Z" fill="white"></path>
                             <path d="M11.2846 309.123L11.0559 308.894V310.132C11.0559 310.339 10.9737 310.538 10.8273 310.684C10.6809 310.83 10.4824 310.913 10.2754 310.913C10.0684 310.913 9.86982 310.83 9.72344 310.684C9.57706 310.538 9.49483 310.339 9.49483 310.132V308.894L9.26613 309.123C9.11891 309.265 8.92174 309.344 8.71709 309.342C8.51243 309.34 8.31666 309.258 8.17194 309.113C8.02722 308.969 7.94513 308.773 7.94335 308.568C7.94157 308.364 8.02025 308.166 8.16243 308.019L9.72353 306.458C9.8699 306.312 10.0684 306.229 10.2754 306.229C10.4823 306.229 10.6808 306.312 10.8272 306.458L12.3883 308.019C12.5305 308.166 12.6092 308.364 12.6074 308.568C12.6056 308.773 12.5235 308.969 12.3788 309.113C12.2341 309.258 12.0383 309.34 11.8337 309.342C11.629 309.344 11.4318 309.265 11.2846 309.123Z" fill="white"></path>
                             <path d="M9.26613 315.044L9.49483 315.272V314.034C9.49483 313.827 9.57706 313.629 9.72344 313.483C9.86982 313.336 10.0684 313.254 10.2754 313.254C10.4824 313.254 10.6809 313.336 10.8273 313.483C10.9737 313.629 11.0559 313.827 11.0559 314.034V315.272L11.2846 315.044C11.4318 314.902 11.629 314.823 11.8337 314.825C12.0383 314.826 12.2341 314.908 12.3788 315.053C12.5235 315.198 12.6056 315.394 12.6074 315.598C12.6092 315.803 12.5305 316 12.3883 316.147L10.8272 317.708C10.6808 317.855 10.4823 317.937 10.2754 317.937C10.0684 317.937 9.8699 317.855 9.72353 317.708L8.16243 316.147C8.02025 316 7.94157 315.803 7.94335 315.598C7.94513 315.394 8.02722 315.198 8.17194 315.053C8.31666 314.908 8.51243 314.826 8.71709 314.825C8.92174 314.823 9.11891 314.902 9.26613 315.044Z" fill="white"></path>
-                            <path d="M39.4785 338.074H313.904V325.749H530.286V338.074H595.852V576.609M665.165 576.609V511.044M665.165 511.044H643.934M665.165 511.044H684.244H738.088V500.74V490.437M565.394 20.2354V204.929M565.394 204.929H530.286V225.284M565.394 204.929H592.972H640.187V252.206V287.008M568.677 304.979H530.286V278.753M530.286 278.753H315.217V258.146H39.4785M530.286 278.753V225.284M706.57 470.208H684.244V490.437H640.187V287.008M706.57 470.208V447.226H769.606M706.57 470.208V490.437M530.286 225.284H568.677M769.606 287.008H640.187M738.088 490.437H769.606M738.088 490.437H706.57M706.57 490.437V511.044" stroke="white" stroke-width="2.49775"></path>
+                            <path xmlns="http://www.w3.org/2000/svg" d="M39.4785 338.074H313.904V325.749H530.286V338.074H595.852V478.5M665.165 576.609V511.044M665.165 511.044H643.934M665.165 511.044H684.244H738.088V500.74V490.437M565.394 20.2354V204.929M565.394 204.929H530.286V225.284M565.394 204.929H592.972H640.188V252.206V287.008M568.677 304.979H530.286V278.753M530.286 278.753H315.217V258.146H39.4785M530.286 278.753V225.284M706.57 470.208H684.244V490.437H640.188V287.008M706.57 470.208V447.226H769.606M706.57 470.208V490.437M530.286 225.284H568.677M769.606 287.008H640.188M738.088 490.437H769.606M738.088 490.437H706.57M706.57 490.437V511.044" stroke="white" stroke-width="2.49775"/>
+                            <path xmlns="http://www.w3.org/2000/svg" d="M596 576.5V492" stroke="white" stroke-width="2.5"/>
                             <defs>
                             <clipPath id="clip0_10922_30816">
                             <rect width="20.2564" height="20.2563" fill="white" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 632.346 80.1699)"></rect>
@@ -565,8 +575,8 @@
                         <div class="building_top__scheme">
                         <svg width="775" height="601" viewBox="0 0 775 601" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                                                                                                    <g>
-                                    <path data-title="Аренда" data-text="Салон текстильного декора Леди Прима - пространство роскоши и уюта, где любой гость окружен&nbsp;самым теплым вниманием и лучшими&nbsp;предложениями компании" data-link="https://gallery11.ru/show-rooms/store-LEDI_PRIMA/" d="M46.6543 249.939V27.6387H112.845V249.939H46.6543Z" class="sector-grey sector top"></path>
-                                    <text transform="translate(55.1016 120.82)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"></text>
+                                    <path data-title="Estima" data-text="" data-link="" d="M46.6543 249.939V27.6387H112.845V249.939H46.6543Z" class="sector top"></path>
+                                    <text transform="translate(52 144)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em">Estima</text>
                                 </g>
                                                                                                                                                    <g>
                                     <path data-title="Outlet" data-text="OUTLET&nbsp;- это дизайнерская мебель из наличия и по сниженным ценам. " data-link="https://gallery11.ru/show-rooms/store-OUTLET/" d="M46.6543 569.062V346.762H191.524V569.062H46.6543Z" class=" sector"></path>
@@ -597,8 +607,8 @@
                                     <text transform="translate(664.707 67.6631)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0.369141" y="15.57">ТД Примм</tspan></text>
                                 </g>
                                                                                                                                                                                                                              <g>
-                                    <path data-title="VERO" data-text="Мебельная фабрика Веро, созданная в 1997 г., ведет свою историю с начала прошлого столетия." data-link="https://gallery11.ru/show-rooms/store-Vero/" d="M118.885 249.939V27.6387H173.835V249.939H118.885Z" class=" sector top"></path>
-                                    <text transform="translate(128.018 129.387)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0.410156" y="15.57">Vero</tspan></text>
+                                    <path data-title="Outlet" data-text="" data-link="" d="M118.885 249.939V27.6387H173.835V249.939H118.885Z" class=" sector top"></path>
+                                    <text transform="translate(122 129.387)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="16" letter-spacing="0em"><tspan x="0.410156" y="15.57">Outlet</tspan></text>
                                 </g>
                                                                                                                                                    <g>
                                     <path data-title="Driada" data-text="Фабрика «Дриада» производитель кухонной мебели с выразительным и уникальным дизайном." data-link="https://gallery11.ru/show-rooms/store-DRIADA/" d="M180.607 249.939V27.6387H271.775V249.939H180.607Z" class=" sector top"></path>
@@ -630,8 +640,8 @@
                                 <path transform="translate(2)" d="M644 327L760 327L760 266L644 266L644 327Z" class="sector-blue sector top" data-title="Офис № 313" data-text="" data-link=""/>
                                 <text transform="translate(665 285)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="14" letter-spacing="0em"><tspan x="0.323242" y="15.57">Офис № 313</tspan></text>
                                 <g>
-                                <path d="M645 412L761 412L761 365L645 365L645 412Z" class="sector-blue sector top" data-title="Baxi" data-text="" data-link=""/>
-                                <text transform="translate(685 380)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="0.323242" y="15.57">Baxi</tspan></text>
+                                <path d="M645 412L761 412L761 365L645 365L645 412Z" class="sector-blue sector top" data-title="Офис № 315" data-text="" data-link=""/>
+                                <text transform="translate(665 380)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="14" letter-spacing="0em"><tspan x="0.323242" y="15.57">Офис № 315</tspan></text>
                                 </g>
                                 <g>
                                 <path xmlns="http://www.w3.org/2000/svg" d="M645 362L761 362L761 335L645 335L645 362Z" class="sector-blue sector top" data-title="Офис № 314" data-text="" data-link=""/>
@@ -1018,6 +1028,10 @@
                                     <path data-title="Techno Sonus" data-text="Ведущий российский производитель звукоизоляционных, акустических и виброизоляционных материалов." data-link="https://gallery11.ru/offices/office-technosonus-/" d="M17.7328 102.66L111.398 102.66L111.398 167L17.7328 166.999L17.7328 102.66Z" class="sector-blue sector  top"></path>
                                     <text transform="translate(29.4453 111.432)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="4.71969" y="21.6973">Techno </tspan><tspan x="10.0283" y="39.6973">Sonus</tspan></text>
                                 </g>
+                                <g>
+                                    <path data-title="Ortgraph" data-text="" data-link="" xmlns="http://www.w3.org/2000/svg" d="M17.7328 175.095L111.398 175.095L111.398 251.277L17.7328 251.277L17.7328 175.095Z" class="sector-blue sector  top"/>
+                                    <text transform="translate(12 190)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="14.6241" y="31.3914">Ortgraph</tspan></text>
+                                </g>
                                                                                                                     <g>
                                     <path data-title="ADR Group" data-text="Рекламное агентство полного цикла." data-link="https://gallery11.ru/offices/office-adr-reklamnoe-agentstvo-polnogo-tsikla/" d="M17.7289 28.9785L185.078 28.9785L185.078 95.1689L17.7289 95.1689L17.7289 28.9785Z" class="sector-blue sector  top"></path>
                                     <text transform="translate(38.6484 38.002)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="18" letter-spacing="0em"><tspan x="14.6241" y="31.3914">ADR Group</tspan></text>
@@ -1068,8 +1082,8 @@
                                     <text transform="translate(405.008 106.778) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="16" letter-spacing="0em"><tspan x="15.4045" y="11.7512">Oscar </tspan><tspan x="9.35758" y="27.7512">Дизайн</tspan></text>
                                 </g>
                                                                                                                     <g>
-                                    <path data-title="White Studio" data-text="Индивидуально и под ключ" data-link="https://gallery11.ru/offices/office-studio-white-design/" d="M441.793 113.773L441.793 26.3516L478.227 26.3516L478.227 113.773L441.793 113.773Z" class="sector-blue sector  top"></path>
-                                    <text transform="translate(446.436 106.778) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="16" letter-spacing="0em"><tspan x="9.71695" y="11.7512">White </tspan><tspan x="8" y="27.7512">Studio</tspan></text>
+                                    <path data-title="Sitnidesign" data-text="" data-link="" d="M441.793 113.773L441.793 26.3516L478.227 26.3516L478.227 113.773L441.793 113.773Z" class="sector-blue sector  top"></path>
+                                    <text transform="translate(465 110) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="16" letter-spacing="0em">Sitnidesign</text>
                                 </g>
                                                                                                                     <g>
                                     <path data-title="Mari+ Design" data-text="Создание частных и общественных интерьеров" data-link="https://gallery11.ru/offices/office-mari-design-/" d="M483.229 113.773L483.229 26.3516L519.663 26.3516L519.663 113.773L483.229 113.773Z" class="sector-blue sector  top"></path>
@@ -1132,6 +1146,10 @@
                                 </g>                                 <g>
                                     <path data-title="Bogi" data-text="Дизайн и ремонт с сопровождением" data-link="https://gallery11.ru/offices/office-bogi/" d="M652.195 142.541L732.123 142.541L732.123 177.481L652.195 177.481L652.195 142.541Z" fill="#313F46" class="sector-blue sector top"></path>
                                     <text transform="translate(665 165)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="13.7376" letter-spacing="0em"><tspan x="14.1543" y="0">Bogi</tspan></text>
+                                </g>
+                                <g>
+                                    <path data-title="White Studio" data-text="Индивидуально и под ключ" data-link="https://gallery11.ru/offices/office-studio-white-design/"  xmlns="http://www.w3.org/2000/svg" d="M623.441 181.227L732.093 181.227L732.093 249.915L623.441 249.915L623.441 181.227Z" class="sector-blue sector top"/>
+                                    <text transform="translate(617 220)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="16" letter-spacing="0em"><tspan x="14.1543" y="0">White Studio</tspan></text>
                                 </g>
                                                             <path d="M271.903 197.05L350.699 197.05L350.699 228.619L350.699 257.46L271.904 257.46L271.903 197.05Z" fill="#7A7A7A"></path>
                                 <path d="M551.633 179.978L584.465 179.978L584.465 207.824L551.633 207.824L551.633 179.978Z" fill="#7A7A7A"></path>
