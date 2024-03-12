@@ -633,8 +633,8 @@
                                     <text transform="translate(518 75.543)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="14" letter-spacing="0em"><tspan x="0.323242" y="15.57">T-мебель</tspan></text>
                                 </g>
                                 <g>
-                                    <path d="M645.502 256.146L761.069 256.146L761.069 216.749L645.502 216.749L645.502 256.146Z" class="sector-blue sector top" data-title="Офис № 311" data-text="" data-link=""/>
-                                    <text transform="translate(665 228)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="14" letter-spacing="0em"><tspan x="0.323242" y="15.57">Офис № 311</tspan></text>
+                                    <path d="M645.502 256.146L761.069 256.146L761.069 216.749L645.502 216.749L645.502 256.146Z" class="sector-blue sector top" data-title="Промкультура" data-text="" data-link=""/>
+                                    <text transform="translate(655 228)" fill="white" xml:space="preserve" style="white-space: pre" font-family="TT Norms Pro" font-size="14" letter-spacing="0em"><tspan x="0.323242" y="15.57">Промкультура</tspan></text>
                                 </g>
                                 <g>
                                 <path transform="translate(2)" d="M644 327L760 327L760 266L644 266L644 327Z" class="sector-blue sector top" data-title="Офис № 313" data-text="" data-link=""/>
