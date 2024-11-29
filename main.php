@@ -40,10 +40,9 @@
             <div class="event__text">В выставочном пространстве Ателье Кирила Бородина открылась выставка фотографа Саши Черепанова</div>
           </div>
         </a>
-        <div class="event__col">
-          <article class="event__el">
-            <div class="event__image" style="background-image: url(img/event__image-2.jpg)"></div>
-            <div class="event__label">Событие</div>
+        <a href="#" class="event__el event__el-large">
+          <div class="event__image" style="background-image: url(img/event__image-2.jpg)"></div>
+          <div class="event__label">Событие</div>
             <div class="event__content">
               <div class="event__top">
                 <div class="event__date">02 августа 2022</div>
@@ -51,19 +50,7 @@
               </div>
               <div class="event__text">При поддержке Анны Кирен</div>
             </div>
-          </article>
-          <article class="event__el">
-            <div class="event__image" style="background-image: url(img/event__image-3.jpg)"></div>
-            <div class="event__label">Событие</div>
-            <div class="event__content">
-              <div class="event__top">
-                <div class="event__date">02 августа 2022</div>
-                <h3 class="event__h3">Презентация Книги</h3>
-              </div>
-              <div class="event__text">Состоялась презентация нового сборника стихов "Вторая волна" в лектории Gallery11</div>
-            </div>
-          </article>
-        </div>
+        </a>
       </div>
       <div class="news">
         <a href="#" class="news__el">

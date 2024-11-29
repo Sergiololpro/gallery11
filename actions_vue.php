@@ -32,44 +32,41 @@
                             <div v-html="f_elements[0].text" class="event__text"></div>
                         </div>
                     </a>
-                    <div v-if="f_elements.length > 1" class="event__col">
-                        <a :href="f_elements[1].link" class="event__el">
-                            <div class="event__image" :style="`background-image: url(${f_elements[1].image})`"></div>
-                            <div v-if="f_elements[1].type_text" class="event__label">{{ f_elements[1].type_text }}</div>
-                            <div class="event__content">
-                                <div class="event__top">
-                                <div class="event__date">{{ f_elements[1].date }}</div>
-                                    <h3 class="event__h3">{{ f_elements[1].title }}</h3>
-                                </div>
-                                <div v-html="f_elements[1].text" class="event__text"></div>
+                    <a v-if="f_elements.length > 1" :href="f_elements[1].link" class="event__el">
+                        <div class="event__image" :style="`background-image: url(${f_elements[1].image})`"></div>
+                        <div v-if="f_elements[1].type_text" class="event__label">{{ f_elements[1].type_text }}</div>
+                        <div class="event__content">
+                            <div class="event__top">
+                            <div class="event__date">{{ f_elements[1].date }}</div>
+                                <h3 class="event__h3">{{ f_elements[1].title }}</h3>
                             </div>
-                        </a>
-                        <template v-if="f_elements.length > 2">
-                            <a :href="f_elements[2].link" class="event__el">
-                                <div class="event__image" :style="`background-image: url(${f_elements[2].image})`"></div>
-                                <div v-if="f_elements[2].type_text" class="event__label">{{ f_elements[2].type_text }}</div>
-                                <div class="event__content">
-                                    <div class="event__top">
-                                    <div class="event__date">{{ f_elements[2].date }}</div>
-                                        <h3 class="event__h3">{{ f_elements[2].title }}</h3>
-                                    </div>
-                                    <div v-html="f_elements[2].text" class="event__text"></div>
-                                </div>
-                            </a>
-                        </template>
-                    </div>
-                </div>
-                <div v-if="f_elements.length > 3" class="news">
-                    <a :href="f_elements[3].link" class="news__el">
-                        <div class="news__image" :style="`background-image: url(${f_elements[3].image})`">
-                            <div v-if="f_elements[3].type_text" class="news__label">{{ f_elements[3].type_text }}</div>
-                        </div>
-                        <div class="news__content">
-                            <div class="news__date">{{ f_elements[3].date }}</div>
-                            <h3 class="news__h3">{{ f_elements[3].title }}</h3>
-                            <div v-html="f_elements[3].text" class="news__text"></div>
+                            <div v-html="f_elements[1].text" class="event__text"></div>
                         </div>
                     </a>
+                </div>
+                <div v-if="f_elements.length > 2" class="news">
+                    <a :href="f_elements[2].link" class="news__el">
+                        <div class="news__image" :style="`background-image: url(${f_elements[2].image})`">
+                            <div v-if="f_elements[2].type_text" class="news__label">{{ f_elements[2].type_text }}</div>
+                        </div>
+                        <div class="news__content">
+                            <div class="news__date">{{ f_elements[2].date }}</div>
+                            <h3 class="news__h3">{{ f_elements[2].title }}</h3>
+                            <div v-html="f_elements[2].text" class="news__text"></div>
+                        </div>
+                    </a>
+                    <template v-if="f_elements.length > 3">
+                        <a :href="f_elements[3].link" class="news__el">
+                            <div class="news__image" :style="`background-image: url(${f_elements[3].image})`">
+                                <div v-if="f_elements[3].type_text" class="news__label">{{ f_elements[3].type_text }}</div>
+                            </div>
+                            <div class="news__content">
+                                <div class="news__date">{{ f_elements[3].date }}</div>
+                                <h3 class="news__h3">{{ f_elements[3].title }}</h3>
+                                <div v-html="f_elements[3].text" class="news__text"></div>
+                            </div>
+                        </a>
+                    </template>
                     <template v-if="f_elements.length > 4">
                         <a :href="f_elements[4].link" class="news__el">
                             <div class="news__image" :style="`background-image: url(${f_elements[4].image})`">
@@ -82,23 +79,22 @@
                             </div>
                         </a>
                     </template>
-                    <template v-if="f_elements.length > 5">
-                        <a :href="f_elements[5].link" class="news__el">
-                            <div class="news__image" :style="`background-image: url(${f_elements[5].image})`">
-                                <div v-if="f_elements[5].type_text" class="news__label">{{ f_elements[5].type_text }}</div>
-                            </div>
-                            <div class="news__content">
-                                <div class="news__date">{{ f_elements[5].date }}</div>
-                                <h3 class="news__h3">{{ f_elements[5].title }}</h3>
-                                <div v-html="f_elements[5].text" class="news__text"></div>
-                            </div>
-                        </a>
-                    </template>
                 </div>
             </div>
-            <div v-if="f_elements.length > 6" class="event__wp">
+            <div v-if="f_elements.length > 5" class="event__wp">
                 <div class="event__wrp">
-                    <a :href="f_elements[6].link" class="event__el event__el-top">
+                    <a :href="f_elements[5].link" class="event__el event__el-top">
+                        <div class="event__image" :style="`background-image: url(${f_elements[5].image})`"></div>
+                        <div v-if="f_elements[5].type_text" class="event__label">{{ f_elements[5].type_text }}</div>
+                        <div class="event__content">
+                            <div class="event__top">
+                            <div class="event__date">{{ f_elements[5].date }}</div>
+                                <h3 class="event__h3">{{ f_elements[5].title }}</h3>
+                            </div>
+                            <div v-html="f_elements[5].text" class="event__text"></div>
+                        </div>
+                    </a>
+                    <a v-if="f_elements.length > 6" :href="f_elements[6].link" class="event__el">
                         <div class="event__image" :style="`background-image: url(${f_elements[6].image})`"></div>
                         <div v-if="f_elements[6].type_text" class="event__label">{{ f_elements[6].type_text }}</div>
                         <div class="event__content">
@@ -109,74 +105,75 @@
                             <div v-html="f_elements[6].text" class="event__text"></div>
                         </div>
                     </a>
-                    <div v-if="f_elements.length > 7" class="event__col">
-                        <a :href="f_elements[7].link" class="event__el">
-                            <div class="event__image" :style="`background-image: url(${f_elements[7].image})`"></div>
-                            <div v-if="f_elements[7].type_text" class="event__label">{{ f_elements[7].type_text }}</div>
-                            <div class="event__content">
-                                <div class="event__top">
-                                <div class="event__date">{{ f_elements[7].date }}</div>
-                                    <h3 class="event__h3">{{ f_elements[7].title }}</h3>
-                                </div>
-                                <div v-html="f_elements[7].text" class="event__text"></div>
-                            </div>
-                        </a>
-                        <template v-if="f_elements.length > 8">
-                            <a :href="f_elements[8].link" class="event__el">
-                                <div class="event__image" :style="`background-image: url(${f_elements[8].image})`"></div>
-                                <div v-if="f_elements[8].type_text" class="event__label">{{ f_elements[8].type_text }}</div>
-                                <div class="event__content">
-                                    <div class="event__top">
-                                    <div class="event__date">{{ f_elements[8].date }}</div>
-                                        <h3 class="event__h3">{{ f_elements[8].title }}</h3>
-                                    </div>
-                                    <div v-html="f_elements[8].text" class="event__text"></div>
-                                </div>
-                            </a>
-                        </template>
-                    </div>
                 </div>
-                <div v-if="f_elements.length > 9" class="news">
-                    <a :href="f_elements[9].link" class="news__el">
-                        <div class="news__image" :style="`background-image: url(${f_elements[9].image})`">
-                            <div v-if="f_elements[9].type_text" v-if="f_elements[9].type_text" class="news__label">{{ f_elements[9].type_text }}</div>
+                <div v-if="f_elements.length > 7" class="news">
+                    <a :href="f_elements[7].link" class="news__el">
+                        <div class="news__image" :style="`background-image: url(${f_elements[7].image})`">
+                            <div v-if="f_elements[7].type_text" v-if="f_elements[7].type_text" class="news__label">{{ f_elements[7].type_text }}</div>
                         </div>
                         <div class="news__content">
-                            <div class="news__date">{{ f_elements[9].date }}</div>
-                            <h3 class="news__h3">{{ f_elements[9].title }}</h3>
-                            <div v-html="f_elements[9].text" class="news__text"></div>
+                            <div class="news__date">{{ f_elements[7].date }}</div>
+                            <h3 class="news__h3">{{ f_elements[7].title }}</h3>
+                            <div v-html="f_elements[7].text" class="news__text"></div>
                         </div>
                     </a>
-                    <template v-if="f_elements.length > 10">
-                        <a :href="f_elements[10].link" class="news__el">
-                            <div class="news__image" :style="`background-image: url(${f_elements[10].image})`">
-                                <div v-if="f_elements[10].type_text" class="news__label">{{ f_elements[10].type_text }}</div>
+                    <template v-if="f_elements.length > 8">
+                        <a :href="f_elements[8].link" class="news__el">
+                            <div class="news__image" :style="`background-image: url(${f_elements[8].image})`">
+                                <div v-if="f_elements[8].type_text" class="news__label">{{ f_elements[8].type_text }}</div>
                             </div>
                             <div class="news__content">
-                                <div class="news__date">{{ f_elements[10].date }}</div>
-                                <h3 class="news__h3">{{ f_elements[10].title }}</h3>
-                                <div v-html="f_elements[10].text" class="news__text"></div>
+                                <div class="news__date">{{ f_elements[8].date }}</div>
+                                <h3 class="news__h3">{{ f_elements[8].title }}</h3>
+                                <div v-html="f_elements[8].text" class="news__text"></div>
                             </div>
                         </a>
                     </template>
-                    <template v-if="f_elements.length > 11">
-                        <a :href="f_elements[11].link" class="news__el">
-                            <div class="news__image" :style="`background-image: url(${f_elements[11].image})`">
-                                <div v-if="f_elements[11].type_text" class="news__label">{{ f_elements[11].type_text }}</div>
+                    <template v-if="f_elements.length > 9">
+                        <a :href="f_elements[9].link" class="news__el">
+                            <div class="news__image" :style="`background-image: url(${f_elements[9].image})`">
+                                <div v-if="f_elements[9].type_text" class="news__label">{{ f_elements[9].type_text }}</div>
                             </div>
                             <div class="news__content">
-                                <div class="news__date">{{ f_elements[11].date }}</div>
-                                <h3 class="news__h3">{{ f_elements[11].title }}</h3>
-                                <div v-html="f_elements[11].text" class="news__text"></div>
+                                <div class="news__date">{{ f_elements[9].date }}</div>
+                                <h3 class="news__h3">{{ f_elements[9].title }}</h3>
+                                <div v-html="f_elements[9].text" class="news__text"></div>
                             </div>
                         </a>
                     </template>
                 </div>
             </div>
-            <div v-if="f_elements.length > 12" class="event__wp">
+            <div v-if="f_elements.length > 10" class="event__wp">
                 <div class="event__wrp event__wrp">
-                    <div class="event__col">
-                        <a :href="f_elements[12].link" class="event__el">
+                    <a :href="f_elements[10].link" class="event__el">
+                        <div class="event__image" :style="`background-image: url(${f_elements[10].image})`"></div>
+                        <div v-if="f_elements[10].type_text" class="event__label">{{ f_elements[10].type_text }}</div>
+                        <div class="event__content">
+                            <div class="event__top">
+                            <div class="event__date">{{ f_elements[10].date }}</div>
+                                <h3 class="event__h3">{{ f_elements[10].title }}</h3>
+                            </div>
+                            <div v-html="f_elements[10].text" class="event__text"></div>
+                        </div>
+                    </a>
+                    <a v-if="f_elements.length > 11" :href="f_elements[11].link" class="event__el event__el-top">
+                        <div class="event__image" :style="`background-image: url(${f_elements[11].image})`"></div>
+                        <div v-if="f_elements[11].type_text" class="event__label">{{ f_elements[11].type_text }}</div>
+                        <div class="event__content">
+                            <div class="event__top">
+                            <div class="event__date">{{ f_elements[11].date }}</div>
+                                <h3 class="event__h3">{{ f_elements[11].title }}</h3>
+                            </div>
+                            <div v-html="f_elements[11].text" class="event__text"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div v-if="!more" class="button button-banner button-down" @click="loadMore()">Показать еще</div>
+            <div v-if="more" class="event__more">
+                <div v-if="f_elements.length > 12" class="event__wp">
+                    <div class="event__wrp">
+                        <a :href="f_elements[12].link" class="event__el event__el-top">
                             <div class="event__image" :style="`background-image: url(${f_elements[12].image})`"></div>
                             <div v-if="f_elements[12].type_text" class="event__label">{{ f_elements[12].type_text }}</div>
                             <div class="event__content">
@@ -187,98 +184,91 @@
                                 <div v-html="f_elements[12].text" class="event__text"></div>
                             </div>
                         </a>
-                        <template v-if="f_elements.length > 13">
-                            <a :href="f_elements[13].link" class="event__el">
-                                <div class="event__image" :style="`background-image: url(${f_elements[13].image})`"></div>
-                                <div v-if="f_elements[13].type_text" class="event__label">{{ f_elements[13].type_text }}</div>
-                                <div class="event__content">
-                                    <div class="event__top">
-                                    <div class="event__date">{{ f_elements[13].date }}</div>
-                                        <h3 class="event__h3">{{ f_elements[13].title }}</h3>
-                                    </div>
-                                    <div v-html="f_elements[13].text" class="event__text"></div>
-                                </div>
-                            </a>
-                        </template>
-                    </div>
-                    <a v-if="f_elements.length > 14" :href="f_elements[14].link" class="event__el event__el-top">
-                        <div class="event__image" :style="`background-image: url(${f_elements[14].image})`"></div>
-                        <div v-if="f_elements[14].type_text" class="event__label">{{ f_elements[14].type_text }}</div>
-                        <div class="event__content">
-                            <div class="event__top">
-                            <div class="event__date">{{ f_elements[14].date }}</div>
-                                <h3 class="event__h3">{{ f_elements[14].title }}</h3>
-                            </div>
-                            <div v-html="f_elements[14].text" class="event__text"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div v-if="!more" class="button button-banner button-down" @click="loadMore()">Показать еще</div>
-            <div v-if="more" class="event__more">
-                <div v-if="f_elements.length > 15" class="event__wp">
-                    <div class="event__wrp">
-                        <a :href="f_elements[15].link" class="event__el event__el-top">
-                            <div class="event__image" :style="`background-image: url(${f_elements[15].image})`"></div>
-                            <div v-if="f_elements[15].type_text" class="event__label">{{ f_elements[15].type_text }}</div>
+                        <a v-if="f_elements.length > 13" :href="f_elements[13].link" class="event__el">
+                            <div class="event__image" :style="`background-image: url(${f_elements[13].image})`"></div>
+                            <div v-if="f_elements[13].type_text" class="event__label">{{ f_elements[13].type_text }}</div>
                             <div class="event__content">
                                 <div class="event__top">
-                                <div class="event__date">{{ f_elements[15].date }}</div>
-                                    <h3 class="event__h3">{{ f_elements[15].title }}</h3>
+                                <div class="event__date">{{ f_elements[13].date }}</div>
+                                    <h3 class="event__h3">{{ f_elements[13].title }}</h3>
                                 </div>
-                                <div v-html="f_elements[15].text" class="event__text"></div>
+                                <div v-html="f_elements[13].text" class="event__text"></div>
                             </div>
                         </a>
-                        <div v-if="f_elements.length > 16" class="event__col">
-                            <a :href="f_elements[16].link" class="event__el">
-                                <div class="event__image" :style="`background-image: url(${f_elements[16].image})`"></div>
-                                <div v-if="f_elements[16].type_text" class="event__label">{{ f_elements[16].type_text }}</div>
-                                <div class="event__content">
-                                    <div class="event__top">
-                                    <div class="event__date">{{ f_elements[16].date }}</div>
-                                        <h3 class="event__h3">{{ f_elements[16].title }}</h3>
-                                    </div>
-                                    <div v-html="f_elements[16].text" class="event__text"></div>
-                                </div>
-                            </a>
-                            <template v-if="f_elements.length > 17">
-                                <a :href="f_elements[17].link" class="event__el">
-                                    <div class="event__image" :style="`background-image: url(${f_elements[17].image})`"></div>
-                                    <div v-if="f_elements[17].type_text" class="event__label">{{ f_elements[17].type_text }}</div>
-                                    <div class="event__content">
-                                        <div class="event__top">
-                                        <div class="event__date">{{ f_elements[17].date }}</div>
-                                            <h3 class="event__h3">{{ f_elements[17].title }}</h3>
-                                        </div>
-                                        <div v-html="f_elements[17].text" class="event__text"></div>
-                                    </div>
-                                </a>
-                            </template>
-                        </div>
                     </div>
-                    <div v-if="f_elements.length > 18" class="news">
-                        <a :href="f_elements[18].link" class="news__el">
-                            <div class="news__image" :style="`background-image: url(${f_elements[18].image})`">
-                                <div v-if="f_elements[18].type_text" class="news__label">{{ f_elements[18].type_text }}</div>
+                    <div v-if="f_elements.length > 14" class="news">
+                        <a :href="f_elements[14].link" class="news__el">
+                            <div class="news__image" :style="`background-image: url(${f_elements[14].image})`">
+                                <div v-if="f_elements[14].type_text" class="news__label">{{ f_elements[14].type_text }}</div>
                             </div>
                             <div class="news__content">
-                                <div class="news__date">{{ f_elements[18].date }}</div>
-                                <h3 class="news__h3">{{ f_elements[18].title }}</h3>
-                                <div v-html="f_elements[18].text" class="news__text"></div>
+                                <div class="news__date">{{ f_elements[14].date }}</div>
+                                <h3 class="news__h3">{{ f_elements[14].title }}</h3>
+                                <div v-html="f_elements[14].text" class="news__text"></div>
                             </div>
                         </a>
-                        <template v-if="f_elements.length > 19">
-                            <a :href="f_elements[19].link" class="news__el">
-                                <div class="news__image" :style="`background-image: url(${f_elements[19].image})`">
-                                    <div v-if="f_elements[19].type_text" class="news__label">{{ f_elements[19].type_text }}</div>
+                        <template v-if="f_elements.length > 15">
+                            <a :href="f_elements[15].link" class="news__el">
+                                <div class="news__image" :style="`background-image: url(${f_elements[15].image})`">
+                                    <div v-if="f_elements[15].type_text" class="news__label">{{ f_elements[15].type_text }}</div>
                                 </div>
                                 <div class="news__content">
-                                    <div class="news__date">{{ f_elements[19].date }}</div>
-                                    <h3 class="news__h3">{{ f_elements[19].title }}</h3>
-                                    <div v-html="f_elements[19].text" class="news__text"></div>
+                                    <div class="news__date">{{ f_elements[15].date }}</div>
+                                    <h3 class="news__h3">{{ f_elements[15].title }}</h3>
+                                    <div v-html="f_elements[15].text" class="news__text"></div>
                                 </div>
                             </a>
                         </template>
+                        <template v-if="f_elements.length > 16">
+                            <a :href="f_elements[16].link" class="news__el">
+                                <div class="news__image" :style="`background-image: url(${f_elements[16].image})`">
+                                    <div v-if="f_elements[16].type_text" class="news__label">{{ f_elements[16].type_text }}</div>
+                                </div>
+                                <div class="news__content">
+                                    <div class="news__date">{{ f_elements[16].date }}</div>
+                                    <h3 class="news__h3">{{ f_elements[16].title }}</h3>
+                                    <div v-html="f_elements[16].text" class="news__text"></div>
+                                </div>
+                            </a>
+                        </template>
+                    </div>
+                </div>
+                <div v-if="f_elements.length > 17" class="event__wp">
+                    <div class="event__wrp">
+                        <a :href="f_elements[17].link" class="event__el event__el-top">
+                            <div class="event__image" :style="`background-image: url(${f_elements[17].image})`"></div>
+                            <div v-if="f_elements[17].type_text" class="event__label">{{ f_elements[17].type_text }}</div>
+                            <div class="event__content">
+                                <div class="event__top">
+                                <div class="event__date">{{ f_elements[17].date }}</div>
+                                    <h3 class="event__h3">{{ f_elements[17].title }}</h3>
+                                </div>
+                                <div v-html="f_elements[17].text" class="event__text"></div>
+                            </div>
+                        </a>
+                        <a v-if="f_elements.length > 18" :href="f_elements[18].link" class="event__el">
+                            <div class="event__image" :style="`background-image: url(${f_elements[18].image})`"></div>
+                            <div v-if="f_elements[18].type_text" class="event__label">{{ f_elements[18].type_text }}</div>
+                            <div class="event__content">
+                                <div class="event__top">
+                                <div class="event__date">{{ f_elements[18].date }}</div>
+                                    <h3 class="event__h3">{{ f_elements[18].title }}</h3>
+                                </div>
+                                <div v-html="f_elements[18].text" class="event__text"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div v-if="f_elements.length > 19" class="news">
+                        <a :href="f_elements[19].link" class="news__el">
+                            <div class="news__image" :style="`background-image: url(${f_elements[19].image})`">
+                                <div v-if="f_elements[19].type_text" class="news__label">{{ f_elements[19].type_text }}</div>
+                            </div>
+                            <div class="news__content">
+                                <div class="news__date">{{ f_elements[19].date }}</div>
+                                <h3 class="news__h3">{{ f_elements[19].title }}</h3>
+                                <div v-html="f_elements[19].text" class="news__text"></div>
+                            </div>
+                        </a>
                         <template v-if="f_elements.length > 20">
                             <a :href="f_elements[20].link" class="news__el">
                                 <div class="news__image" :style="`background-image: url(${f_elements[20].image})`">
@@ -291,122 +281,42 @@
                                 </div>
                             </a>
                         </template>
-                    </div>
-                </div>
-                <div v-if="f_elements.length > 21" class="event__wp">
-                    <div class="event__wrp">
-                        <a :href="f_elements[21].link" class="event__el event__el-top">
-                            <div class="event__image" :style="`background-image: url(${f_elements[21].image})`"></div>
-                            <div v-if="f_elements[21].type_text" class="event__label">{{ f_elements[21].type_text }}</div>
-                            <div class="event__content">
-                                <div class="event__top">
-                                <div class="event__date">{{ f_elements[21].date }}</div>
-                                    <h3 class="event__h3">{{ f_elements[21].title }}</h3>
-                                </div>
-                                <div v-html="f_elements[21].text" class="event__text"></div>
-                            </div>
-                        </a>
-                        <div v-if="f_elements.length > 22" class="event__col">
-                            <a :href="f_elements[22].link" class="event__el">
-                                <div class="event__image" :style="`background-image: url(${f_elements[22].image})`"></div>
-                                <div v-if="f_elements[22].type_text" class="event__label">{{ f_elements[22].type_text }}</div>
-                                <div class="event__content">
-                                    <div class="event__top">
-                                    <div class="event__date">{{ f_elements[22].date }}</div>
-                                        <h3 class="event__h3">{{ f_elements[22].title }}</h3>
-                                    </div>
-                                    <div v-html="f_elements[22].text" class="event__text"></div>
-                                </div>
-                            </a>
-                            <template v-if="f_elements.length > 23">
-                                <a :href="f_elements[23].link" class="event__el">
-                                    <div class="event__image" :style="`background-image: url(${f_elements[23].image})`"></div>
-                                    <div v-if="f_elements[23].type_text" class="event__label">{{ f_elements[23].type_text }}</div>
-                                    <div class="event__content">
-                                        <div class="event__top">
-                                        <div class="event__date">{{ f_elements[23].date }}</div>
-                                            <h3 class="event__h3">{{ f_elements[23].title }}</h3>
-                                        </div>
-                                        <div v-html="f_elements[23].text" class="event__text"></div>
-                                    </div>
-                                </a>
-                            </template>
-                        </div>
-                    </div>
-                    <div v-if="f_elements.length > 24" class="news">
-                        <a :href="f_elements[24].link" class="news__el">
-                            <div class="news__image" :style="`background-image: url(${f_elements[24].image})`">
-                                <div v-if="f_elements[24].type_text" class="news__label">{{ f_elements[24].type_text }}</div>
-                            </div>
-                            <div class="news__content">
-                                <div class="news__date">{{ f_elements[24].date }}</div>
-                                <h3 class="news__h3">{{ f_elements[24].title }}</h3>
-                                <div v-html="f_elements[24].text" class="news__text"></div>
-                            </div>
-                        </a>
-                        <template v-if="f_elements.length > 25">
-                            <a :href="f_elements[25].link" class="news__el">
-                                <div class="news__image" :style="`background-image: url(${f_elements[25].image})`">
-                                    <div v-if="f_elements[25].type_text" class="news__label">{{ f_elements[25].type_text }}</div>
+                        <template v-if="f_elements.length > 21">
+                            <a :href="f_elements[21].link" class="news__el">
+                                <div class="news__image" :style="`background-image: url(${f_elements[21].image})`">
+                                    <div v-if="f_elements[21].type_text" class="news__label">{{ f_elements[21].type_text }}</div>
                                 </div>
                                 <div class="news__content">
-                                    <div class="news__date">{{ f_elements[25].date }}</div>
-                                    <h3 class="news__h3">{{ f_elements[25].title }}</h3>
-                                    <div v-html="f_elements[25].text" class="news__text"></div>
-                                </div>
-                            </a>
-                        </template>
-                        <template v-if="f_elements.length > 26">
-                            <a :href="f_elements[26].link" class="news__el">
-                                <div class="news__image" :style="`background-image: url(${f_elements[26].image})`">
-                                    <div v-if="f_elements[26].type_text" class="news__label">{{ f_elements[26].type_text }}</div>
-                                </div>
-                                <div class="news__content">
-                                    <div class="news__date">{{ f_elements[26].date }}</div>
-                                    <h3 class="news__h3">{{ f_elements[26].title }}</h3>
-                                    <div v-html="f_elements[26].text" class="news__text"></div>
+                                    <div class="news__date">{{ f_elements[21].date }}</div>
+                                    <h3 class="news__h3">{{ f_elements[21].title }}</h3>
+                                    <div v-html="f_elements[21].text" class="news__text"></div>
                                 </div>
                             </a>
                         </template>
                     </div>
                 </div>
-                <div v-if="f_elements.length > 27" class="event__wp">
+                <div v-if="f_elements.length > 22" class="event__wp">
                     <div class="event__wrp event__wrp">
-                        <div class="event__col">
-                            <a :href="f_elements[27].link" class="event__el">
-                                <div class="event__image" :style="`background-image: url(${f_elements[27].image})`"></div>
-                                <div v-if="f_elements[27].type_text" class="event__label">{{ f_elements[27].type_text }}</div>
-                                <div class="event__content">
-                                    <div class="event__top">
-                                    <div class="event__date">{{ f_elements[27].date }}</div>
-                                        <h3 class="event__h3">{{ f_elements[27].title }}</h3>
-                                    </div>
-                                    <div v-html="f_elements[27].text" class="event__text"></div>
-                                </div>
-                            </a>
-                            <template v-if="f_elements.length > 28">
-                                <a :href="f_elements[28].link" class="event__el">
-                                    <div class="event__image" :style="`background-image: url(${f_elements[28].image})`"></div>
-                                    <div v-if="f_elements[28].type_text" class="event__label">{{ f_elements[28].type_text }}</div>
-                                    <div class="event__content">
-                                        <div class="event__top">
-                                        <div class="event__date">{{ f_elements[28].date }}</div>
-                                            <h3 class="event__h3">{{ f_elements[28].title }}</h3>
-                                        </div>
-                                        <div v-html="f_elements[28].text" class="event__text"></div>
-                                    </div>
-                                </a>
-                            </template>
-                        </div>
-                        <a v-if="f_elements.length > 29" :href="f_elements[29].link" class="event__el event__el-top">
-                            <div class="event__image" :style="`background-image: url(${f_elements[29].image})`"></div>
-                            <div v-if="f_elements[29].type_text" class="event__label">{{ f_elements[29].type_text }}</div>
+                        <a :href="f_elements[22].link" class="event__el">
+                            <div class="event__image" :style="`background-image: url(${f_elements[22].image})`"></div>
+                            <div v-if="f_elements[22].type_text" class="event__label">{{ f_elements[22].type_text }}</div>
                             <div class="event__content">
                                 <div class="event__top">
-                                <div class="event__date">{{ f_elements[29].date }}</div>
-                                    <h3 class="event__h3">{{ f_elements[29].title }}</h3>
+                                <div class="event__date">{{ f_elements[22].date }}</div>
+                                    <h3 class="event__h3">{{ f_elements[22].title }}</h3>
                                 </div>
-                                <div v-html="f_elements[29].text" class="event__text"></div>
+                                <div v-html="f_elements[22].text" class="event__text"></div>
+                            </div>
+                        </a>
+                        <a v-if="f_elements.length > 23" :href="f_elements[23].link" class="event__el event__el-top">
+                            <div class="event__image" :style="`background-image: url(${f_elements[23].image})`"></div>
+                            <div v-if="f_elements[23].type_text" class="event__label">{{ f_elements[23].type_text }}</div>
+                            <div class="event__content">
+                                <div class="event__top">
+                                <div class="event__date">{{ f_elements[23].date }}</div>
+                                    <h3 class="event__h3">{{ f_elements[23].title }}</h3>
+                                </div>
+                                <div v-html="f_elements[23].text" class="event__text"></div>
                             </div>
                         </a>
                     </div>
@@ -418,6 +328,105 @@
 
 <script>
     var elements = [
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
+        {
+            title: "Выставка Юрия Первушина 1",
+            date: "02 августа 2022",
+            text: "test test <br/>22222",
+            type: "1",
+            type_text: "Акция",
+            image: "img/event__image-1.jpg",
+            link: "/",
+        },
         {
             title: "Выставка Юрия Первушина 1",
             date: "02 августа 2022",
