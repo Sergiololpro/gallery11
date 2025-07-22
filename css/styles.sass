@@ -4141,7 +4141,6 @@ body
         &__el
             width: 100%
             height: 360px
-            display: inline-block
             vertical-align: top
             white-space: normal
             margin: 0 0 30px
@@ -4166,8 +4165,9 @@ body
             margin: 0 8px 0 0
             .event
                 &__el
-                    width: 320px
-                    margin: 0 10px 0 0
+                    margin: 0 0 30px
+                    &:last-child
+                        margin: 0 0 30px
         &__wp
             overflow-y: auto
             vertical-align: top
